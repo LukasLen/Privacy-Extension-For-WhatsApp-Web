@@ -14,7 +14,7 @@ The Privacy Extension For WhatsApp Web hides your messages from unwanted glimpse
 - Select the "/chrome" folder from your repository clone
 
 ### Firefox
-- Come back soon for instructions.
+- Install if from https://addons.mozilla.org/de/firefox/addon/privacy-extension-for-whatsapp/
 
 ## Authors
 * **Lukas Lenhardt** - *Initial work* - [LukasLen](https://github.com/LukasLen)
