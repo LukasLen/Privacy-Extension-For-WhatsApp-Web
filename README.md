@@ -1,4 +1,6 @@
 # Privacy Extension For WhatsApp Web
+[![GitHub license](https://img.shields.io/github/license/LukasLen/Privacy-Extension-For-WhatsApp-Web.svg)](https://github.com/LukasLen/Privacy-Extension-For-WhatsApp-Web/blob/master/LICENSE)[![Twitter](https://img.shields.io/twitter/url/https/github.com/LukasLen/Privacy-Extension-For-WhatsApp-Web.svg?style=social)](https://twitter.com/intent/tweet?text=Wow:&url=https%3A%2F%2Fgithub.com%2FLukasLen%2FPrivacy-Extension-For-WhatsApp-Web)
+
 <p align="center">
   <img width="80%" title="WhatsApp Web with the extension" alt="WhatsApp Web with the extension" src="https://github.com/LukasLen/Privacy-Extension-For-WhatsApp-Web/blob/master/screenshot.jpg">
 </p>
