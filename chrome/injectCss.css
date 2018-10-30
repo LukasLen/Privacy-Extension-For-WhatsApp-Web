@@ -15,7 +15,8 @@
   padding-top: 12px !important;
   padding-bottom: 12px !important;
 }
-.ZhF0n::after /*same width as before*/ {
+.ZhF0n::after /*same width as before*/
+{
   margin-right: 49px !important;
 }
 
@@ -25,7 +26,8 @@
 ._2N_Df /*voice message*/,
 ._3C-gs /*position*/,
 ._1YNgi /*contact share*/,
-._1umJf /*GIF*/
+._1umJf /*GIF*/,
+._23Cyn /*Sticker*/
 {
   filter: blur(20px) grayscale(1);
   transition-delay: 0s;
@@ -39,8 +41,16 @@
 ._2N_Df:hover /*voice message*/,
 ._3C-gs:hover /*position*/,
 ._1YNgi:hover /*contact share*/,
-._1umJf:hover /*GIF*/
+._1umJf:hover /*GIF*/,
+._23Cyn:hover /*Sticker*/
 {
   filter: blur(0) grayscale(0);
   transition-delay: 0.3s;
+}
+
+._1rK-b /*set pseudo background on sticker*/
+{
+  background-color: #dcf8c6 !important;
+  border-radius: 7.5px !important;
+  box-shadow: 0 1px 0.5px rgba(0, 0, 0, 0.13) !important;
 }
