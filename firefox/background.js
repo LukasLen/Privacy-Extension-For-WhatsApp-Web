@@ -1,5 +1,12 @@
 chrome.runtime.onInstalled.addListener(function() {
-  chrome.storage.sync.set({on: true, first: true});
+  // set storage variables
+  chrome.storage.sync.set({
+    on: true,
+    messages: true,
+    textInput:true,
+    profilePic: false,
+    name: false
+  });
 });
 function initializePageAction(tab) {
   if (tab.url.includes("web.whatsapp.com")) {
