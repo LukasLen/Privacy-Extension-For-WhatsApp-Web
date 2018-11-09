@@ -30,7 +30,7 @@ Available for both Chrome and Firefox.
 ## Authors
 * **Lukas Lenhardt** - *Initial work* - [LukasLen](https://github.com/LukasLen)
 
-See also the list of [contributors](https://github.com/LukasLen/secretsanta/contributors) who participated in this project.
+See also the list of [contributors](https://github.com/LukasLen/Privacy-Extension-For-WhatsApp-Web/contributors) who participated in this project.
 
 ## License
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details
