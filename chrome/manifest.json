@@ -8,10 +8,11 @@
     "persistent": false
   },
   "web_accessible_resources": [
-   "css/messages.css",
-   "css/textInput.css",
-   "css/profilePic.css",
-   "css/name.css"
+    "css/messages.css",
+    "css/mediaPreview.css",
+    "css/textInput.css",
+    "css/profilePic.css",
+    "css/name.css"
   ],
   "content_scripts": [
    {

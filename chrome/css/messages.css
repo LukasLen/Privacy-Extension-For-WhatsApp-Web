@@ -1,5 +1,6 @@
 ._itDl /*message preview*/,
-.Tkt2p /*normal message*/
+.Tkt2p /*normal message*/,
+._1Z9m- /*Datails link preview*/
 {
   filter: blur(8px) grayscale(1);
   transition-delay: 0s;
@@ -30,6 +31,7 @@
 
 ._itDl:hover /*message preview*/,
 .Tkt2p:hover /*normal message*/,
+._1Z9m-:hover /*Datails link preview*/,
 .KYpDv:hover /*image*/,
 ._13TsX:hover /*video*/,
 ._1fnMt:hover /*file*/,

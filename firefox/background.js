@@ -4,6 +4,7 @@ chrome.runtime.onInstalled.addListener(function() {
     on: true,
     messages: true,
     textInput:true,
+    mediaPreview: true,
     profilePic: false,
     name: false
   });
