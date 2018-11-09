@@ -1,0 +1,29 @@
+._25Ooe /*List user/group name*/,
+._2zCDG /*Top user/group name*/,
+._3sgkv /*Group user preview*/,
+.iYPsH /*Details username*/,
+._1Xlb2 /*Starred messages username*/,
+._1qUQi /*Starred messages groupname*/,
+._2S1VP /*Details group name*/,
+._2nEKn /*Group description*/,
+._1mf1Y /*About user*/,
+.selectable-text ._3LL06 /*About user phone number*/
+{
+  filter: blur(5px) grayscale(1);
+  transition-delay: 0s;
+}
+
+._25Ooe:hover /*List user/group name*/,
+._2zCDG:hover /*Top user/group name*/,
+._3sgkv:hover /*Group user preview*/,
+.iYPsH:hover /*Details username*/,
+._1Xlb2:hover /*Starred messages username*/,
+._1qUQi:hover /*Starred messages groupname*/,
+._2S1VP:hover /*Details group name*/,
+._2nEKn:hover /*Group description*/,
+._1mf1Y:hover /*About user*/,
+.selectable-text ._3LL06:hover /*About user phone number*/
+{
+  filter: blur(0) grayscale(0);
+  transition-delay: 0.3s;
+}

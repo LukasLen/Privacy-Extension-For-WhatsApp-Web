@@ -7,31 +7,70 @@
           padding: 0;
         }
         body{
+          font-family: "Segoe UI", Tahoma, sans-serif;
+          font-size: 75%;
           width: 200px;
+          padding: 10px;
+          -moz-user-select: none;
+          user-select: none;
+        }
+        hr{
+          border: 0.5px solid #dedede;
+          margin: 10px 0;
+        }
+        img{
+          float: left;
+          margin-top: 5px;
+          margin-left: 10px;
+          margin-right: 15px;
         }
         h1{
           font-size: larger;
-          padding: 5px;
+          margin-bottom: 5px;
+          display: block;
+        }
+        h2{
+          margin-bottom: 6px;
+          font-size: small;
         }
         p{
-          padding: 5px;
+          margin-top: 5px;
           font-size: small;
         }
         button {
-          height: 30px;
-          width: 100px;
+          height: 25px;
+          width: 70px;
           outline: none;
-          margin-top: 10px;
-          margin-bottom: 20px;
-          margin-left: 5px;
+          margin-bottom: 15px;
+        }
+        a{
+          color: #00587f;
+        }
+        #footer hr{
+          margin-bottom: 0;
+          margin-top: 15px;
+        }
+        #footer p{
+          font-size: smaller;
         }
       </style>
     </head>
     <body>
+      <img src="../images/logo_32.png" alt="">
       <h1>Privacy Extension<br>For WhatsApp Web</h1>
-      <button id="switch">Turn Off</button>
       <hr>
-      <p>v1.2.1 - by <a href="https://twitter.com/Lukas_Len" target="_blank">@Lukas_Len</a></p>
+      <h2>Toggle</h2>
+      <button id="switch">Disable</button>
+      <h2>Settings</h2>
+      <p><input type="checkbox" id="messages" checked><label for="messages"> Messages and Media</label></p>
+      <p><input type="checkbox" id="mediaPreview" checked><label for="mediaPreview"> Media preview</label></p>
+      <p><input type="checkbox" id="textInput" checked><label for="textInput"> Text input</label></p>
+      <p><input type="checkbox" id="profilePic"><label for="profilePic"> Profile pictures</label></p>
+      <p><input type="checkbox" id="name"><label for="name"> Group/Users names</label></p>
+      <div id="footer">
+        <hr>
+        <p>v2.0.0 - <a href="https://github.com/LukasLen/Privacy-Extension-For-WhatsApp-Web/issues" title="When you encounter issues or have a feature request please follow this link." target="_blank">Bug reports & Suggestions</a> - <a href="https://twitter.com/Lukas_Len" title="by Lukas Lenhardt" target="_blank">Author</a></p>
+      </div>
       <script src="popup.js"></script>
     </body>
   </html>
