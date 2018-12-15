@@ -19,10 +19,12 @@ Available for both Chrome and Firefox.
 ## Installation
 
 ### Chrome
-- Go to [chrome://extensions/](chrome://extensions/)
+- Download the newest release [here](https://github.com/LukasLen/Privacy-Extension-For-WhatsApp-Web/releases) and unzip it
+- Navigate to [chrome://extensions/](chrome://extensions/)
 - Activate the developer mode (on the top right)
 - Click on "Load Unpacked"
-- Select the "/chrome" folder from your repository clone (this folder has to be persistent so you might want to keep it somewhere where you won't delete it)
+- Select the "/chrome" folder from your unzipped download (this folder has to be persistent so you might want to keep it somewhere where you won't delete it)
+- Check back here for new releases
 
 ### Firefox
 - Install if from https://addons.mozilla.org/firefox/addon/privacy-extension-for-whatsapp/
