@@ -1,8 +1,4 @@
-.dIyEr /*List profile pic*/,
-._18tv- /*Top profile pic*/,
-._2umId /*Own profile pic*/,
-._3ce9t /*Starred messages profile pic*/,
-._1WliW /*Media view profile pic*/
+._1WliW /*profile pic*/
 {
   filter: blur(7px) grayscale(1);
   transition-delay: 0s;
@@ -15,11 +11,7 @@
   transition-delay: 0s;
 }
 
-.dIyEr:hover /*Profile pic*/,
-._18tv-:hover /*Top profile pic*/,
-._2umId:hover /*Own profile pic*/,
-._3ce9t:hover /*Starred messages profile pic*/,
-._1WliW:hover /*Media view profile pic*/,
+._1WliW:hover /*profile pic*/,
 ._1RIe1:hover /*Details profile pic group*/,
 ._2u2Mg:hover /*Details profile pic user*/,
 ._12fSF:hover /*Details own profile pic*/

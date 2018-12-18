@@ -33,10 +33,8 @@ Available for both Chrome and Firefox.
 ### Firefox
 - Install if from https://addons.mozilla.org/firefox/addon/privacy-extension-for-whatsapp/
 
-## Authors
-* **Lukas Lenhardt** - *Initial work* - [LukasLen](https://github.com/LukasLen)
-
-See also the list of [contributors](https://github.com/LukasLen/Privacy-Extension-For-WhatsApp-Web/contributors) who participated in this project.
+## Issues and feature requests
+If you have a feature request or if you have encountered a problem, please create a new issue under this link: https://github.com/LukasLen/Privacy-Extension-For-WhatsApp-Web/issues
 
 ## License
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details
