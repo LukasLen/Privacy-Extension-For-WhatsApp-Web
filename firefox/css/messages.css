@@ -1,6 +1,7 @@
 ._itDl /*message preview*/,
 .Tkt2p /*normal message*/,
-._1Z9m- /*Datails link preview*/
+._1Z9m- /*Datails link preview*/,
+._2ArBI /*blue info bar*/
 {
   filter: blur(8px) grayscale(1);
   transition-delay: 0s;
@@ -17,7 +18,8 @@
 }
 
 .KYpDv /*image*/,
-._13TsX /*video*/,
+._3ImSK /*video*/,
+._13TsX /*legacy_video*/,
 ._1fnMt /*file*/,
 ._2N_Df /*voice message*/,
 ._3C-gs /*position*/,
@@ -32,8 +34,10 @@
 ._itDl:hover /*message preview*/,
 .Tkt2p:hover /*normal message*/,
 ._1Z9m-:hover /*Datails link preview*/,
+._2ArBI:hover /*blue info bar*/,
 .KYpDv:hover /*image*/,
-._13TsX:hover /*video*/,
+._3ImSK:hover /*video*/,
+._13TsX:hover /*legacy_video*/,
 ._1fnMt:hover /*file*/,
 ._2N_Df:hover /*voice message*/,
 ._3C-gs:hover /*position*/,
