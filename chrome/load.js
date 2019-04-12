@@ -1,4 +1,4 @@
-chrome.storage.sync.get(['on', 'messages', 'mediaPreview', 'textInput', 'profilePic', 'name'], function(data) {
+chrome.storage.sync.get(['on', 'messages', 'mediaPreview', 'mediaGallery', 'textInput', 'profilePic', 'name'], function(data) {
 
   function removeStyleById(id){
     // check if the stylesheet is there before removing
@@ -24,6 +24,7 @@ chrome.storage.sync.get(['on', 'messages', 'mediaPreview', 'textInput', 'profile
     // add stylesheets if selected otherwise remove it
     if(data.messages) addStyle('messages'); else removeStyleById('messages');
     if(data.mediaPreview) addStyle('mediaPreview'); else removeStyleById('mediaPreview');
+    if(data.mediaGallery) addStyle('mediaGallery'); else removeStyleById('mediaGallery');
     if(data.textInput) addStyle('textInput'); else removeStyleById('textInput');
     if(data.profilePic) addStyle('profilePic'); else removeStyleById('profilePic');
     if(data.name) addStyle('name'); else removeStyleById('name');
