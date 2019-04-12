@@ -2,6 +2,7 @@
 let button = document.getElementById('switch');
 let messages = document.getElementById('messages');
 let mediaPreview = document.getElementById('mediaPreview');
+let mediaGallery = document.getElementById('mediaGallery');
 let textInput = document.getElementById('textInput');
 let profilePic = document.getElementById('profilePic');
 let name = document.getElementById('name');
@@ -18,11 +19,12 @@ function refreshScript(){
 }
 
 // Set current state in popup
-chrome.storage.sync.get(['on', 'messages', 'mediaPreview', 'textInput', 'profilePic', 'name'], function(data) {
+chrome.storage.sync.get(['on', 'messages', 'mediaPreview', 'mediaGallery', 'textInput', 'profilePic', 'name'], function(data) {
   chrome.tabs.query({active: true, currentWindow: true}, function(tabs) {
     if(!data.on) button.innerHTML=button_enable;
     messages.checked=data.messages;
     mediaPreview.checked=data.mediaPreview;
+    mediaGallery.checked=data.mediaGallery;
     textInput.checked=data.textInput;
     profilePic.checked=data.profilePic;
     name.checked=data.name;
@@ -50,6 +52,10 @@ messages.addEventListener('change', function() {
 });
 mediaPreview.addEventListener('change', function() {
   chrome.storage.sync.set({mediaPreview: this.checked});
+  refreshScript();
+});
+mediaGallery.addEventListener('change', function() {
+  chrome.storage.sync.set({mediaGallery: this.checked});
   refreshScript();
 });
 textInput.addEventListener('change', function() {

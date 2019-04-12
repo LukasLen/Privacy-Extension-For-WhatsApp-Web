@@ -1,11 +1,17 @@
-._2Ry6_ /*media preview*/
+._1JVSX /*image preview*/,
+._3CnDa * /*gif preview*/,
+._1C80R /*video preview*/,
+._3ssLP /*media reply thumb*/
 {
-  filter: blur(12px) grayscale(1);
+  filter: blur(20px) grayscale(1);
   transition-delay: 0s;
 }
-
-._2Ry6_:hover /*media preview*/
+._1JVSX:hover /*image preview*/,
+._3CnDa:hover * /*gif preview*/,
+._1opHa:hover ._1C80R /*video preview*/,
+._3ssLP:hover /*media reply thumb*/
 {
   filter: blur(0) grayscale(0);
+  -webkit-transition: -webkit-filter .16s linear;
   transition-delay: 0.3s;
 }
