@@ -7,7 +7,8 @@ chrome.runtime.onInstalled.addListener(function() {
     mediaPreview: true,
     mediaGallery: true,
     profilePic: false,
-    name: false
+    name: false,
+    noDelay: false
   });
 });
 function initializePageAction(tab) {

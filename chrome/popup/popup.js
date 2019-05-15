@@ -6,6 +6,7 @@ let mediaGallery = document.getElementById('mediaGallery');
 let textInput = document.getElementById('textInput');
 let profilePic = document.getElementById('profilePic');
 let name = document.getElementById('name');
+let noDelay = document.getElementById('noDelay');
 
 // Button text
 let button_enable = 'Enable';
@@ -19,7 +20,7 @@ function refreshScript(){
 }
 
 // Set current state in popup
-chrome.storage.sync.get(['on', 'messages', 'mediaPreview', 'mediaGallery', 'textInput', 'profilePic', 'name'], function(data) {
+chrome.storage.sync.get(['on', 'messages', 'mediaPreview', 'mediaGallery', 'textInput', 'profilePic', 'name', 'noDelay'], function(data) {
   chrome.tabs.query({active: true, currentWindow: true}, function(tabs) {
     if(!data.on) button.innerHTML=button_enable;
     messages.checked=data.messages;
@@ -28,6 +29,7 @@ chrome.storage.sync.get(['on', 'messages', 'mediaPreview', 'mediaGallery', 'text
     textInput.checked=data.textInput;
     profilePic.checked=data.profilePic;
     name.checked=data.name;
+    noDelay.checked=data.noDelay;
   });
 });
 
@@ -68,5 +70,9 @@ profilePic.addEventListener('change', function() {
 });
 name.addEventListener('change', function() {
   chrome.storage.sync.set({name: this.checked});
+  refreshScript();
+});
+noDelay.addEventListener('change', function() {
+  chrome.storage.sync.set({noDelay: this.checked});
   refreshScript();
 });

@@ -7,7 +7,8 @@ chrome.runtime.onInstalled.addListener(function(details) {
     mediaPreview: true,
     mediaGallery: true,
     profilePic: false,
-    name: false
+    name: false,
+    noDelay: false
   });
   chrome.declarativeContent.onPageChanged.removeRules(undefined, function() {
     chrome.declarativeContent.onPageChanged.addRules([{
