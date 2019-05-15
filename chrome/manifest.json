@@ -1,6 +1,6 @@
 {
   "name": "Privacy Extension For WhatsApp Web",
-  "version": "2.1.0",
+  "version": "2.2.0",
   "description": "Hides your messages until you hover over them.",
   "permissions": ["declarativeContent", "activeTab", "tabs", "storage"],
   "background": {
@@ -13,7 +13,8 @@
     "css/mediaGallery.css",
     "css/textInput.css",
     "css/profilePic.css",
-    "css/name.css"
+    "css/name.css",
+    "css/noDelay.css"
   ],
   "content_scripts": [
    {
