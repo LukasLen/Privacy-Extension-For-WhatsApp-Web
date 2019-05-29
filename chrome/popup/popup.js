@@ -7,6 +7,7 @@ let textInput = document.getElementById('textInput');
 let profilePic = document.getElementById('profilePic');
 let name = document.getElementById('name');
 let noDelay = document.getElementById('noDelay');
+let popupMessage = document.getElementById('popupMessage');
 
 // Button text
 let button_enable = 'Enable';
@@ -76,3 +77,13 @@ noDelay.addEventListener('change', function() {
   chrome.storage.sync.set({noDelay: this.checked});
   refreshScript();
 });
+
+//load message
+xmlhttp=new XMLHttpRequest();
+xmlhttp.onreadystatechange=function(){
+  if (xmlhttp.readyState==4 && xmlhttp.status==200){
+    popupMessage.innerHTML = xmlhttp.responseText;
+  }
+}
+xmlhttp.open("GET", "https://lukaslen.com/message/pfwa.txt", true);
+xmlhttp.send();
