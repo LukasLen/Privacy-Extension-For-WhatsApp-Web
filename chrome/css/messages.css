@@ -1,55 +1,53 @@
-._itDl /*message preview*/,
-.Tkt2p /*normal message*/,
-._1Z9m- /*Datails link preview*/,
-._2ArBI /*blue info bar*/
+._2Bw3Q /*message preview*/,
+.-N6Gq  /*normal message*/,
+._1jnqn /*Gallery link preview*/,
+._1_8_q /*blue info bar*/
 {
   filter: blur(8px) grayscale(1);
   transition-delay: 0s;
 }
-.Tkt2p /*normal message more padding*/
+.-N6Gq  /*normal message more padding*/
 {
   padding-right: 40px !important;
   padding-top: 12px !important;
   padding-bottom: 12px !important;
 }
-.ZhF0n::after /*same width as before*/
+.EopGb::after /*same width as before*/
 {
   margin-right: 49px !important;
 }
 
-.KYpDv /*image*/,
-._3ImSK /*video*/,
-._13TsX /*legacy_video*/,
-._1fnMt /*file*/,
-._2N_Df /*voice message*/,
-._3C-gs /*position*/,
-._1YNgi /*contact share*/,
-._1umJf /*GIF*/,
-._23Cyn /*Sticker*/
+.tW-YU /*image*/,
+.ziVVa /*video*/,
+._2dV8O /*file*/,
+._2Zgm- /*voice message*/,
+._15Rkh /*position*/,
+._2qE0x /*contact share*/,
+._2iEEP /*GIF*/,
+.Eu2_h /*Sticker*/
 {
   filter: blur(20px) grayscale(1);
   transition-delay: 0s;
 }
 
-._itDl:hover /*message preview*/,
-.Tkt2p:hover /*normal message*/,
-._1Z9m-:hover /*Datails link preview*/,
-._2ArBI:hover /*blue info bar*/,
-.KYpDv:hover /*image*/,
-._3ImSK:hover /*video*/,
-._13TsX:hover /*legacy_video*/,
-._1fnMt:hover /*file*/,
-._2N_Df:hover /*voice message*/,
-._3C-gs:hover /*position*/,
-._1YNgi:hover /*contact share*/,
-._1umJf:hover /*GIF*/,
-._23Cyn:hover /*Sticker*/
+._2Bw3Q:hover /*message preview*/,
+.-N6Gq:hover /*normal message*/,
+._1jnqn:hover /*Gallery link preview*/,
+._1_8_q:hover /*blue info bar*/,
+.tW-YU:hover /*image*/,
+.ziVVa:hover /*video*/,
+._2dV8O:hover /*file*/,
+._2Zgm-:hover /*voice message*/,
+._15Rkh:hover /*position*/,
+._2qE0x:hover /*contact share*/,
+._2iEEP:hover /*GIF*/,
+.Eu2_h:hover /*Sticker*/
 {
   filter: blur(0) grayscale(0);
   transition-delay: 0.3s;
 }
 
-._1rK-b /*set pseudo background on sticker*/
+.a81-s /*set pseudo background on sticker*/
 {
   background-color: #dcf8c6 !important;
   border-radius: 7.5px !important;

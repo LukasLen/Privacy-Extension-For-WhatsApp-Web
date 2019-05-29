@@ -1,45 +1,44 @@
 /* mediaGallery */
-._2Ry6_:hover /*media preview in gallery*/,
+._2wPfr:hover /*media preview in gallery*/,
 
 /* mediaPreview */
-._1JVSX:hover /*image preview*/,
-._3CnDa:hover * /*gif preview*/,
-._1opHa:hover ._1C80R /*video preview*/,
-._3ssLP:hover /*media reply thumb*/,
+._3fmQw:hover /*image preview*/,
+._3KBs6:hover * /*gif preview*/,
+.cMrTV:hover ._2IYG6 /*video preview*/,
+._1Bw-K:hover /*media reply thumb*/,
 
 /* messages */
-._itDl:hover /*message preview*/,
-.Tkt2p:hover /*normal message*/,
-._1Z9m-:hover /*Datails link preview*/,
-._2ArBI:hover /*blue info bar*/,
-.KYpDv:hover /*image*/,
-._3ImSK:hover /*video*/,
-._13TsX:hover /*legacy_video*/,
-._1fnMt:hover /*file*/,
-._2N_Df:hover /*voice message*/,
-._3C-gs:hover /*position*/,
-._1YNgi:hover /*contact share*/,
-._1umJf:hover /*GIF*/,
-._23Cyn:hover /*Sticker*/,
+._2Bw3Q:hover /*message preview*/,
+.-N6Gq:hover /*normal message*/,
+._1jnqn:hover /*Gallery link preview*/,
+._1_8_q:hover /*blue info bar*/,
+.tW-YU:hover /*image*/,
+.ziVVa:hover /*video*/,
+._2dV8O:hover /*file*/,
+._2Zgm-:hover /*voice message*/,
+._15Rkh:hover /*position*/,
+._2qE0x:hover /*contact share*/,
+._2iEEP:hover /*GIF*/,
+.Eu2_h:hover /*Sticker*/,
 
 /* name */
-._25Ooe:hover /*List user/group name*/,
-._3XrHh:hover /*Top user/group name*/,
-._3sgkv:hover /*Group user preview*/,
-.iYPsH:hover /*Details username*/,
-._1Xlb2:hover /*Starred messages username*/,
-._1qUQi:hover /*Starred messages groupname*/,
-._3F6QL._7UnOZ ._2S1VP:hover /*Details group name*/,
-._2nEKn:hover /*Group description*/,
-._1mf1Y:hover /*About user*/,
-.selectable-text ._3LL06:hover /*About user phone number*/,
-._3ataZ:hover /*Media preview user/group name*/,
+._3H4MS:hover /*List user/group name*/,
+._19vo_:hover /*Top user/group name*/,
+._3Q3ui:hover /*Top group user preview*/,
+._1drsQ:hover /*Details username*/,
+._3iZHE:hover /*Starred messages username*/,
+._3KF1B:hover /*Starred messages groupname*/,
+._3FeAD._3jJ43 ._3u328:hover /*Details group name*/,
+._5KVVe:hover /*Group description*/,
+._2sl9a:hover /*About user*/,
+.selectable-text ._6xQdq:hover /*About user phone number*/,
+._26ydt:hover /*Media preview user/group name*/,
 
 /* profilePic */
-._1WliW:hover /*profile pic*/,
-._1RIe1:hover /*Details profile pic group*/,
-._2u2Mg:hover /*Details profile pic user*/,
-._12fSF:hover /*Details own profile pic*/
+._3RWII:hover /*profile pic*/,
+._2XJ_f:hover /*Details profile pic group*/,
+._2vJOg:hover /*Details profile pic user*/,
+.PU7NO:hover /*Details own profile pic*/
 {
   transition-delay: 0.04s !important;
   -webkit-transition-duration: 0s !important;

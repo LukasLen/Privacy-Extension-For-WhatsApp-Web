@@ -1,20 +1,20 @@
-._1WliW /*profile pic*/
+._3RWII /*profile pic*/
 {
   filter: blur(7px) grayscale(1);
   transition-delay: 0s;
 }
-._1RIe1 /*Details profile pic group*/,
-._2u2Mg /*Details profile pic user*/,
-._12fSF /*Details own profile pic*/
+._2XJ_f /*Details profile pic group*/,
+._2vJOg /*Details profile pic user*/,
+.PU7NO /*Details own profile pic*/
 {
   filter: blur(12px) grayscale(1);
   transition-delay: 0s;
 }
 
-._1WliW:hover /*profile pic*/,
-._1RIe1:hover /*Details profile pic group*/,
-._2u2Mg:hover /*Details profile pic user*/,
-._12fSF:hover /*Details own profile pic*/
+._3RWII:hover /*profile pic*/,
+._2XJ_f:hover /*Details profile pic group*/,
+._2vJOg:hover /*Details profile pic user*/,
+.PU7NO:hover /*Details own profile pic*/
 {
   filter: blur(0) grayscale(0);
   transition-delay: 0.3s;
