@@ -2,6 +2,7 @@ chrome.runtime.onInstalled.addListener(function() {
   // set storage variables
   chrome.storage.sync.set({
     on: true,
+    currentPopupMessage: "",
     messages: true,
     textInput:true,
     mediaPreview: true,

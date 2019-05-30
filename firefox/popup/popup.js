@@ -7,6 +7,7 @@ let textInput = document.getElementById('textInput');
 let profilePic = document.getElementById('profilePic');
 let name = document.getElementById('name');
 let noDelay = document.getElementById('noDelay');
+let popupMessage = document.getElementById('popupMessage');
 
 // Button text
 let button_enable = 'Enable';
@@ -20,7 +21,7 @@ function refreshScript(){
 }
 
 // Set current state in popup
-chrome.storage.sync.get(['on', 'messages', 'mediaPreview', 'mediaGallery', 'textInput', 'profilePic', 'name', 'noDelay'], function(data) {
+chrome.storage.sync.get(['on', 'currentPopupMessage', 'messages', 'mediaPreview', 'mediaGallery', 'textInput', 'profilePic', 'name', 'noDelay'], function(data) {
   chrome.tabs.query({active: true, currentWindow: true}, function(tabs) {
     if(!data.on) button.innerHTML=button_enable;
     messages.checked=data.messages;
@@ -30,6 +31,24 @@ chrome.storage.sync.get(['on', 'messages', 'mediaPreview', 'mediaGallery', 'text
     profilePic.checked=data.profilePic;
     name.checked=data.name;
     noDelay.checked=data.noDelay;
+
+    //load message
+    xmlhttp=new XMLHttpRequest();
+    xmlhttp.onreadystatechange=function(){
+      if (xmlhttp.readyState==4 && xmlhttp.status==200){
+        if(data.currentPopupMessage != xmlhttp.responseText){
+          popupMessage.innerHTML = xmlhttp.responseText + "<a href=\"#\" id=\"popupMessageButton\">Close message</a>";
+
+          let popupMessageButton = document.getElementById('popupMessageButton');
+          popupMessageButton.addEventListener('click', function() {
+            chrome.storage.sync.set({currentPopupMessage: xmlhttp.responseText});
+            popupMessage.innerHTML = "";
+          });
+        }
+      }
+    }
+    xmlhttp.open("GET", "https://lukaslen.com/message/pfwa.txt", true);
+    xmlhttp.send();
   });
 });
 
@@ -76,13 +95,3 @@ noDelay.addEventListener('change', function() {
   chrome.storage.sync.set({noDelay: this.checked});
   refreshScript();
 });
-
-//load message
-xmlhttp=new XMLHttpRequest();
-xmlhttp.onreadystatechange=function(){
-  if (xmlhttp.readyState==4 && xmlhttp.status==200){
-    popupMessage.innerHTML = xmlhttp.responseText;
-  }
-}
-xmlhttp.open("GET", "https://lukaslen.com/message/pfwa.txt", true);
-xmlhttp.send();
