@@ -4,6 +4,7 @@ chrome.runtime.onInstalled.addListener(function() {
     on: true,
     currentPopupMessage: "",
     messages: true,
+    messagesPreview: true,
     textInput:true,
     mediaPreview: true,
     mediaGallery: true,

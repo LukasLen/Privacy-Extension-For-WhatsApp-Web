@@ -1,0 +1,11 @@
+._2Bw3Q /*message preview*/
+{
+  filter: blur(8px) grayscale(1);
+  transition-delay: 0s;
+}
+
+._2Bw3Q:hover /*message preview*/
+{
+  filter: blur(0) grayscale(0);
+  transition-delay: 0.3s;
+}

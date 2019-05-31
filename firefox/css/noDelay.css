@@ -8,7 +8,6 @@
 ._1Bw-K:hover /*media reply thumb*/,
 
 /* messages */
-._2Bw3Q:hover /*message preview*/,
 .-N6Gq:hover /*normal message*/,
 ._1jnqn:hover /*Gallery link preview*/,
 ._1_8_q:hover /*blue info bar*/,
@@ -20,6 +19,9 @@
 ._2qE0x:hover /*contact share*/,
 ._2iEEP:hover /*GIF*/,
 .Eu2_h:hover /*Sticker*/,
+
+/* messagesPreview */
+._2Bw3Q:hover /*message preview*/,
 
 /* name */
 ._3H4MS:hover /*List user/group name*/,

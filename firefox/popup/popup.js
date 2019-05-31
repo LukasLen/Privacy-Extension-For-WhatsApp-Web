@@ -1,6 +1,7 @@
 // Checkboxes
 let button = document.getElementById('switch');
 let messages = document.getElementById('messages');
+let messagesPreview = document.getElementById('messagesPreview');
 let mediaPreview = document.getElementById('mediaPreview');
 let mediaGallery = document.getElementById('mediaGallery');
 let textInput = document.getElementById('textInput');
@@ -21,10 +22,11 @@ function refreshScript(){
 }
 
 // Set current state in popup
-chrome.storage.sync.get(['on', 'currentPopupMessage', 'messages', 'mediaPreview', 'mediaGallery', 'textInput', 'profilePic', 'name', 'noDelay'], function(data) {
+chrome.storage.sync.get(['on', 'currentPopupMessage', 'messages', 'messagesPreview', 'mediaPreview', 'mediaGallery', 'textInput', 'profilePic', 'name', 'noDelay'], function(data) {
   chrome.tabs.query({active: true, currentWindow: true}, function(tabs) {
     if(!data.on) button.innerHTML=button_enable;
     messages.checked=data.messages;
+    messagesPreview.checked=data.messagesPreview;
     mediaPreview.checked=data.mediaPreview;
     mediaGallery.checked=data.mediaGallery;
     textInput.checked=data.textInput;
@@ -69,6 +71,10 @@ button.addEventListener('click', function() {
 // Update settings values
 messages.addEventListener('change', function() {
   chrome.storage.sync.set({messages: this.checked});
+  refreshScript();
+});
+messagesPreview.addEventListener('change', function() {
+  chrome.storage.sync.set({messagesPreview: this.checked});
   refreshScript();
 });
 mediaPreview.addEventListener('change', function() {

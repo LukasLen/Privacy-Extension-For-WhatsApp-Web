@@ -14,6 +14,7 @@
   },
   "web_accessible_resources": [
     "css/messages.css",
+    "css/messagesPreview.css",
     "css/mediaPreview.css",
     "css/mediaGallery.css",
     "css/textInput.css",
