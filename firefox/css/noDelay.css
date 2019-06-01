@@ -8,7 +8,6 @@
 ._1Bw-K:hover /*media reply thumb*/,
 
 /* messages */
-._2Bw3Q:hover /*message preview*/,
 .-N6Gq:hover /*normal message*/,
 ._1jnqn:hover /*Gallery link preview*/,
 ._1_8_q:hover /*blue info bar*/,
@@ -21,11 +20,15 @@
 ._2iEEP:hover /*GIF*/,
 .Eu2_h:hover /*Sticker*/,
 
+/* messagesPreview */
+._2Bw3Q:hover /*message preview*/,
+
 /* name */
 ._3H4MS:hover /*List user/group name*/,
 ._19vo_:hover /*Top user/group name*/,
 ._3Q3ui:hover /*Top group user preview*/,
 ._1drsQ:hover /*Details username*/,
+._3VvbK:hover /*Details username ~nickname*/,
 ._3iZHE:hover /*Starred messages username*/,
 ._3KF1B:hover /*Starred messages groupname*/,
 ._3FeAD._3jJ43 ._3u328:hover /*Details group name*/,
