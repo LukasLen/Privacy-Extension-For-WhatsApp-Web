@@ -8,6 +8,9 @@ let textInput = document.getElementById('textInput');
 let profilePic = document.getElementById('profilePic');
 let name = document.getElementById('name');
 let noDelay = document.getElementById('noDelay');
+
+// Message functionality
+let mainContent = document.getElementById('mainContent');
 let popupMessage = document.getElementById('popupMessage');
 
 // Button text
@@ -39,12 +42,14 @@ chrome.storage.sync.get(['on', 'currentPopupMessage', 'messages', 'messagesPrevi
     xmlhttp.onreadystatechange=function(){
       if (xmlhttp.readyState==4 && xmlhttp.status==200){
         if(data.currentPopupMessage != xmlhttp.responseText){
+          mainContent.style.display = "none";
           popupMessage.innerHTML = xmlhttp.responseText + "<a href=\"#\" id=\"popupMessageButton\">Close message</a>";
 
           let popupMessageButton = document.getElementById('popupMessageButton');
           popupMessageButton.addEventListener('click', function() {
             chrome.storage.sync.set({currentPopupMessage: xmlhttp.responseText});
             popupMessage.innerHTML = "";
+            mainContent.style.display = "initial";
           });
         }
       }

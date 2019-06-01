@@ -70,23 +70,25 @@
       <img src="../images/logo_32.png" alt="">
       <h1>Privacy Extension<br>For WhatsApp Web</h1>
       <hr>
-      <h2>Toggle</h2>
-      <button id="switch">Disable</button>
-      <h2>Settings</h2>
-      <p><input type="checkbox" id="messages" checked><label for="messages"> All messages in chat</label></p>
-      <p><input type="checkbox" id="messagesPreview" checked><label for="messagesPreview"> Last messages preview</label></p>
-      <p><input type="checkbox" id="mediaPreview" checked><label for="mediaPreview"> Media preview</label></p>
-      <p><input type="checkbox" id="mediaGallery" checked><label for="mediaGallery"> Media gallery</label></p>
-      <p><input type="checkbox" id="textInput" checked><label for="textInput"> Text input</label></p>
-      <p><input type="checkbox" id="profilePic"><label for="profilePic"> Profile pictures</label></p>
-      <p><input type="checkbox" id="name"><label for="name"> Group/Users names</label></p>
-      <hr id="otherSettings">
-      <p><input type="checkbox" id="noDelay"><label for="noDelay"> No transition delay</label></p>
+      <span id="mainContent">
+        <h2>Toggle</h2>
+        <button id="switch">Disable</button>
+        <h2>Settings</h2>
+        <p><input type="checkbox" id="messages" checked><label for="messages"> All messages in chat</label></p>
+        <p><input type="checkbox" id="messagesPreview" checked><label for="messagesPreview"> Last messages preview</label></p>
+        <p><input type="checkbox" id="mediaPreview" checked><label for="mediaPreview"> Media preview</label></p>
+        <p><input type="checkbox" id="mediaGallery" checked><label for="mediaGallery"> Media gallery</label></p>
+        <p><input type="checkbox" id="textInput" checked><label for="textInput"> Text input</label></p>
+        <p><input type="checkbox" id="profilePic"><label for="profilePic"> Profile pictures</label></p>
+        <p><input type="checkbox" id="name"><label for="name"> Group/Users names</label></p>
+        <hr id="otherSettings">
+        <p><input type="checkbox" id="noDelay"><label for="noDelay"> No transition delay</label></p>
+      </span>
+      <span id="popupMessage"></span>
       <div id="footer">
         <hr>
         <p>v2.4.0 - <a href="mailto:contact@lukaslen.com" title="When you encounter issues or have a feature request please email me: contact@lukaslen.com" target="_blank">Bug reports & Suggestions</a> - <a href="https://lukaslen.com" title="by Lukas Lenhardt" target="_blank">Author</a></p>
       </div>
-      <span id="popupMessage"></span>
       <script src="popup.js"></script>
     </body>
   </html>
