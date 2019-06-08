@@ -17,6 +17,9 @@ let popupMessage = document.getElementById('popupMessage');
 let button_enable = 'Enable';
 let button_disable = 'Disable';
 
+// Get and set current version
+document.getElementById('version').innerHTML = chrome.runtime.getManifest().version;
+
 // Add or remove stylesheets
 function refreshScript(){
   chrome.tabs.query({active: true, currentWindow: true}, function(tabs) {
@@ -25,38 +28,49 @@ function refreshScript(){
 }
 
 // Set current state in popup
-chrome.storage.sync.get(['on', 'currentPopupMessage', 'messages', 'messagesPreview', 'mediaPreview', 'mediaGallery', 'textInput', 'profilePic', 'name', 'noDelay'], function(data) {
-  chrome.tabs.query({active: true, currentWindow: true}, function(tabs) {
-    if(!data.on) button.innerHTML=button_enable;
-    messages.checked=data.messages;
-    messagesPreview.checked=data.messagesPreview;
-    mediaPreview.checked=data.mediaPreview;
-    mediaGallery.checked=data.mediaGallery;
-    textInput.checked=data.textInput;
-    profilePic.checked=data.profilePic;
-    name.checked=data.name;
-    noDelay.checked=data.noDelay;
+chrome.storage.sync.get([
+    'on',
+    'currentPopupMessage',
+    'messages',
+    'messagesPreview',
+    'mediaPreview',
+    'mediaGallery',
+    'textInput',
+    'profilePic',
+    'name',
+    'noDelay'
+  ], function(data) {
+    chrome.tabs.query({active: true, currentWindow: true}, function(tabs) {
+      if(!data.on) button.innerHTML=button_enable;
+      messages.checked=data.messages;
+      messagesPreview.checked=data.messagesPreview;
+      mediaPreview.checked=data.mediaPreview;
+      mediaGallery.checked=data.mediaGallery;
+      textInput.checked=data.textInput;
+      profilePic.checked=data.profilePic;
+      name.checked=data.name;
+      noDelay.checked=data.noDelay;
 
-    //load message
-    xmlhttp=new XMLHttpRequest();
-    xmlhttp.onreadystatechange=function(){
-      if (xmlhttp.readyState==4 && xmlhttp.status==200){
-        if(data.currentPopupMessage != xmlhttp.responseText){
-          mainContent.style.display = "none";
-          popupMessage.innerHTML = xmlhttp.responseText + "<a href=\"#\" id=\"popupMessageButton\">Close message</a>";
+      //load message
+      xmlhttp=new XMLHttpRequest();
+      xmlhttp.onreadystatechange=function(){
+        if (xmlhttp.readyState==4 && xmlhttp.status==200){
+          if(xmlhttp.responseText != "" && data.currentPopupMessage != xmlhttp.responseText){
+            mainContent.style.display = "none";
+            popupMessage.innerHTML = xmlhttp.responseText + "<a href=\"#\" id=\"popupMessageButton\">Close message</a>";
 
-          let popupMessageButton = document.getElementById('popupMessageButton');
-          popupMessageButton.addEventListener('click', function() {
-            chrome.storage.sync.set({currentPopupMessage: xmlhttp.responseText});
-            popupMessage.innerHTML = "";
-            mainContent.style.display = "initial";
-          });
+            let popupMessageButton = document.getElementById('popupMessageButton');
+            popupMessageButton.addEventListener('click', function() {
+              chrome.storage.sync.set({currentPopupMessage: xmlhttp.responseText});
+              popupMessage.innerHTML = "";
+              mainContent.style.display = "initial";
+            });
+          }
         }
       }
-    }
-    xmlhttp.open("GET", "https://lukaslen.com/message/pfwa.txt", true);
-    xmlhttp.send();
-  });
+      xmlhttp.open("GET", "https://lukaslen.com/message/pfwa.txt", true);
+      xmlhttp.send();
+    });
 });
 
 // Toogle button text and variable
