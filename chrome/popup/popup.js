@@ -17,6 +17,9 @@ let popupMessage = document.getElementById('popupMessage');
 let button_enable = 'Enable';
 let button_disable = 'Disable';
 
+// Get and set current version
+document.getElementById('version').innerHTML = chrome.runtime.getManifest().version;
+
 // Add or remove stylesheets
 function refreshScript(){
   chrome.tabs.query({active: true, currentWindow: true}, function(tabs) {
