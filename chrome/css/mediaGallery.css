@@ -1,10 +1,12 @@
-._2wPfr /*media preview in gallery*/
+._2wPfr /*media preview in gallery*/,
+._2sn3C /*media preview in send media*/
 {
   filter: blur(12px) grayscale(1);
   transition-delay: 0s;
 }
 
-._2wPfr:hover /*media preview in gallery*/
+._2wPfr:hover /*media preview in gallery*/,
+._2sn3C:hover /*media preview in send media*/
 {
   filter: blur(0) grayscale(0);
   transition-delay: 0.3s;
