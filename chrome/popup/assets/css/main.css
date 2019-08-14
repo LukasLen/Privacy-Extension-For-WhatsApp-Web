@@ -1,0 +1,76 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+  font-family: "Segoe UI", Tahoma, sans-serif;
+  font-size: 75%;
+  width: 200px;
+  padding: 10px;
+  -moz-user-select: none;
+  user-select: none;
+}
+hr{
+  border: 0.5px solid #dedede;
+  margin: 10px 0;
+}
+img{
+  float: left;
+  margin-top: 5px;
+  margin-left: 10px;
+  margin-right: 15px;
+}
+h1{
+  font-size: larger;
+  margin-bottom: 5px;
+  display: block;
+}
+h2{
+  margin-bottom: 6px;
+  font-size: small;
+}
+p{
+  margin-top: 5px;
+  font-size: small;
+}
+button {
+  display: block;
+  height: 26px;
+  width: 70px;
+  outline: none;
+  background-color: #ccc;
+  border: none;
+  border-radius: 3px;
+  margin-bottom: 15px;
+}
+input[type=checkbox] {
+  margin-right: 5px;
+  height: 15px;
+  width: 15px;
+  background-color: #ccc;
+}
+#otherSettings{
+  border: 0.5px solid #dedede;
+  margin: 3px 0;
+  width: 10px;
+}
+a{
+  color: #00587f;
+  text-decoration: none;
+}
+a:hover{
+  text-decoration: underline;
+}
+#footer hr{
+  margin-bottom: 0;
+  margin-top: 15px;
+}
+#footer p{
+  font-size: smaller;
+  text-align: center;
+}
+#popupMessage{
+  display: table;
+}
+#popupMessageButton{
+  float: right;
