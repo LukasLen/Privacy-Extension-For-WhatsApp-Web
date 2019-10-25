@@ -18,7 +18,7 @@ let button_enable = 'Enable';
 let button_disable = 'Disable';
 
 // Get and set current version
-document.getElementById('version').innerHTML = chrome.runtime.getManifest().version;
+document.getElementById('version').innerText = chrome.runtime.getManifest().version;
 
 // Add or remove stylesheets
 function refreshScript(){
@@ -41,7 +41,7 @@ chrome.storage.sync.get([
     'noDelay'
   ], function(data) {
     chrome.tabs.query({active: true, currentWindow: true}, function(tabs) {
-      if(!data.on) button.innerHTML=button_enable;
+      if(!data.on) button.innerText=button_enable;
       messages.checked=data.messages;
       messagesPreview.checked=data.messagesPreview;
       mediaPreview.checked=data.mediaPreview;
@@ -57,7 +57,8 @@ chrome.storage.sync.get([
         if (xmlhttp.readyState==4 && xmlhttp.status==200){
           if(xmlhttp.responseText != "" && data.currentPopupMessage != xmlhttp.responseText){
             mainContent.style.display = "none";
-            popupMessage.innerHTML = xmlhttp.responseText + "<a href=\"#\" id=\"popupMessageButton\">Close message</a>";
+            popupMessage.innerText = xmlhttp.responseText;
+            popupMessage.innerHTML += "<br><a href=\"#\" id=\"popupMessageButton\">Close message</a>";
 
             let popupMessageButton = document.getElementById('popupMessageButton');
             popupMessageButton.addEventListener('click', function() {
@@ -78,10 +79,10 @@ button.addEventListener('click', function() {
   chrome.storage.sync.get('on', function(data) {
     if(data.on){
       chrome.storage.sync.set({on: false});
-      button.innerHTML=button_enable;
+      button.innerText=button_enable;
     }else{
       chrome.storage.sync.set({on: true});
-      button.innerHTML=button_disable;
+      button.innerText=button_disable;
     }
     refreshScript();
   });
