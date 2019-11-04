@@ -41,7 +41,7 @@ chrome.storage.sync.get([
     'noDelay'
   ], function(data) {
     chrome.tabs.query({active: true, currentWindow: true}, function(tabs) {
-      if(!data.on) button.innerText=button_enable;
+      if(!data.on)
       messages.checked=data.messages;
       messagesPreview.checked=data.messagesPreview;
       mediaPreview.checked=data.mediaPreview;
@@ -50,6 +50,7 @@ chrome.storage.sync.get([
       profilePic.checked=data.profilePic;
       name.checked=data.name;
       noDelay.checked=data.noDelay;
+      button.checked=data.on;
 
       //load message
       xmlhttp=new XMLHttpRequest();
@@ -75,7 +76,7 @@ chrome.storage.sync.get([
 });
 
 // Toogle button text and variable
-button.addEventListener('click', function() {
+/*button.addEventListener('click', function() {
   chrome.storage.sync.get('on', function(data) {
     if(data.on){
       chrome.storage.sync.set({on: false});
@@ -86,8 +87,13 @@ button.addEventListener('click', function() {
     }
     refreshScript();
   });
-});
+});*/
 
+
+button.addEventListener('change', function() {
+  chrome.storage.sync.set({on: this.checked});
+  refreshScript();
+});
 // Update settings values
 messages.addEventListener('change', function() {
   chrome.storage.sync.set({messages: this.checked});
