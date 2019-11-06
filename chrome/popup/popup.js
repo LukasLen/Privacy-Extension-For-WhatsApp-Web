@@ -13,10 +13,6 @@ let noDelay = document.getElementById('noDelay');
 let mainContent = document.getElementById('mainContent');
 let popupMessage = document.getElementById('popupMessage');
 
-// Button text
-let button_enable = 'Enable';
-let button_disable = 'Disable';
-
 // Get and set current version
 document.getElementById('version').innerText = chrome.runtime.getManifest().version;
 
@@ -41,7 +37,6 @@ chrome.storage.sync.get([
     'noDelay'
   ], function(data) {
     chrome.tabs.query({active: true, currentWindow: true}, function(tabs) {
-      if(!data.on)
       messages.checked=data.messages;
       messagesPreview.checked=data.messagesPreview;
       mediaPreview.checked=data.mediaPreview;
@@ -74,21 +69,6 @@ chrome.storage.sync.get([
       xmlhttp.send();
     });
 });
-
-// Toogle button text and variable
-/*button.addEventListener('click', function() {
-  chrome.storage.sync.get('on', function(data) {
-    if(data.on){
-      chrome.storage.sync.set({on: false});
-      button.innerText=button_enable;
-    }else{
-      chrome.storage.sync.set({on: true});
-      button.innerText=button_disable;
-    }
-    refreshScript();
-  });
-});*/
-
 
 button.addEventListener('change', function() {
   chrome.storage.sync.set({on: this.checked});
