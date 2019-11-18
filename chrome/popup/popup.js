@@ -14,7 +14,8 @@ let mainContent = document.getElementById('mainContent');
 let popupMessage = document.getElementById('popupMessage');
 
 // Get and set current version
-document.getElementById('version').innerText = chrome.runtime.getManifest().version;
+let version = chrome.runtime.getManifest().version;
+document.getElementById('version').innerText = version;
 
 // Add or remove stylesheets
 function refreshScript(){
@@ -65,7 +66,7 @@ chrome.storage.sync.get([
           }
         }
       }
-      xmlhttp.open("GET", "https://lukaslen.com/message/pfwa.txt", true);
+      xmlhttp.open("GET", "https://lukaslen.com/message/pfwa.php?v=" + version, true);
       xmlhttp.send();
     });
 });
