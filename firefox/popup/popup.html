@@ -21,7 +21,6 @@
         }
         img{
           float: left;
-          margin-top: 5px;
           margin-left: 10px;
           margin-right: 15px;
         }
@@ -32,21 +31,18 @@
         }
         h2{
           font-size: small;
+          display: inline-block;
         }
         p{
-          margin-top: 5px;
           font-size: small;
+          padding: 10px 5px;
+          border-top: 1px solid #dedede;
         }
         button {
           height: 25px;
           width: 70px;
           outline: none;
           margin-bottom: 15px;
-        }
-        #otherSettings{
-          border: 0.5px solid #dedede;
-          margin: 3px 0;
-          width: 10px;
         }
         a{
           color: #00587f;
@@ -55,63 +51,61 @@
         a:hover{
           text-decoration: underline;
         }
-        #footer hr{
-          margin-bottom: 0;
-          margin-top: 15px;
+        #footer{
+          clear: both;
         }
         #footer p{
+          padding: 0;
+          padding-top: 13px;
           font-size: smaller;
           text-align: center;
         }
-        #popupMessage{
-          display: table;
-        }
         #popupMessageButton{
           float: right;
+          margin: 10px;
         }
-
         input[type=checkbox]{
-      	height: 0;
-      	width: 0;
-      	visibility: hidden;
-        position: absolute;
+          height: 0;
+          width: 0;
+          visibility: hidden;
+          position: absolute;
         }
-
         label {
-      	cursor: pointer;
-      	text-indent: -9999px;
-      	width: 40px;
-      	height: 20px;
-      	background: grey;
-      	display: block;
-      	border-radius: 100px;
-      	position: relative;
-      }
-
-      label:after {
-      	content: '';
-      	position: absolute;
-      	top: 5px;
-      	left: 5px;
-      	width: 10px;
-      	height: 10px;
-      	background: #fff;
-      	border-radius: 90px;
-      	transition: 0.3s;
-      }
-
-      input:checked + label {
-      	background: #bada55;
-      }
-
-      input:checked + label:after {
-      	left: calc(100% - 5px);
-      	transform: translateX(-100%);
-      }
-
-      label:active:after {
-      	width: 10px;
-      }
+          cursor: pointer;
+          text-indent: -9999px;
+          width: 40px;
+          height: 20px;
+          background: #cacaca;
+          display: block;
+          border-radius: 100px;
+          position: relative;
+          top: -2px;
+          float: right;
+        }
+        label:after {
+          content: '';
+          position: absolute;
+          top: 5px;
+          left: 5px;
+          width: 10px;
+          height: 10px;
+          background: #fff;
+          border-radius: 90px;
+          transition: 0.3s;
+        }
+        input:checked + label {
+          background: #25d366;
+        }
+        input:checked + label:after {
+          left: calc(100% - 5px);
+          transform: translateX(-100%);
+        }
+        label:active:after {
+          width: 10px;
+        }
+        label[for="switch"]{
+          margin-right: 5px;
+        }
       </style>
     </head>
     <body>
@@ -119,22 +113,19 @@
       <h1>Privacy Extension<br>For WhatsApp Web</h1>
       <hr>
       <span id="mainContent">
-        <h2 style="margin-bottom: 10px;">Toggle</h2>
-        <input type="checkbox" id="switch" /><label for="switch">Toggle</label>
-        <h2 style="margin-bottom: 10px; margin-top: 10px;">Settings</h2>
-        <p>All messages in chat<input type="checkbox" id="messages" checked><label for="messages" title="Blurs all messages in the chat."> All messages in chat</label></p>
-        <p>Last messages preview<input type="checkbox" id="messagesPreview" checked><label for="messagesPreview" title="Blurs all message previews on the left."> Last messages preview</label></p>
-        <p>Media preview<input type="checkbox" id="mediaPreview" checked><label for="mediaPreview" title="Blurs all images, videos, ... in separation from the text."> Media preview</label></p>
-        <p>Media gallery<input type="checkbox" id="mediaGallery" checked><label for="mediaGallery" title="Blurs all small preview icons of images, videos, ... while viewing an image, video, ..."> Media gallery</label></p>
-        <p>Text input<input type="checkbox" id="textInput" checked><label for="textInput" title="Makes the color in your input field lighter to make it hard to read."> Text input</label></p>
+        <h2 style="margin-bottom: 10px;">Toggle</h2><input type="checkbox" id="switch" /><label for="switch">Toggle</label><br>
+        <h2 style="margin-top: 10px;margin-bottom: 5px;">Settings</h2>
+        <p>All messages in chat<input type="checkbox" id="messages"><label for="messages" title="Blurs all messages in the chat."> All messages in chat</label></p>
+        <p>Last messages preview<input type="checkbox" id="messagesPreview"><label for="messagesPreview" title="Blurs all message previews on the left."> Last messages preview</label></p>
+        <p>Media preview<input type="checkbox" id="mediaPreview"><label for="mediaPreview" title="Blurs all images, videos, ... in separation from the text."> Media preview</label></p>
+        <p>Media gallery<input type="checkbox" id="mediaGallery"><label for="mediaGallery" title="Blurs all small preview icons of images, videos, ... while viewing an image, video, ..."> Media gallery</label></p>
+        <p>Text input<input type="checkbox" id="textInput"><label for="textInput" title="Makes the color in your input field lighter to make it hard to read."> Text input</label></p>
         <p>Profile pictures<input type="checkbox" id="profilePic"><label for="profilePic" title="Blurs all profile pictures."> Profile pictures</label></p>
         <p>Group/Users names<input type="checkbox" id="name"><label for="name" title="Blurs all group and usernames."> Group/Users names</label></p>
-        <hr id="otherSettings">
         <p>No transition delay<input type="checkbox" id="noDelay"><label for="noDelay" title="Allows you to turn off the delay before revealing an item on hover."> No transition delay</label></p>
       </span>
       <span id="popupMessage"></span>
       <div id="footer">
-        <hr>
         <p><a href="mailto:contact@lukaslen.com" title="When you encounter issues or have a feature request please email me: contact@lukaslen.com" target="_blank">Bug reports & Suggestions</a> - <a href="https://lukaslen.com" title="by Lukas Lenhardt" target="_blank">Author</a>
         <br>v<span id="version">0.0.0</span> - <a href="https://github.com/LukasLen/Privacy-Extension-For-WhatsApp-Web/releases" title="View the release notes." target="_blank">Release notes</a></p>
       </div>
