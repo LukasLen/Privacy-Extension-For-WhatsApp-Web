@@ -20,7 +20,8 @@
     "css/textInput.css",
     "css/profilePic.css",
     "css/name.css",
-    "css/noDelay.css"
+    "css/noDelay.css",
+    "css/unblurActive.css"
   ],
   "content_scripts": [
    {

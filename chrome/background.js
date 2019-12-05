@@ -10,7 +10,8 @@ chrome.runtime.onInstalled.addListener(function(details) {
       'textInput',
       'profilePic',
       'name',
-      'noDelay'
+      'noDelay',
+      'unblurActive'
     ], function(data) {
       data.on == null && chrome.storage.sync.set({on: true});
       data.currentPopupMessage == null && chrome.storage.sync.set({currentPopupMessage: ""});
@@ -22,6 +23,7 @@ chrome.runtime.onInstalled.addListener(function(details) {
       data.profilePic == null && chrome.storage.sync.set({profilePic: false});
       data.name == null && chrome.storage.sync.set({name: false});
       data.noDelay == null && chrome.storage.sync.set({noDelay: false});
+      data.unblurActive == null && chrome.storage.sync.set({unblurActive: false});
   });
   chrome.declarativeContent.onPageChanged.removeRules(undefined, function() {
     chrome.declarativeContent.onPageChanged.addRules([{
