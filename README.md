@@ -17,6 +17,7 @@ The Privacy Extension For WhatsApp™ Web hides your messages from unwanted glim
 - Profile pictures: *Blurs all profile pictures.*
 - Group/Users names: *Blurs all group and usernames.*
 - No transition delay: *Allows you to turn off the delay before revealing an item on hover.*
+- Unblur all on app hover: Unblurs all elements when you hover over the WhatsApp Web app.
 
 ## Installation
 Available for both Chrome and Firefox.
