@@ -49,3 +49,8 @@ body:hover .PU7NO /*Details own profile pic*/
   filter: blur(0) grayscale(0);
   transition-delay: 0s;
 }
+
+body:hover ._3u328 /*textarea*/
+{
+  color: #4A4A4A;
+}
