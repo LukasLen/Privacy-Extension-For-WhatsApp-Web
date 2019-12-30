@@ -33,6 +33,8 @@ chrome.storage.sync.get([
     }
 
     if(data.on){
+      document.title = "WhatsApp Blurred";
+
       // add stylesheets if selected otherwise remove it
       if(data.messages) addStyle('messages'); else removeStyleById('messages');
       if(data.messagesPreview) addStyle('messagesPreview'); else removeStyleById('messagesPreview');
@@ -44,6 +46,8 @@ chrome.storage.sync.get([
       if(data.noDelay) addStyle('noDelay'); else removeStyleById('noDelay');
       if(data.unblurActive) addStyle('unblurActive'); else removeStyleById('unblurActive');
     }else if(document.getElementsByClassName('pfwa').length>0){
+      document.title = "WhatsApp";
+
       // remove all stylesheets
       var el = document.getElementsByClassName('pfwa');
       while(el.length > 0){

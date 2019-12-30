@@ -42,3 +42,16 @@ gettingAllTabs.then((tabs) => {
     initializePageAction(tab);
   }
 });
+
+chrome.commands.onCommand.addListener(function(command) {
+  if(command == 'toggle'){
+    chrome.storage.sync.get(['on'], function(data) {
+      chrome.storage.sync.set({on: !data.on});
+
+      chrome.tabs.query({url: "https://*.whatsapp.com/*"}, function(tabs) {
+        if (tabs.length !== 0)
+          tabs.forEach(function(tab){chrome.tabs.executeScript(tab.id, {file: '/load.js'})});
+      });
+    });
+  }
+});
