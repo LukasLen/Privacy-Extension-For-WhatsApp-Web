@@ -20,7 +20,7 @@ The Privacy Extension For WhatsApp™ Web hides your messages from unwanted glim
 - Unblur all on app hover: *Unblurs all elements when you hover over the WhatsApp Web app.*
 
 **Quick Toggle:**
-You can quickly toggle the blur in the settings or with a keyboard shortcut (Alt+X).
+You can quickly toggle the blur in the settings or with a keyboard shortcut (Default: Alt+X).
 
 ## Installation
 Available for both Chrome and Firefox.

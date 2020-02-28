@@ -52,5 +52,5 @@ body:hover .PU7NO /*Details own profile pic*/
 
 body:hover ._3u328 /*textarea*/
 {
-  color: #4A4A4A;
+  color: #4A4A4A !important;
 }
