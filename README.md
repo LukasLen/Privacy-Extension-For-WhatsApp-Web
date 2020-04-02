@@ -21,6 +21,9 @@ The Privacy Extension For WhatsApp™ Web hides your messages from unwanted glim
 
 **Quick Toggle:**
 You can quickly toggle the blur in the settings or with a keyboard shortcut (Default: Alt+X).
+To change this navigate to:
+ - Chrome: "chrome://extensions/shortcuts"
+ - Firefox: "about:addons" -> Settings icon on the top right -> Manage Extension Shortcuts
 
 ## Installation
 Available for both Chrome and Firefox.

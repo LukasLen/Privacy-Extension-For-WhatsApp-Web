@@ -12,6 +12,11 @@ chrome.storage.sync.get([
     'unblurActive'
   ], function(data) {
 
+    function replaceFavicon(status){
+      var link = document.querySelector("link[rel*='shortcut icon']");
+      link.setAttribute("href", chrome.extension.getURL('images/'+status+'.png'));
+    }
+
     function removeStyleById(id){
       // check if the stylesheet is there before removing
       if(el=document.getElementById(id)){
@@ -33,7 +38,7 @@ chrome.storage.sync.get([
     }
 
     if(data.on){
-      document.title = "WhatsApp Blurred";
+      replaceFavicon("statusOn");
 
       // add stylesheets if selected otherwise remove it
       if(data.messages) addStyle('messages'); else removeStyleById('messages');
@@ -46,7 +51,7 @@ chrome.storage.sync.get([
       if(data.noDelay) addStyle('noDelay'); else removeStyleById('noDelay');
       if(data.unblurActive) addStyle('unblurActive'); else removeStyleById('unblurActive');
     }else if(document.getElementsByClassName('pfwa').length>0){
-      document.title = "WhatsApp";
+      replaceFavicon("statusOff");
 
       // remove all stylesheets
       var el = document.getElementsByClassName('pfwa');

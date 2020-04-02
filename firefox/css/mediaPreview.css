@@ -1,19 +1,21 @@
-._18vxA /*image preview*/,
-._3KBs6 * /*gif preview*/,
-._2IYG6 /*video preview*/,
-._1Bw-K /*media reply thumb*/,
-._3in0k /*image send preview*/,
-._2k0GR /*file preview*/
+._1YbLB /*image preview*/,
+._3CnDa * /*gif preview*/,
+._1C80R /*video preview*/,
+._8k43T /*media reply thumb*/,
+.xVBLL /*image send preview*/,
+._2R5eA /*file preview*/,
+._2H6ea /*link preview*/
 {
   filter: blur(20px) grayscale(1);
   transition-delay: 0s;
 }
-._18vxA:hover /*image preview*/,
-._3KBs6:hover * /*gif preview*/,
-.cMrTV:hover ._2IYG6 /*video preview*/,
-._1Bw-K:hover /*media reply thumb*/,
-._3in0k:hover /*image send preview*/,
-._2k0GR:hover /*file preview*/
+._1YbLB:hover /*image preview*/,
+._3CnDa:hover * /*gif preview*/,
+._1opHa:hover ._1C80R /*video preview*/,
+._8k43T:hover /*media reply thumb*/,
+.xVBLL:hover /*image send preview*/,
+._2R5eA:hover /*file preview*/,
+._2H6ea:hover /*link preview*/
 {
   filter: blur(0) grayscale(0);
   -webkit-transition: -webkit-filter .16s linear;
