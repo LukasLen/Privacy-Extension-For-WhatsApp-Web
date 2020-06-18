@@ -1,51 +1,50 @@
 /* mediaGallery */
-._2Ry6_:hover /*media preview in gallery*/,
-._2gZno:hover /*media preview in send media*/,
+._2n28r:hover /*media preview in gallery*/,
+.TZVqr:hover /*media preview in send media*/,
 
 /* mediaPreview */
-._1YbLB:hover /*image preview*/,
-._3CnDa:hover * /*gif preview*/,
-._1opHa:hover ._1C80R /*video preview*/,
-._8k43T:hover /*media reply thumb*/,
-.xVBLL:hover /*image send preview*/,
-._2R5eA:hover /*file preview*/,
-._2H6ea:hover /*link preview*/,
+._39rvu:hover /*image preview*/,
+._15rLL:hover * /*gif preview*/,
+.va0ao:hover .eD3kt /*video preview*/,
+._2UMoT:hover /*media reply thumb*/,
+._5gAn-:hover /*yt link reply thumb*/,
+._19AnP:hover /*image send preview*/,
+._2Y1s9:hover /*file preview*/,
+._3k4oG:hover /*link preview*/,
 
 /* messages */
-.Tkt2p:hover /*normal message*/,
-._1Z9m-:hover /*Gallery link preview*/,
-._2ArBI:hover /*blue info bar*/,
-._2F4Rh:hover /*image*/,
-._2kztM:hover /*multiple images*/,
-._13TsX:hover /*video*/,
-._3_KyJ:hover /*file*/,
-._2N_Df:hover /*voice message*/,
-._3C-gs:hover /*position*/,
-._1YNgi:hover /*contact share*/,
-.r1ybh:hover /*multiple contact share*/,
-._1umJf:hover /*GIF*/,
-._1OBta:hover /*Sticker*/,
+._274yw:hover /*normal message*/,
+._2uArY:hover /*Gallery link preview*/,
+._39Y7t:hover /*blue info bar*/,
+.xOg_4:hover /*image*/,
+.S9d8c:hover /*video*/,
+._1TGsd:hover /*file*/,
+._3D5PJ:hover /*voice message*/,
+._1Yj6K:hover /*position*/,
+._3S3Sz:hover /*contact share*/,
+._1BgKX:hover /*multiple contact share*/,
+._3gBQS:hover /*GIF*/,
+._1F528:hover /*Sticker*/
 
 /* messagesPreview */
-._itDl:hover /*message preview*/,
+._3tBW6:hover /*message preview*/,
 
 /* name */
-._25Ooe:hover /*List user/group name*/,
-._3XrHh:hover /*Top user/group name*/,
-._3sgkv:hover /*Top group user preview*/,
-.iYPsH:hover /*Details username*/,
-._3Bxar:hover /*Details username ~nickname*/,
-._3V0wL:hover /*Starred messages username*/,
-._7UnOZ:hover /*Details group name*/,
-._2nEKn:hover /*Group description*/,
-._3xj48 ._itDl:hover /*About user*/,
-.selectable-text ._3LL06:hover /*About user phone number*//*,
+._3CneP:hover /*List user/group name*/,
+.DP7CM:hover /*Top user/group name*/,
+._2ruUq:hover /*Top group user preview*/,
+.YZNwM:hover /*Details username*/,
+._1_1Jb:hover /*Details username ~nickname*/,
+._IqKu:hover /*Starred messages username*/,
+._2FVVk:hover /*Details group name*/,
+._3sKYI:hover /*Group description*/,
+.I9WJJ ._9l3wT:hover /*About user*/,
+.selectable-text ._1X4JR:hover /*About user phone number*//*,
 .MVjBr ._2lc14:hover *//*Message in chat*/,
 
 /* profilePic */
-._1WliW:hover /*profile pic*/,
-._1RIe1:hover /*Details profile*/,
-._12fSF:hover /*Details own profile pic*/
+._1BjNO:hover /*profile pic*/,
+._3X-61:hover /*Details profile pic*/
 {
   transition-delay: 0.04s !important;
   -webkit-transition-duration: 0s !important;
