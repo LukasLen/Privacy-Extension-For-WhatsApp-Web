@@ -25,14 +25,6 @@ chrome.runtime.onInstalled.addListener(function(details) {
       data.noDelay == null && chrome.storage.sync.set({noDelay: false});
       data.unblurActive == null && chrome.storage.sync.set({unblurActive: false});
   });
-  chrome.declarativeContent.onPageChanged.removeRules(undefined, function() {
-    chrome.declarativeContent.onPageChanged.addRules([{
-      conditions: [new chrome.declarativeContent.PageStateMatcher({
-        pageUrl: {hostEquals: 'web.whatsapp.com'},
-      })],
-      actions: [new chrome.declarativeContent.ShowPageAction()]
-    }]);
-  });
 });
 
 chrome.commands.onCommand.addListener(function(command) {
@@ -40,7 +32,7 @@ chrome.commands.onCommand.addListener(function(command) {
     chrome.storage.sync.get(['on'], function(data) {
       chrome.storage.sync.set({on: !data.on});
 
-      chrome.tabs.query({url: "https://*.whatsapp.com/*"}, function(tabs) {
+      chrome.tabs.query({url: "https://web.whatsapp.com/"}, function(tabs) {
         if (tabs.length !== 0)
           tabs.forEach(function(tab){chrome.tabs.executeScript(tab.id, {file: '/load.js'})});
       });

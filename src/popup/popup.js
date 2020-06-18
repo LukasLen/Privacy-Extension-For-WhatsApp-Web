@@ -20,8 +20,9 @@ document.getElementById('version').innerText = version;
 
 // Add or remove stylesheets
 function refreshScript(){
-  chrome.tabs.query({active: true, currentWindow: true}, function(tabs) {
-    chrome.tabs.executeScript(tabs[0].id, {file: '/load.js'});
+  chrome.tabs.query({url: "https://web.whatsapp.com/"}, function(tabs) {
+    if (tabs.length !== 0)
+      tabs.forEach(function(tab){chrome.tabs.executeScript(tab.id, {file: '/load.js'})});
   });
 }
 
