@@ -1,4 +1,4 @@
-# Privacy Extension For WhatsApp™ Web ![Logo](https://github.com/LukasLen/Privacy-Extension-For-WhatsApp-Web/blob/master/src/images/logo_32.png?raw=true)
+# Privacy Extension For WhatsApp™ Web ![Logo](https://github.com/LukasLen/Privacy-Extension-For-WhatsApp-Web/blob/master/src/images/icon32.png?raw=true)
 [![GitHub license](https://img.shields.io/github/license/LukasLen/Privacy-Extension-For-WhatsApp-Web.svg)](https://github.com/LukasLen/Privacy-Extension-For-WhatsApp-Web/blob/master/LICENSE) [![Chrome Web Store](https://img.shields.io/chrome-web-store/users/jbojhlhhggfmmkpefknmbdhlaghehini.svg)](https://chrome.google.com/webstore/detail/privacy-extension-for-wha/jbojhlhhggfmmkpefknmbdhlaghehini) [![Tweet](https://img.shields.io/twitter/url/https/github.com/LukasLen/Privacy-Extension-For-WhatsApp-Web.svg?style=social)](https://twitter.com/intent/tweet?text=&url=https%3A%2F%2Fgithub.com%2FLukasLen%2FPrivacy-Extension-For-WhatsApp-Web)
 
 <p align="center">
@@ -26,8 +26,8 @@ It adapts to your needs by letting you decide which elements you want to blur. Y
 
 You can quickly toggle the blur in the settings or with a keyboard shortcut (Default: Alt+X).
 To change this navigate to:
- - Chrome: "[chrome://extensions/shortcuts](chrome://extensions/shortcuts)"
- - Firefox: "[about:addons](about:addons)" -> Settings icon on the top right -> Manage Extension Shortcuts
+ - Chrome: "chrome://extensions/shortcuts"
+ - Firefox: "about:addons" -> Settings icon on the top right -> Manage Extension Shortcuts
 
 ## Installation
 Available for both Chrome and Firefox.
@@ -40,6 +40,7 @@ Available for both Chrome and Firefox.
 
 ### For development purposes on Chrome
 - Download the newest release [here](https://github.com/LukasLen/Privacy-Extension-For-WhatsApp-Web/releases) and unzip it
+- Rename the file /src/manifest-chromium.json to /src/manifest.json
 - Navigate to chrome://extensions/
 - Activate the developer mode (on the top right)
 - Click on "Load Unpacked"
