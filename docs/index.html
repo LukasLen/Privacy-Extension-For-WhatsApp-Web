@@ -8,6 +8,7 @@
     <meta name="keywords" content="Lukas Lenhardt, Privacy Extension For WhatsApp Web, Blur Messages, Hide Images, WhatsApp Web">
     <meta name="robots" content="index, follow, noarchive, nocache">
     <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/baguettebox.js@1.11.1/dist/baguetteBox.min.css" integrity="sha256-cLMYWYYutHkt+KpNqjg7NVkYSQ+E2VbrXsEvOqU7mL0=" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro:wght@700&family=Work+Sans:wght@400;600&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="https://github.com/LukasLen/Privacy-Extension-For-WhatsApp-Web/blob/master/src/images/icon32.png?raw=true" type="image/png">
     <link rel="icon" href="https://github.com/LukasLen/Privacy-Extension-For-WhatsApp-Web/blob/master/src/images/icon32.png?raw=true" type="image/png">
@@ -19,8 +20,8 @@
       <img src="https://github.com/LukasLen/Privacy-Extension-For-WhatsApp-Web/blob/master/src/images/logo.svg?raw=true" class="logo" alt="Logo">
       <p class="download">15.000 Users. Available for <a href="https://chrome.google.com/webstore/detail/privacy-extension-for-wha/jbojhlhhggfmmkpefknmbdhlaghehini" target="_blank">Chrome</a> and <a href="https://addons.mozilla.org/de/firefox/addon/privacy-extension-for-whatsapp/" target="_blank">Firefox</a>.</p>
       <div class="screenshots">
-        <a href="https://github.com/LukasLen/Privacy-Extension-For-WhatsApp-Web/blob/master/screenshots/PFWA_Header.png?raw=true" target="_blank"><img src="https://github.com/LukasLen/Privacy-Extension-For-WhatsApp-Web/blob/master/screenshots/PFWA_Header.png?raw=true" alt="Screenshot: Reveal messages on hover."></a>
-        <a href="https://github.com/LukasLen/Privacy-Extension-For-WhatsApp-Web/blob/master/screenshots/PFWA_Settings.png?raw=true" target="_blank"><img src="https://github.com/LukasLen/Privacy-Extension-For-WhatsApp-Web/blob/master/screenshots/PFWA_Settings.png?raw=true" alt="Screenshot: Customize what you want to blur."></a>
+        <a href="https://github.com/LukasLen/Privacy-Extension-For-WhatsApp-Web/blob/master/screenshots/PFWA_Header.png?raw=true" target="_blank"><img src="https://github.com/LukasLen/Privacy-Extension-For-WhatsApp-Web/blob/master/screenshots/PFWA_Header_Thumb.png?raw=true" alt="Screenshot: Reveal messages on hover."></a>
+        <a href="https://github.com/LukasLen/Privacy-Extension-For-WhatsApp-Web/blob/master/screenshots/PFWA_Settings.png?raw=true" target="_blank"><img src="https://github.com/LukasLen/Privacy-Extension-For-WhatsApp-Web/blob/master/screenshots/PFWA_Settings_Thumb.png?raw=true" alt="Screenshot: Customize what you want to blur."></a>
       </div>
       <p>To increase privacy in public spaces the Privacy Extension For WhatsApp™ Web blurs your messages (as well as other content) and only reveals one when you hover over it with your mouse cursor. Additionally, you can quickly toggle all effects by using a keyboard shortcut or by clicking the toggle button in the extension menu.</p>
 
@@ -50,6 +51,7 @@
       <div class="install">
         <a href="https://chrome.google.com/webstore/detail/privacy-extension-for-wha/jbojhlhhggfmmkpefknmbdhlaghehini"><img src="assets/img/ChromeBadge.png" alt="Chrome Download Link"></a>
         <a href="https://addons.mozilla.org/de/firefox/addon/privacy-extension-for-whatsapp/"><img src="assets/img/FirefoxBadge.png" alt="Firefox Download Link"></a>
+        <p>View the release notes <a href="https://github.com/LukasLen/Privacy-Extension-For-WhatsApp-Web/releases">here</a>.</p>
       </div>
 
       <h2>Support</h2>
@@ -58,12 +60,18 @@
       <p>Alternatively you can get help at: <a href="mailto:contact@lukaslen.com">contact@lukaslen.com</a></p>
 
       <h2>About This Project</h2>
-      <p>This is an open-source project released under the <a href="https://github.com/LukasLen/Privacy-Extension-For-WhatsApp-Web/blob/master/LICENSE">MIT license</a> by <a href="https://lukaslen.com/">lukaslen.com</a>. You can view the code and contribute on the <a href="https://github.com/LukasLen/Privacy-Extension-For-WhatsApp-Web">GitHub repository</a> of this project.</p>
+      <p>This is an open-source project released under the <a href="https://github.com/LukasLen/Privacy-Extension-For-WhatsApp-Web/blob/master/LICENSE">MIT license</a> by <a href="https://lukaslen.com/">lukaslen.com</a>. You can view the code and contribute to the <a href="https://github.com/LukasLen/Privacy-Extension-For-WhatsApp-Web">GitHub repository</a> of this project.</p>
       <br>
       <p>This extension does not collect information about you or your messages. We only communicate with our server to display information about problems or updates. Visit the privacy policy to learn more.</p>
 
       <p class="disclaimer"><b>Disclaimer:</b> WhatsApp is a trademark of WhatsApp Inc., registered in the U.S. and other countries. This extension is an independent project developed by Lukas Lenhardt and has no relationship to WhatsApp or WhatsApp Inc.</p>
       <p class="legal">&copy; 2020 Lukas Lenhardt -<a href="https://lukaslen.com/legal">Legal and Privacy notice</a></p>
     </div>
+    <script>
+      window.addEventListener('load', function() {
+        baguetteBox.run('.screenshots');
+      });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/baguettebox.js@1.11.1/dist/baguetteBox.min.js" integrity="sha256-ULQV01VS9LCI2ePpLsmka+W0mawFpEA0rtxnezUj4A4=" crossorigin="anonymous"></script>
   </body>
 </html>
