@@ -112,5 +112,9 @@ li{
   color: #5c636e;
   font-size: small;
   text-align: center;
-  padding: 5px;
+  padding-top: 5px;
+  text-decoration: none;
+}
+.legal a:hover{
+  text-decoration: underline;
 }
