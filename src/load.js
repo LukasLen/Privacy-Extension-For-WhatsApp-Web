@@ -12,11 +12,6 @@ chrome.storage.sync.get([
     'unblurActive'
   ], function(data) {
 
-    function replaceFavicon(status){
-      var link = document.querySelector("link[rel*='shortcut icon']");
-      link.setAttribute("href", chrome.extension.getURL('images/'+status+'.png'));
-    }
-
     function removeStyleById(id){
       // check if the stylesheet is there before removing
       if(el=document.getElementById(id)){
@@ -38,8 +33,6 @@ chrome.storage.sync.get([
     }
 
     if(data.on){
-      replaceFavicon("statusOn");
-
       // add stylesheets if selected otherwise remove it
       if(data.messages) addStyle('messages'); else removeStyleById('messages');
       if(data.messagesPreview) addStyle('messagesPreview'); else removeStyleById('messagesPreview');
@@ -51,8 +44,6 @@ chrome.storage.sync.get([
       if(data.noDelay) addStyle('noDelay'); else removeStyleById('noDelay');
       if(data.unblurActive) addStyle('unblurActive'); else removeStyleById('unblurActive');
     }else if(document.getElementsByClassName('pfwa').length>0){
-      replaceFavicon("statusOff");
-
       // remove all stylesheets
       var el = document.getElementsByClassName('pfwa');
       while(el.length > 0){

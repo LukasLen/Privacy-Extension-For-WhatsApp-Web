@@ -39,3 +39,18 @@ chrome.commands.onCommand.addListener(function(command) {
     });
   }
 });
+
+//set icon depending on extension status
+function toggleIcon(status){
+  chrome.browserAction.setIcon({path:'images/status' + (status == true ? 'On' : 'Off') + '.png'});
+}
+
+chrome.storage.onChanged.addListener(function(changes, area) {
+    if (area == "sync" && "on" in changes) {
+      toggleIcon(changes.on.newValue);
+    }
+});
+
+chrome.storage.sync.get(['on'], function(data) {
+  toggleIcon(data.on);
+});

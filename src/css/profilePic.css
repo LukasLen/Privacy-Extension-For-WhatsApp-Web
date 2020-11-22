@@ -1,16 +1,16 @@
-._1BjNO /*profile pic*/
+._1l12d /*profile pic*/
 {
   filter: blur(7px) grayscale(1);
   transition-delay: 0s;
 }
-._3X-61 /*Details profile pic*/
+.VVPdM /*Details profile pic*/
 {
   filter: blur(12px) grayscale(1);
   transition-delay: 0s;
 }
 
-._1BjNO:hover /*profile pic*/,
-._3X-61:hover /*Details profile pic*/
+._1l12d:hover /*profile pic*/,
+.VVPdM:hover /*Details profile pic*/
 {
   filter: blur(0) grayscale(0);
   transition-delay: 0.3s;
