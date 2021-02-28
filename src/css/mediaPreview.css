@@ -1,23 +1,23 @@
-._2ggGe /*image preview*/,
-.QnPmY * /*gif preview*/,
-._2MrqQ /*video preview*/,
-.Y2pgK /*media reply thumb*/,
-._3Lgvh /*yt link reply thumb*/,
-._1cbSY /*image send preview*/,
-._1kOOx /*file preview*/,
-._1OOH5 /*link preview*/
+._2p30Q /*image preview*/,
+._2I8rV * /*gif preview*/,
+._17Nt7 /*video preview*/,
+._3e0Yi /*media reply thumb*/,
+._2wzt8 /*yt link reply thumb*/,
+._2ycmW /*image send preview*/,
+._1VkQG /*file preview*/,
+.u4d-M /*link preview*/
 {
   filter: blur(20px) grayscale(1);
   transition-delay: 0s;
 }
-._2ggGe:hover /*image preview*/,
-.QnPmY:hover * /*gif preview*/,
-._2nJ1e:hover ._2MrqQ /*video preview*/,
-.Y2pgK:hover /*media reply thumb*/,
-._3Lgvh:hover /*yt link reply thumb*/,
-._1cbSY:hover /*image send preview*/,
-._1kOOx:hover /*file preview*/,
-._1OOH5:hover /*link preview*/
+._2p30Q:hover /*image preview*/,
+._2I8rV:hover * /*gif preview*/,
+.hS6U_:hover ._17Nt7 /*video preview*/,
+._3e0Yi:hover /*media reply thumb*/,
+._2wzt8:hover /*yt link reply thumb*/,
+._2ycmW:hover /*image send preview*/,
+._1VkQG:hover /*file preview*/,
+.u4d-M:hover /*link preview*/
 {
   filter: blur(0) grayscale(0);
   -webkit-transition: -webkit-filter .16s linear;

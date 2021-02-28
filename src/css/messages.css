@@ -1,49 +1,49 @@
-._1dB-m  /*normal message*/,
-._1MYBw /*Gallery link preview*/,
-._203bP /*blue info bar*/
+._1bR5a /*normal message*/,
+._2wvOi /*Gallery link preview*/,
+._1grL7 /*blue info bar*/
 {
   filter: blur(8px) grayscale(1);
   transition-delay: 0s;
 }
-._1dB-m  /*normal message more padding*/
+._1bR5a /*normal message more padding*/
 {
   padding-right: 40px !important;
   padding-top: 12px !important;
   padding-bottom: 12px !important;
 }
 
-.NSNJN /*image*/,
-._3Da1E /*video*/,
-._23z4j /*file*/,
-._3ojHs /*voice message*/,
-._3O9Gs /*position*/,
-._7JsyP /*contact share*/,
-._3-1wf /*multiple contact share*/,
-._3Um8Y /*GIF*/,
-._23kzp /*Sticker*/
+._2Ro1i /*image*/,
+._16D7a /*video*/,
+._3KIS4 /*file*/,
+._1RXxK /*voice message*/,
+._12-qh /*position*/,
+._24mt0 /*contact share*/,
+._18kCM /*multiple contact share*/,
+._2kMYF /*GIF*/,
+._3wSPP /*Sticker*/
 {
   filter: blur(20px) grayscale(1);
   transition-delay: 0s;
 }
 
-._1dB-m:hover /*normal message*/,
-._1MYBw:hover /*Gallery link preview*/,
-._203bP:hover /*blue info bar*/,
-.NSNJN:hover /*image*/,
-._3Da1E:hover /*video*/,
-._23z4j:hover /*file*/,
-._3ojHs:hover /*voice message*/,
-._3O9Gs:hover /*position*/,
-._7JsyP:hover /*contact share*/,
-._3-1wf:hover /*multiple contact share*/,
-._3Um8Y:hover /*GIF*/,
-._23kzp:hover /*Sticker*/
+._1bR5a:hover /*normal message*/,
+._2wvOi:hover /*Gallery link preview*/,
+._1grL7:hover /*blue info bar*/,
+._2Ro1i:hover /*image*/,
+._16D7a:hover /*video*/,
+._3KIS4:hover /*file*/,
+._1RXxK:hover /*voice message*/,
+._12-qh:hover /*position*/,
+._24mt0:hover /*contact share*/,
+._18kCM:hover /*multiple contact share*/,
+._2kMYF:hover /*GIF*/,
+._3wSPP:hover /*Sticker*/
 {
   filter: blur(0) grayscale(0);
   transition-delay: 0.3s;
 }
 
-._1Sikt /*set pseudo background on sticker*/
+._2DGdv /*set pseudo background on sticker*/
 {
   background-color: #dcf8c6 !important;
   border-radius: 7.5px !important;
