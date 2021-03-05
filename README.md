@@ -14,7 +14,7 @@ It adapts to your needs by letting you decide which elements you want to blur. Y
 
 - All messages in chat: *Blurs all messages in the current chat.*
 - Last messages preview: *Blurs all message previews on the left.*
-- Media preview: *Blurs all images, videos, ... in separation from the text.*
+- Media preview: *Blurs all images, videos, stickers, ... in separation from the text.*
 - Media gallery: *Blurs all small icons of images, videos, ... while viewing an image, video, ...*
 - Text input: *Makes the color in your input field lighter to make it hard to read.*
 - Profile pictures: *Blurs all profile pictures.*
