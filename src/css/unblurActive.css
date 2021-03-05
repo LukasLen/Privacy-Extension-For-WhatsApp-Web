@@ -42,7 +42,10 @@ body:hover ._19038 *//*Message in chat*/,
 
 /* profilePic */
 body:hover .-y4n1 /*profile pic*/,
-body:hover ._2gXlr /*Details profile pic*/
+body:hover ._2gXlr /*Details profile pic*/,
+
+/* stickers */
+body:hover ._3wSPP /*sticker*/
 {
   filter: blur(0) grayscale(0);
   transition-delay: 0s;

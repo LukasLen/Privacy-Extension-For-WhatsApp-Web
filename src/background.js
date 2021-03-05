@@ -11,7 +11,8 @@ chrome.runtime.onInstalled.addListener(function(details) {
       'profilePic',
       'name',
       'noDelay',
-      'unblurActive'
+      'unblurActive',
+      'stickers'
     ], function(data) {
       data.on == null && chrome.storage.sync.set({on: true});
       data.currentPopupMessage == null && chrome.storage.sync.set({currentPopupMessage: ""});
@@ -24,6 +25,7 @@ chrome.runtime.onInstalled.addListener(function(details) {
       data.name == null && chrome.storage.sync.set({name: false});
       data.noDelay == null && chrome.storage.sync.set({noDelay: false});
       data.unblurActive == null && chrome.storage.sync.set({unblurActive: false});
+      data.stickers == null && chrome.storage.sync.set({stickers: false});
   });
 });
 

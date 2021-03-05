@@ -9,7 +9,8 @@ chrome.storage.sync.get([
     'profilePic',
     'name',
     'noDelay',
-    'unblurActive'
+    'unblurActive',
+    'stickers'
   ], function(data) {
 
     function removeStyleById(id){
@@ -43,6 +44,7 @@ chrome.storage.sync.get([
       if(data.name) addStyle('name'); else removeStyleById('name');
       if(data.noDelay) addStyle('noDelay'); else removeStyleById('noDelay');
       if(data.unblurActive) addStyle('unblurActive'); else removeStyleById('unblurActive');
+      if(data.stickers) addStyle('stickers'); else removeStyleById('stickers');
     }else if(document.getElementsByClassName('pfwa').length>0){
       // remove all stylesheets
       var el = document.getElementsByClassName('pfwa');

@@ -9,6 +9,7 @@ let profilePic = document.getElementById('profilePic');
 let name = document.getElementById('name');
 let noDelay = document.getElementById('noDelay');
 let unblurActive = document.getElementById('unblurActive');
+let stickers = document.getElementById('stickers');
 
 // Message functionality
 let mainContent = document.getElementById('mainContent');
@@ -38,7 +39,8 @@ chrome.storage.sync.get([
     'profilePic',
     'name',
     'noDelay',
-    'unblurActive'
+    'unblurActive',
+    'stickers'
   ], function(data) {
     chrome.tabs.query({active: true, currentWindow: true}, function(tabs) {
       messages.checked=data.messages;
@@ -50,6 +52,7 @@ chrome.storage.sync.get([
       name.checked=data.name;
       noDelay.checked=data.noDelay;
       unblurActive.checked=data.unblurActive;
+      stickers.checked=data.stickers;
       button.checked=data.on;
 
       //load message
@@ -120,5 +123,9 @@ noDelay.addEventListener('change', function() {
 });
 unblurActive.addEventListener('change', function() {
   chrome.storage.sync.set({unblurActive: this.checked});
+  refreshScript();
+});
+stickers.addEventListener('change', function() {
+  chrome.storage.sync.set({stickers: this.checked});
   refreshScript();
 });

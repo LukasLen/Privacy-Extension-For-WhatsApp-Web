@@ -42,7 +42,10 @@
 
 /* profilePic */
 .-y4n1:hover /*profile pic*/,
-._2gXlr:hover /*Details profile pic*/
+._2gXlr:hover /*Details profile pic*/,
+
+/* stickers */
+._3wSPP:hover /*sticker*/
 {
   transition-delay: 0.04s !important;
   -webkit-transition-duration: 0s !important;
