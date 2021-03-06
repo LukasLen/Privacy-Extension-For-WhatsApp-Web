@@ -6,7 +6,8 @@
 ._2ycmW /*image send preview*/,
 ._1VkQG /*file preview*/,
 .u4d-M /*link preview*/,
-._3wSPP /*sticker preview*/
+._3wSPP /*sticker*/,
+.Jc_g2 /*sticker preview*/
 {
   filter: blur(20px) grayscale(1);
   transition-delay: 0s;
@@ -19,9 +20,16 @@
 ._2ycmW:hover /*image send preview*/,
 ._1VkQG:hover /*file preview*/,
 .u4d-M:hover /*link preview*/,
-._3wSPP:hover /*sticker preview*/
+._3wSPP:hover /*sticker*/,
+.Jc_g2:hover /*sticker preview*/
 {
   filter: blur(0) grayscale(0);
   -webkit-transition: -webkit-filter .16s linear;
   transition-delay: 0.3s;
+}
+._2DGdv /*set pseudo background on sticker*/
+{
+  background-color: #dcf8c6 !important;
+  border-radius: 7.5px !important;
+  box-shadow: 0 1px 0.5px rgba(0, 0, 0, 0.13) !important;
 }
