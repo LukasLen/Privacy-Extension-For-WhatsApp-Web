@@ -3,7 +3,7 @@
 ._2yXI9:hover /*media preview in send media*/,
 
 /* mediaPreview */
-._3IfUe:hover /*image preview*/,
+._1WrWf:hover /*image preview*/,
 ._1HqS9:hover * /*gif preview*/,
 ._1ypsO:hover .UYCLA /*video preview*/,
 .fX8hW:hover /*media reply thumb*/,
@@ -17,7 +17,7 @@
 /* messages */
 ._22Msk:hover /*normal message*/,
 ._2z0p1:hover /*Gallery link preview*/,
-._2ad1k:hover /*blue info bar*/,
+.EtBAv ._2ad1k:hover /*blue info bar*/,
 ._33Jbv:hover /*image*/,
 ._1t37P:hover /*video*/,
 .Hcx4J:hover /*file*/,
@@ -44,7 +44,7 @@
 
 /* profilePic */
 ._3GlyB:hover /*profile pic*/,
-._1TGpC:hover /*Details group/self profile pic*/
+._3zYOj:hover /*Details group/self profile pic*/
 {
   transition-delay: 0.04s !important;
   -webkit-transition-duration: 0s !important;
