@@ -20,7 +20,8 @@
 ._1tfap /*contact share*/,
 .lsgDP /*multiple contact share*/,
 ._1FpDI /*GIF*/,
-._3BGWx /*Sticker*/
+._2JUrU /*Sticker*/,
+._26F99 /*sticker reply*/
 {
   filter: blur(20px) grayscale(1);
   transition-delay: 0s;
@@ -37,13 +38,15 @@
 ._1tfap:hover /*contact share*/,
 .lsgDP:hover /*multiple contact share*/,
 ._1FpDI:hover /*GIF*/,
-._3BGWx:hover /*Sticker*/
+._2JUrU:hover /*Sticker*/,
+._26F99:hover /*sticker reply*/
 {
   filter: blur(0) grayscale(0);
   transition-delay: 0.3s;
 }
 
-._2JUrU /*set pseudo background on sticker*/
+._2JUrU /*set pseudo background on sticker*/,
+._26F99 /*sticker reply*/
 {
   background-color: #dcf8c6 !important;
   border-radius: 7.5px !important;
