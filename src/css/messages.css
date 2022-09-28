@@ -47,6 +47,17 @@
   transition-delay: 0.3s;
 }
 
+.tvf2evcx .i0jNr /* office files*/
+{
+  filter: blur(12px) grayscale(1);
+  transition-delay: 0s;
+}
+.tvf2evcx .i0jNr:hover
+{
+  filter: blur(0) grayscale(0);
+  transition-delay: 0.3s;
+}
+
 ._2JUrU /*set pseudo background on sticker*/
 {
   background-color: #dcf8c6 !important;
