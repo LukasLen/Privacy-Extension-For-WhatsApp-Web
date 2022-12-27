@@ -7,7 +7,8 @@
 .MidYK /*file preview*/,
 ._1hT12 /*link preview*/,
 ._3BGWx /*sticker*/,
-._2xrJ4 /*sticker preview*/
+._2xrJ4 /*sticker preview*/,
+._3HyaH /*sticker*/
 {
   filter: blur(20px) grayscale(1);
   transition-delay: 0s;
@@ -21,7 +22,8 @@
 .MidYK:hover /*file preview*/,
 ._1hT12:hover /*link preview*/,
 ._3BGWx:hover /*sticker*/,
-._2xrJ4:hover /*sticker preview*/
+._2xrJ4:hover /*sticker preview*/,
+._3HyaH:hover /*sticker*/
 {
   filter: blur(0) grayscale(0);
   -webkit-transition: -webkit-filter .16s linear;

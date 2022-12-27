@@ -13,6 +13,7 @@ body:hover .MidYK /*file preview*/,
 body:hover ._1hT12 /*link preview*/,
 body:hover ._3BGWx /*sticker*/,
 body:hover ._2xrJ4 /*sticker preview*/,
+body:hover ._3HyaH/*sticker*/,
 
 /* messages */
 body:hover ._22Msk /*normal message*/,
@@ -29,6 +30,7 @@ body:hover .lsgDP /*multiple contact share*/,
 body:hover ._1FpDI /*GIF*/,
 body:hover ._3BGWx /*Sticker*/,
 body:hover ._3OC33 /*sticker contact*/,
+body:hover .eWQsx /* quoted message reply with sticker */,
 
 /* messagesPreview */
 body:hover ._1qB8f /*message preview*/,
@@ -42,7 +44,9 @@ body:hover ._1ux8Y /*Details username ~nickname*/,
 body:hover ._2PElp /*Starred messages username*/,
 body:hover .czcZD /*Details group name*/,
 body:hover .selectable-text ._3NUK1 /*About user phone number*//*,
-body:hover ._19038:hover *//*Message in chat*/,
+body:hover ._19038 *//*Message in chat*/,
+body:hover ._1D6fx /*Reply with sticker username*/,
+body:hover .a71At /*Reply with sticker the quoted message username*/,
 
 /* profilePic */
 body:hover ._3GlyB /*profile pic*/,

@@ -1,4 +1,5 @@
 ._22Msk /*normal message*/,
+.eWQsx /* quoted message reply with sticker */,
 ._2z0p1 /*Gallery link preview*/,
 .EtBAv ._2ad1k  /*blue info bar*/
 {
@@ -41,7 +42,8 @@
 .lsgDP:hover /*multiple contact share*/,
 ._1FpDI:hover /*GIF*/,
 ._3BGWx:hover /*Sticker*/,
-._3OC33:hover /*sticker contact*/
+._3OC33:hover /*sticker contact*/,
+.eWQsx:hover /* quoted message reply with sticker */
 {
   filter: blur(0) grayscale(0);
   transition-delay: 0.3s;
