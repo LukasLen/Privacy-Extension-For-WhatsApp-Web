@@ -1,11 +1,11 @@
-._22Msk /*normal message*/,
+._21Ahp /*normal message*/,
 ._2z0p1 /*Gallery link preview*/,
 .EtBAv ._2ad1k  /*blue info bar*/
 {
   filter: blur(8px) grayscale(1);
   transition-delay: 0s;
 }
-._22Msk /*normal message more padding*/
+._21Ahp /*normal message more padding*/
 {
   padding-right: 40px !important;
   padding-top: 12px !important;
@@ -28,7 +28,7 @@
   transition-delay: 0s;
 }
 
-._22Msk:hover /*normal message*/,
+._21Ahp:hover /*normal message*/,
 ._2z0p1:hover /*Gallery link preview*/,
 .EtBAv ._2ad1k:hover /*blue info bar*/,
 .jnl3jror:hover /*image*/,
