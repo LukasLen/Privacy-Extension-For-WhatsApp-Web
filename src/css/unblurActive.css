@@ -1,51 +1,47 @@
 /* mediaGallery */
-body:hover ._7xcOR /*media preview in gallery*/,
-body:hover ._1hZLd /*media preview in send media*/,
+body:hover .tukmaf4q /*media preview in gallery*/,
+body:hover ._1Pr6q /*media preview in send media*/,
 
 /* mediaPreview */
 body:hover .jciay5ix /*image preview*/,
-body:hover ._1HqS9 * /*gif preview*/,
-body:hover ._1ypsO .UYCLA /*video preview*/,
-body:hover .fX8hW /*media reply thumb*/,
-body:hover ._1HKX6 /*yt link reply thumb*/,
-body:hover ._153i9 /*image send preview*/,
-body:hover .MidYK /*file preview*/,
-body:hover ._1hT12 /*link preview*/,
-body:hover ._3BGWx /*sticker*/,
-body:hover ._2xrJ4 /*sticker preview*/,
+body:hover ._3V9pc * /*gif preview*/,
+body:hover .sfeitywo .s4eafire /*video preview*/,
+body:hover .kknmh /*media reply thumb*/,
+body:hover .-YT7w /*image send preview*/,
+body:hover .fe3aadhc /*file preview*/,
+body:hover .M6sU5 /*link preview*/,
+body:hover ._1pmNo /*Sticker*/,
+body:hover ._3o1Tf /*sticker contact*/,
 
 /* messages */
-body:hover ._22Msk /*normal message*/,
-body:hover ._2z0p1 /*Gallery link preview*/,
-body:hover .EtBAv ._2ad1k /*blue info bar*/,
-body:hover .jnl3jror /*image*/,
-body:hover ._1t37P /*video*/,
-body:hover .Hcx4J /*file*/,
-body:hover ._35n_s /*voice message*/,
-body:hover ._1O7Qw /*position*/,
-body:hover .dld5k21c /*live location*/,
-body:hover ._1tfap /*contact share*/,
-body:hover .lsgDP /*multiple contact share*/,
-body:hover ._1FpDI /*GIF*/,
-body:hover ._3BGWx /*Sticker*/,
-body:hover ._3OC33 /*sticker contact*/,
+body:hover ._27K43 /*normal message*/,
+body:hover .NQl4z > .ItfyB /*blue info bar*/,
+body:hover .ocd2b0bc /*image, video*/,
+body:hover .rku33uoa /*file*/,
+body:hover ._1AUaQ /*voice message*/,
+body:hover ._2FdHA /*position*/,
+body:hover .AgrIP /*contact share*/,
+body:hover .atp9n7ve /*multiple contact share*/,
+body:hover ._3Hka4 /*GIF*/,
+body:hover ._1pmNo /*Sticker*/,
+body:hover ._3o1Tf /*sticker contact*/,
 
 /* messagesPreview */
-body:hover ._1qB8f /*message preview*/,
+body:hover .vQ0w7 /*message preview*/,
 
 /* name */
-body:hover .zoWT4 /*List user/group name*/,
+body:hover ._21S-L /*List user/group name*/,
 body:hover ._21nHd /*Top user/group name*/,
-body:hover .zzgSd /*Top group user preview*/,
-body:hover ._3WYXy /*Details username*/,
+body:hover .pm5hny62 /*Top group user preview*/,
+body:hover .qfejxiq4 /*Details username*/,
+body:hover .cw3vfol9 /*Details username */,
 body:hover ._1ux8Y /*Details username ~nickname*/,
-body:hover ._2PElp /*Starred messages username*/,
-body:hover .czcZD /*Details group name*/,
-body:hover .selectable-text ._3NUK1 /*About user phone number*//*,
-body:hover ._19038:hover *//*Message in chat*/,
+body:hover ._2l_N5 /*Starred messages username*/,
+body:hover.selectable-text ._10kwi /*About user phone number*/,
+body:hover ._3IzYj._1yJoL /*Message in chat*/,
 
 /* profilePic */
-body:hover ._3GlyB /*profile pic*/,
+body:hover ._3g4Pn /*profile pic*/,
 body:hover ._3yg5l /*Details group/self profile pic*/
 {
   filter: blur(0) grayscale(0);
@@ -53,7 +49,7 @@ body:hover ._3yg5l /*Details group/self profile pic*/
 }
 
 /* textInput */
-body:hover ._13NKt /*textarea*/
+body:hover .to2l77zo /*textarea*/
 {
-  color: #4A4A4A !important;
+  filter: grayscale(0) opacity(1);
 }

@@ -1,10 +1,10 @@
-._1qB8f /*message preview*/
+.vQ0w7 /*message preview*/
 {
   filter: blur(8px) grayscale(1);
   transition-delay: 0s;
 }
 
-._1qB8f:hover /*message preview*/
+.vQ0w7:hover /*message preview*/
 {
   filter: blur(0) grayscale(0);
   transition-delay: 0.3s;
