@@ -1,4 +1,5 @@
-._3g4Pn /*profile pic*/
+.re70xkk9 img /*profile pic when status is open*/,
+._13jwn /*profile pic*/
 {
   filter: blur(7px) grayscale(1);
   transition-delay: 0s;
@@ -9,7 +10,8 @@
   transition-delay: 0s;
 }
 
-._3g4Pn:hover /*profile pic*/,
+._13jwn:hover /*profile pic*/,
+.re70xkk9 img:hover /*profile pic when status is open*/,
 ._3yg5l:hover /*Details group/self profile pic*/
 {
   filter: blur(0) grayscale(0);
