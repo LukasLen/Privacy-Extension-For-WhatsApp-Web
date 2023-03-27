@@ -1,5 +1,10 @@
 .re70xkk9 img /*profile pic when status is open*/,
-._13jwn /*profile pic*/
+._13jwn /*profile pic*/,
+._2YnE3 /*profile pic in chat header*/,
+._3oha0 /*profile pic in voice message*/,
+._2xaO4 /*profile pic in voice message*/,
+div[data-testid="group-chat-profile-picture"]>img /*profile pic in group chat messages*/,
+.pz0xruzv > div > img /*profile pic in user details*/
 {
   filter: blur(7px) grayscale(1);
   transition-delay: 0s;
@@ -12,7 +17,12 @@
 
 ._13jwn:hover /*profile pic*/,
 .re70xkk9 img:hover /*profile pic when status is open*/,
-._3yg5l:hover /*Details group/self profile pic*/
+._2YnE3:hover /*profile pic in chat header*/,
+._3oha0:hover /*profile pic in voice message*/,
+._2xaO4:hover /*profile pic in voice message*/,
+._3yg5l:hover /*Details group/self profile pic*/,
+div[data-testid="group-chat-profile-picture"]>img:hover /*profile pic in group chat messages*/,
+.pz0xruzv > div > img:hover /*profile pic in user details*/
 {
   filter: blur(0) grayscale(0);
   transition-delay: 0.3s;
