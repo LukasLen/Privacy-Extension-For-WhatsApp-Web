@@ -1,6 +1,6 @@
 .to2l77zo /*textarea*/
 {
-  filter: grayscale(1) opacity(0.25);
+  filter: blur(7px) grayscale(1);
 }
 
 .to2l77zo:hover /*textarea*/
