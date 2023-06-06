@@ -1,47 +1,28 @@
-._27K43 /*normal message*/,
-.NQl4z > .ItfyB  /*blue info bar*/
+._2AOIt div:first-child /*normal message*/,
+._1BOF7 ._1sykI /*blue info bar*/
 {
   filter: blur(8px) grayscale(1);
   transition-delay: 0s;
 }
-._3nbHh /*normal message more padding*/
+._2AOIt /*normal message more padding*/
 {
   padding-right: 40px !important;
   padding-top: 12px !important;
   padding-bottom: 12px !important;
 }
-
-.ocd2b0bc /*image, video*/,
-.rku33uoa  /*file*/,
-._1AUaQ /*voice message*/,
-._2FdHA /*position*/,
-.AgrIP /*contact share*/,
-.atp9n7ve /*multiple contact share*/,
-._3Hka4 /*GIF*/,
-._1pmNo /*Sticker*/,
-._3o1Tf /*sticker contact*/
+._1Fw-f /*sticker*/
 {
   filter: blur(20px) grayscale(1);
   transition-delay: 0s;
 }
-
-._27K43:hover /*normal message*/,
-.NQl4z > .ItfyB:hover /*blue info bar*/,
-.ocd2b0bc:hover /*image, video*/,
-.rku33uoa:hover /*file*/,
-._1AUaQ:hover /*voice message*/,
-._2FdHA:hover /*position*/,
-.AgrIP:hover /*contact share*/,
-.atp9n7ve:hover /*multiple contact share*/,
-._3Hka4:hover /*GIF*/,
-._1pmNo:hover /*Sticker*/,
-._3o1Tf:hover /*sticker contact*/
+._2AOIt:hover div:first-child /*normal message*/,
+._1Fw-f:hover, /*sticker*/
+._1BOF7 ._1sykI:hover /*blue info bar*/
 {
   filter: blur(0) grayscale(0);
   transition-delay: 0.3s;
 }
-
-._2l-QZ /*set pseudo background on sticker*/
+._1Fw-f /*set pseudo background on sticker*/
 {
   background-color: var(--incoming-background) !important;
   border-radius: 7.5px !important;

@@ -1,31 +1,26 @@
-.jciay5ix /*image preview*/,
-._3V9pc * /*gif preview*/,
-.s4eafire /*video preview*/,
+._2AOIt div[data-testid^="media-"] div /*image/video*/,
+._2AOIt div[data-testid^="image-"] div /*image/video*/,
+._2AOIt div[data-testid^="document-"] div /*document*/,
+._2AOIt img[data-testid^="link-"] /*link*/,
 .kknmh /*media reply thumb*/,
-.-YT7w /*image send preview*/,
-.fe3aadhc /*file preview*/,
-.M6sU5 /*link preview*/,
-._1pmNo /*Sticker*/,
-._3o1Tf /*sticker contact*/
+._2MmTH /*media send preview*/,
+._1qNn2 ._1nCcB div:first-child /*Sticker*/
 {
   filter: blur(20px) grayscale(1);
   transition-delay: 0s;
 }
-.jciay5ix:hover /*image preview*/,
-._3V9pc:hover * /*gif preview*/,
-.sfeitywo:hover .s4eafire /*video preview*/,
+._2AOIt div[data-testid^="media-"]:hover div /*image/video*/,
+._2AOIt div[data-testid^="image-"]:hover div /*image/video*/,
+._2AOIt div[data-testid^="document-"]:hover div /*document*/,
+._2AOIt img[data-testid^="link-"]:hover /*link*/,
 .kknmh:hover /*media reply thumb*/,
-.-YT7w:hover /*image send preview*/,
-.fe3aadhc:hover /*file preview*/,
-.M6sU5:hover /*link preview*/,
-._1pmNo:hover /*Sticker*/,
-._3o1Tf:hover /*sticker contact*/
+._2MmTH:hover /*media send preview*/,
+._1qNn2 ._1nCcB:hover div:first-child  /*Sticker*/
 {
   filter: blur(0) grayscale(0);
-  -webkit-transition: -webkit-filter .16s linear;
   transition-delay: 0.3s;
 }
-._2l-QZ /*set pseudo background on sticker*/
+._1qNn2 ._1nCcB /*set pseudo background on sticker*/
 {
   background-color: var(--incoming-background) !important;
   border-radius: 7.5px !important;
