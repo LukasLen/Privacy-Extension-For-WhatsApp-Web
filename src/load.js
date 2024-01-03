@@ -25,7 +25,7 @@ chrome.storage.sync.get([
         var link = document.createElement('link');
         link.id = id;
         link.className = 'pfwa';
-        link.href = chrome.extension.getURL('css/'+id+'.css');
+        link.href = chrome.runtime.getURL('css/'+id+'.css');
         link.type = "text/css";
         link.rel = "stylesheet";
         document.getElementsByTagName("head")[0].appendChild(link);

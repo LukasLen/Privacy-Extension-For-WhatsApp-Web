@@ -34,7 +34,11 @@ chrome.commands.onCommand.addListener(function(command) {
 
       chrome.tabs.query({url: "https://web.whatsapp.com/"}, function(tabs) {
         if (tabs.length !== 0)
-          tabs.forEach(function(tab){chrome.tabs.executeScript(tab.id, {file: '/load.js'})});
+          tabs.forEach(function(tab){chrome.scripting.executeScript({
+            target: {tabId: tab.id},
+            files: ['/load.js']
+          })
+        });
       });
     });
   }
@@ -42,7 +46,7 @@ chrome.commands.onCommand.addListener(function(command) {
 
 //set icon depending on extension status
 function toggleIcon(status){
-  chrome.browserAction.setIcon({path:'images/status' + (status == true ? 'On' : 'Off') + '.png'});
+  chrome.action.setIcon({path:'images/status' + (status == true ? 'On' : 'Off') + '.png'});
 }
 
 chrome.storage.onChanged.addListener(function(changes, area) {
