@@ -22,7 +22,9 @@ document.getElementById('version').innerText = version;
 function refreshScript(){
   chrome.tabs.query({url: "https://web.whatsapp.com/"}, function(tabs) {
     if (tabs.length !== 0)
-      tabs.forEach(function(tab){chrome.tabs.executeScript(tab.id, {file: '/load.js'})});
+      tabs.forEach(function(tab){chrome.scripting.executeScript({
+        target :{tabId:tab.id},
+        files: ['/load.js']})});
   });
 }
 
