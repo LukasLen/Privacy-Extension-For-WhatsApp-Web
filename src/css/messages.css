@@ -1,4 +1,5 @@
 ._2AOIt div:first-child /*normal message*/,
+._3cupO /*link list message*/,
 ._1BOF7 ._1sykI /*blue info bar*/
 {
   filter: blur(8px) grayscale(1);
@@ -10,19 +11,20 @@
   padding-top: 12px !important;
   padding-bottom: 12px !important;
 }
-._1Fw-f /*sticker*/
+._1qNn2 ._1nCcB /*sticker*/
 {
   filter: blur(20px) grayscale(1);
   transition-delay: 0s;
 }
 ._2AOIt:hover div:first-child /*normal message*/,
-._1Fw-f:hover, /*sticker*/
+._3cupO:hover /*link list message*/,
+._1qNn2 ._1nCcB:hover, /*sticker*/
 ._1BOF7 ._1sykI:hover /*blue info bar*/
 {
   filter: blur(0) grayscale(0);
   transition-delay: 0.3s;
 }
-._1Fw-f /*set pseudo background on sticker*/
+._1qNn2 ._1nCcB /*set pseudo background on sticker*/
 {
   background-color: var(--incoming-background) !important;
   border-radius: 7.5px !important;
