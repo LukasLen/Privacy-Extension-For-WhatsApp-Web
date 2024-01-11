@@ -20,23 +20,28 @@ body:hover ._1BOF7 ._1sykI /*blue info bar*/,
 body:hover .vQ0w7 /*message preview*/,
 
 /* name */
-body:hover ._21S-L /*List user/group name*/,
+body:hover div:not([role]) > div:not([role]) > ._8nE1Y ._21S-L /*user/group name in search message*/,
+body:hover div[role="row"] > div > ._8nE1Y ._21S-L /*user/group name in message list*/,
+body:hover div[role="button"] > div > ._8nE1Y ._21S-L /*user/group name in non message list*/,
 body:hover ._3W2ap /*Top user/group name*/,
-body:hover div[data-testid="chat-subtitle"] /*Top group user preview*/,
-body:hover ._2HCBh ._1mDG- /*Details groupname*/,
+body:hover ._2au8k div:nth-child(2) /*Top group user preview*/,
+body:hover ._2HCBh ._1N-sl ._1mDG- /*Details groupname*/,
 body:hover .q9lllk4z /*Details username */,
-body:hover .kjemk6od /*Starred messages username*/,
-body:hover .qt60bha0 /*About user phone number*/,
-body:hover ._8nE1Y ._2KKXC /*About user*/,
+body:hover .qfejxiq4 .Mk0Bp._30scZ /*Details username business*/,
+body:hover .njub1g37 span._11JPr /*Starred messages user/group name*/,
+body:hover .a4ywakfo.qt60bha0 /*About user phone number*/,
 body:hover ._3IzYj /*Message in chat*/,
 
 /* profilePic */
-body:hover ._13jwn /*profile pic message list*/,
+body:hover [role="row"] > div > ._1AHcd ._13jwn /*profile pic message list*/,
+body:hover [role="button"] > div > ._1AHcd ._13jwn /*profile pic non message list*/,
 body:hover ._2pr2H /*message view profile pic*/,
 body:hover ._3WByx /*self profile pic*/,
 body:hover .stnyektq /*group chat msg profile pic*/,
+body:hover ._3oha0._2xaO4 /* voice message profile pic */,
 body:hover .pz0xruzv /*Details direct profile pic*/,
-body:hover .njub1g37 /*Details group profile pic*/
+body:hover .njub1g37 ._3xH7K /*Details group profile pic*/,
+body:hover .njub1g37 .kk3akd72.claouzo6 /*Starred message profile pic*/
 {
   filter: blur(0) grayscale(0);
   transition-delay: 0s;
