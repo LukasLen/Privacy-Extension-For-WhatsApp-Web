@@ -3,13 +3,18 @@ body:hover .tukmaf4q /*media preview in gallery*/,
 body:hover ._1Pr6q /*media preview in send media*/,
 
 /* mediaPreview */
-body:hover ._2AOIt div[data-testid^="media-"] div /*image/video*/,
-body:hover ._2AOIt div[data-testid^="image-"] div /*image/video*/,
-body:hover ._2AOIt div[data-testid^="document-"] div /*document*/,
-body:hover ._2AOIt img[data-testid^="link-"] /*link*/,
+body:hover ._2AOIt div.ktbp76dp div[role="button"] img /*image landscape*/,
+body:hover ._2AOIt div.eu4mztcy div[role="button"] img /*image potrait*/,
+body:hover ._2AOIt div.ktbp76dp > div[role="button"] /*video landscape*/,
+body:hover ._2AOIt div.eu4mztcy > div[role="button"] /*video potrait*/,
+body:hover ._2AOIt .cm280p3y > div[role="button"] > div.g0rxnol2.fe3aadhc.g0rxnol2.ln8gz9je /*document image*/,
+body:hover ._2AOIt .cm280p3y > div[role="button"] > div > div > div:not(:last-child) /*document*/,
+body:hover ._2AOIt .M6sU5 /*link*/,
+body:hover ._1BOF7 ._3cupO > div:not(.LldYr) /*link list*/,
+body:hover ._3V9pc /* gif */,
 body:hover .kknmh /*media reply thumb*/,
 body:hover ._2MmTH /*media send preview*/,
-body:hover ._1qNn2 ._1nCcB div:first-child  /*Sticker*/,
+body:hover .ZRhsD._2foMf /*Sticker*/,
 
 /* messages */
 body:hover ._2AOIt div:first-child /*normal message*/,
