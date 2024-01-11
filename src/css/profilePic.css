@@ -1,24 +1,34 @@
-._13jwn /*profile pic message list*/,
+[role="row"] > div > ._1AHcd ._13jwn /*profile pic message list*/,
+[role="button"] > div > ._1AHcd ._13jwn /*profile pic non message list*/,
 ._2pr2H /*message view profile pic*/,
 ._3WByx /*self profile pic*/,
-.stnyektq /*group chat msg profile pic*/
+.stnyektq /*group chat msg profile pic*/,
+._3oha0._2xaO4 /* voice message profile pic */
 {
   filter: blur(7px) grayscale(1);
   transition-delay: 0s;
 }
 .pz0xruzv /*Details direct profile pic*/,
-.njub1g37 /*Details group profile pic*/
+.njub1g37 ._3xH7K /*Details group profile pic*/
 {
   filter: blur(12px) grayscale(1);
   transition-delay: 0s;
 }
+.njub1g37 .kk3akd72.claouzo6 /*Starred message profile pic*/
+{
+  filter: blur(3px) grayscale(1);
+  transition-delay: 0s;
+}
 
-._13jwn:hover /*profile pic message list*/,
+[role="row"] > div > ._1AHcd ._13jwn:hover /*profile pic message list*/,
+[role="button"] > div > ._1AHcd ._13jwn:hover /*profile pic non message list*/,
 ._2pr2H:hover /*message view profile pic*/,
 ._3WByx:hover /*self profile pic*/,
 .stnyektq:hover /*group chat msg profile pic*/,
+._3oha0._2xaO4:hover /* voice message profile pic */,
 .pz0xruzv:hover /*Details direct profile pic*/,
-.njub1g37:hover /*Details group profile pic*/
+.njub1g37 ._3xH7K:hover /*Details group profile pic*/,
+.njub1g37 .kk3akd72.claouzo6:hover /*Starred message profile pic*/
 {
   filter: blur(0) grayscale(0);
   transition-delay: 0.3s;

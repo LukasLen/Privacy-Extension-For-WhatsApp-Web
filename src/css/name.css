@@ -1,25 +1,29 @@
-._21S-L /*List user/group name*/,
+div:not([role]) > div:not([role]) > ._8nE1Y ._21S-L /*user/group name in search message*/,
+div[role="row"] > div > ._8nE1Y ._21S-L /*user/group name in message list*/,
+div[role="button"] > div > ._8nE1Y ._21S-L /*user/group name in non message list*/,
 ._3W2ap /*Top user/group name*/,
-div[data-testid="chat-subtitle"] /*Top group user preview*/,
-._2HCBh ._1mDG- /*Details groupname*/,
+._2au8k div:nth-child(2) /*Top group user preview*/,
+._2HCBh ._1N-sl ._1mDG- /*Details groupname*/,
 .q9lllk4z /*Details username */,
-.kjemk6od /*Starred messages username*/,
-.qt60bha0 /*About user phone number*/,
-._8nE1Y ._2KKXC /*About user*/,
+.qfejxiq4 .Mk0Bp._30scZ /*Details username business*/,
+.njub1g37 span._11JPr /*Starred messages user/group name*/,
+.a4ywakfo.qt60bha0 /*About user phone number*/,
 ._3IzYj /*Message in chat*/
 {
   filter: blur(5px) grayscale(1);
   transition-delay: 0s;
 }
 
-._21S-L:hover /*List user/group name*/,
+div:not([role]) > div:not([role]) > ._8nE1Y ._21S-L:hover /*user/group name in search message*/,
+div[role="row"] > div > ._8nE1Y ._21S-L:hover /*user/group name in message list*/,
+div[role="button"] > div > ._8nE1Y ._21S-L:hover /*user/group name in non message list*/,
 ._3W2ap:hover /*Top user/group name*/,
-div[data-testid="chat-subtitle"]:hover /*Top group user preview*/,
-._2HCBh:hover ._1mDG- /*Details groupname*/,
+._2au8k div:nth-child(2):hover /*Top group user preview*/,
+._2HCBh:hover ._1N-sl ._1mDG- /*Details groupname*/,
 .q9lllk4z:hover /*Details username */,
-.kjemk6od:hover /*Starred messages username*/,
-.qt60bha0:hover /*About user phone number*/,
-._8nE1Y:hover ._2KKXC /*About user*/,
+.qfejxiq4 .Mk0Bp._30scZ:hover /*Details username business*/,
+.njub1g37 span._11JPr:hover /*Starred messages user/group name*/,
+.a4ywakfo.qt60bha0:hover /*About user phone number*/,
 ._3IzYj:hover /*Message in chat*/
 {
   filter: blur(0) grayscale(0);
