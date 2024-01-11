@@ -3,13 +3,18 @@
 ._1Pr6q:hover /*media preview in send media*/,
 
 /* mediaPreview */
-._2AOIt div[data-testid^="media-"]:hover div /*image/video*/,
-._2AOIt div[data-testid^="image-"]:hover div /*image/video*/,
-._2AOIt div[data-testid^="document-"]:hover div /*document*/,
-._2AOIt img[data-testid^="link-"]:hover /*link*/,
+._2AOIt div.ktbp76dp div[role="button"]:hover img /*image landscape*/,
+._2AOIt div.eu4mztcy div[role="button"]:hover img /*image potrait*/,
+._2AOIt div.ktbp76dp > div[role="button"]:hover /*video landscape*/,
+._2AOIt div.eu4mztcy > div[role="button"]:hover /*video potrait*/,
+._2AOIt .cm280p3y > div[role="button"] > div.g0rxnol2.fe3aadhc.g0rxnol2.ln8gz9je:hover /*document image*/,
+._2AOIt .cm280p3y > div[role="button"] > div > div > div:not(:last-child):hover /*document*/,
+._2AOIt .M6sU5:hover /*link*/,
+._1BOF7 ._3cupO > div:not(.LldYr):hover /*link list*/,
+._3V9pc:hover /* gif */,
 .kknmh:hover /*media reply thumb*/,
 ._2MmTH:hover /*media send preview*/,
-._1qNn2 ._1nCcB:hover div:first-child  /*Sticker*/,
+.ZRhsD._2foMf:hover /*Sticker*/,
 
 /* messages */
 ._2AOIt:hover div:first-child /*normal message*/,

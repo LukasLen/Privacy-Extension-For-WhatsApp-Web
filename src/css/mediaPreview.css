@@ -1,21 +1,31 @@
-._2AOIt div[data-testid^="media-"] div /*image/video*/,
-._2AOIt div[data-testid^="image-"] div /*image/video*/,
-._2AOIt div[data-testid^="document-"] div /*document*/,
-._2AOIt img[data-testid^="link-"] /*link*/,
+._2AOIt div.ktbp76dp div[role="button"] img /*image landscape*/,
+._2AOIt div.eu4mztcy div[role="button"] img /*image potrait*/,
+._2AOIt div.ktbp76dp > div[role="button"] /*video landscape*/,
+._2AOIt div.eu4mztcy > div[role="button"] /*video potrait*/,
+._2AOIt .cm280p3y > div[role="button"] > div.g0rxnol2.fe3aadhc.g0rxnol2.ln8gz9je /*document image*/,
+._2AOIt .cm280p3y > div[role="button"] > div > div > div:not(:last-child) /*document*/,
+._2AOIt .M6sU5 /*link*/,
+._1BOF7 ._3cupO > div:not(.LldYr) /*link list*/,
+._3V9pc /* gif */,
 .kknmh /*media reply thumb*/,
 ._2MmTH /*media send preview*/,
-._1qNn2 ._1nCcB div:first-child /*Sticker*/
+.ZRhsD._2foMf /*Sticker*/
 {
   filter: blur(20px) grayscale(1);
   transition-delay: 0s;
 }
-._2AOIt div[data-testid^="media-"]:hover div /*image/video*/,
-._2AOIt div[data-testid^="image-"]:hover div /*image/video*/,
-._2AOIt div[data-testid^="document-"]:hover div /*document*/,
-._2AOIt img[data-testid^="link-"]:hover /*link*/,
+._2AOIt div.ktbp76dp div[role="button"]:hover img /*image landscape*/,
+._2AOIt div.eu4mztcy div[role="button"]:hover img /*image potrait*/,
+._2AOIt div.ktbp76dp > div[role="button"]:hover /*video landscape*/,
+._2AOIt div.eu4mztcy > div[role="button"]:hover /*video potrait*/,
+._2AOIt .cm280p3y > div[role="button"] > div.g0rxnol2.fe3aadhc.g0rxnol2.ln8gz9je:hover /*document image*/,
+._2AOIt .cm280p3y > div[role="button"] > div > div > div:not(:last-child):hover /*document*/,
+._2AOIt .M6sU5:hover /*link*/,
+._1BOF7 ._3cupO > div:not(.LldYr):hover /*link list*/,
+._3V9pc:hover /* gif */,
 .kknmh:hover /*media reply thumb*/,
 ._2MmTH:hover /*media send preview*/,
-._1qNn2 ._1nCcB:hover div:first-child  /*Sticker*/
+.ZRhsD._2foMf:hover /*Sticker*/
 {
   filter: blur(0) grayscale(0);
   transition-delay: 0.3s;
