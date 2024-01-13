@@ -1,0 +1,61 @@
+{
+  "name": "Privacy Extension For WhatsApp Web",
+  "version": "2.12.1",
+  "description": "Hides your messages until you hover over them.",
+  "permissions": ["storage" , "scripting"],
+  "host_permissions": [
+    "https://web.whatsapp.com/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "web_accessible_resources": [
+    {
+      "resources": [
+        "images/statusOn.png",
+        "images/statusOff.png",
+        "css/messages.css",
+        "css/messagesPreview.css",
+        "css/mediaPreview.css",
+        "css/mediaGallery.css",
+        "css/textInput.css",
+        "css/profilePic.css",
+        "css/name.css",
+        "css/noDelay.css",
+        "css/unblurActive.css"
+      ],
+      "matches": ["https://web.whatsapp.com/*"]
+    }
+  ],
+  "content_scripts": [
+   {
+     "matches": ["https://web.whatsapp.com/"],
+     "js": ["load.js"]
+   }
+  ],
+  "action": {
+    "default_title": "Privacy Extension For WhatsApp Web",
+   "default_popup": "popup/popup.html",
+   "default_icon": {
+     "16": "images/icon16.png",
+     "24": "images/icon24.png",
+     "32": "images/icon32.png"
+   }
+  },
+
+  "commands": {
+    "toggle": {
+      "suggested_key": {
+        "default": "Alt+X"
+      },
+      "description": "Toggle On/Off"
+    }
+  },
+  "icons": {
+    "16": "images/icon16.png",
+    "32": "images/icon32.png",
+    "48": "images/icon48.png",
+    "128": "images/icon128.png"
+  },
+  "manifest_version": 3
+}
