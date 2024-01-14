@@ -37,6 +37,8 @@ div[role="button"] > div > ._8nE1Y ._21S-L:hover /*user/group name in non messag
 .njub1g37 span._11JPr:hover /*Starred messages user/group name*/,
 .a4ywakfo.qt60bha0:hover /*About user phone number*/,
 ._3IzYj:hover /*Message in chat*/,
+.Efdtr:hover /* name in contact attachment */,
+.djhxrpsl:hover /* name in multi contact attachment */,
 
 /* profilePic */
 [role="row"] > div > ._1AHcd ._13jwn:hover /*profile pic message list*/,
@@ -45,6 +47,8 @@ div[role="button"] > div > ._8nE1Y ._21S-L:hover /*user/group name in non messag
 ._3WByx:hover /*self profile pic*/,
 .stnyektq:hover /*group chat msg profile pic*/,
 ._3oha0._2xaO4:hover /* voice message profile pic */,
+._3dPH0:hover /* contacts attachment */,
+.b021xdil:hover /* multi contacts attachment */,
 .pz0xruzv:hover /*Details direct profile pic*/,
 .njub1g37 ._3xH7K:hover /*Details group profile pic*/,
 .njub1g37 .kk3akd72.claouzo6:hover /*Starred message profile pic*/,
