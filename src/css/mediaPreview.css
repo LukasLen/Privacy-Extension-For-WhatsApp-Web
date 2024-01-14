@@ -9,7 +9,11 @@
 ._3V9pc /* gif */,
 .kknmh /*media reply thumb*/,
 ._2MmTH /*media send preview*/,
-.ZRhsD._2foMf /*Sticker*/
+.ZRhsD._2foMf /*Sticker*/,
+.Efdtr /* name in contact attachment */,
+.djhxrpsl /* name in multi contact attachment */,
+._3dPH0 /* contacts attachment */,
+.b021xdil /* multi contacts attachment */
 {
   filter: blur(20px) grayscale(1);
   transition-delay: 0s;
@@ -25,7 +29,11 @@
 ._3V9pc:hover /* gif */,
 .kknmh:hover /*media reply thumb*/,
 ._2MmTH:hover /*media send preview*/,
-.ZRhsD._2foMf:hover /*Sticker*/
+.ZRhsD._2foMf:hover /*Sticker*/,
+.Efdtr:hover /* name in contact attachment */,
+.djhxrpsl:hover /* name in multi contact attachment */,
+._3dPH0:hover /* contacts attachment */,
+.b021xdil:hover /* multi contacts attachment */
 {
   filter: blur(0) grayscale(0);
   transition-delay: 0.3s;

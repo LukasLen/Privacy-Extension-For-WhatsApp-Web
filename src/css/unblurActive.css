@@ -37,6 +37,8 @@ body:hover .qfejxiq4 .Mk0Bp._30scZ /*Details username business*/,
 body:hover .njub1g37 span._11JPr /*Starred messages user/group name*/,
 body:hover .a4ywakfo.qt60bha0 /*About user phone number*/,
 body:hover ._3IzYj /*Message in chat*/,
+body:hover .Efdtr /* name in contact attachment */,
+body:hover .djhxrpsl /* name in multi contact attachment */,
 
 /* profilePic */
 body:hover [role="row"] > div > ._1AHcd ._13jwn /*profile pic message list*/,
@@ -45,6 +47,8 @@ body:hover ._2pr2H /*message view profile pic*/,
 body:hover ._3WByx /*self profile pic*/,
 body:hover .stnyektq /*group chat msg profile pic*/,
 body:hover ._3oha0._2xaO4 /* voice message profile pic */,
+body:hover ._3dPH0 /* contacts attachment */,
+body:hover .b021xdil /* multi contacts attachment */,
 body:hover .pz0xruzv /*Details direct profile pic*/,
 body:hover .njub1g37 ._3xH7K /*Details group profile pic*/,
 body:hover .njub1g37 .kk3akd72.claouzo6 /*Starred message profile pic*/
