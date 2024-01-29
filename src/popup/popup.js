@@ -1,3 +1,4 @@
+/*
 // Checkboxes
 let button = document.getElementById('switch');
 let messages = document.getElementById('messages');
@@ -121,4 +122,44 @@ noDelay.addEventListener('change', function() {
 unblurActive.addEventListener('change', function() {
   chrome.storage.sync.set({unblurActive: this.checked});
   refreshScript();
+});
+*/
+
+let version = chrome.runtime.getManifest().version;
+document.getElementById('version').innerText = version;
+
+let switches = document.querySelectorAll("input[type='checkbox']");
+
+switches.forEach((checkbox) => {
+  checkbox.addEventListener('change', updateSettings);
+});
+function updateSettings() {
+  let id = this.dataset.style;
+  let checked = this.checked;
+
+  chrome.storage.sync.get(["settings"]).then((result) => {
+    if (result.hasOwnProperty("settings")) {
+      if (id == "on") {
+        result.settings.on = checked;
+      } else {
+        result.settings.styles[id] = checked;
+      }
+      chrome.storage.sync.set(result);
+    }
+  });
+}
+
+chrome.storage.sync.get(["settings"]).then((result) => {
+  if (result.hasOwnProperty("settings")) {
+    let settings = result.settings;
+
+    switches.forEach((checkbox) => {
+      let id = checkbox.dataset.style;
+      if (id == "on") {
+        checkbox.checked = settings.on;
+      } else {
+        checkbox.checked = settings.styles[id];
+      }
+    });
+  }
 });
