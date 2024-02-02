@@ -1,7 +1,5 @@
-> **_⚠️ IMPORTANT:_**  This codebase is quite inefficient and contains badly written code. It needs updating! I plan on rewriting this extension together with an upgrade to the new Manifest V3. Help is appreciated.
-
 # Privacy Extension For WhatsApp™ Web ![Logo](https://github.com/LukasLen/Privacy-Extension-For-WhatsApp-Web/blob/master/src/images/icon32.png?raw=true)
-[![GitHub license](https://img.shields.io/github/license/LukasLen/Privacy-Extension-For-WhatsApp-Web.svg)](https://github.com/LukasLen/Privacy-Extension-For-WhatsApp-Web/blob/master/LICENSE) [![Chrome Web Store](https://img.shields.io/chrome-web-store/users/jbojhlhhggfmmkpefknmbdhlaghehini.svg)](https://chrome.google.com/webstore/detail/privacy-extension-for-wha/jbojhlhhggfmmkpefknmbdhlaghehini) [![Tweet](https://img.shields.io/twitter/url/https/github.com/LukasLen/Privacy-Extension-For-WhatsApp-Web.svg?style=social)](https://twitter.com/intent/tweet?text=&url=https%3A%2F%2Fgithub.com%2FLukasLen%2FPrivacy-Extension-For-WhatsApp-Web)
+[![GitHub license](https://img.shields.io/github/license/LukasLen/Privacy-Extension-For-WhatsApp-Web.svg)](https://github.com/LukasLen/Privacy-Extension-For-WhatsApp-Web/blob/master/LICENSE) [![Chrome Web Store](https://img.shields.io/chrome-web-store/users/jbojhlhhggfmmkpefknmbdhlaghehini.svg)](https://chrome.google.com/webstore/detail/privacy-extension-for-wha/jbojhlhhggfmmkpefknmbdhlaghehini)
 
 <p align="center">
   <img width="48%" title="WhatsApp™ Web with the extension" alt="WhatsApp™ Web with the extension" src="https://github.com/LukasLen/Privacy-Extension-For-WhatsApp-Web/blob/master/screenshots/PFWA_Header.png?raw=true">
@@ -51,8 +49,6 @@ Available for both Chrome and Firefox.
 
 ## Issues and Feature Requests
 If you have a feature request or if you have encountered a problem, please create a new issue under this link: [https://github.com/LukasLen/Privacy-Extension-For-WhatsApp-Web/issues](https://github.com/LukasLen/Privacy-Extension-For-WhatsApp-Web/issues)
-
-Alternatively you can get help at: contact@lukaslen.com
 
 ## License
 This project is licensed under the MIT License - see the [LICENSE](https://github.com/LukasLen/Privacy-Extension-For-WhatsApp-Web/blob/master/LICENSE) file for details.

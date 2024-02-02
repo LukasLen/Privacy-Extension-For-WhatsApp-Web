@@ -1,3 +1,7 @@
+/* Privacy Extension for WhatsApp(TM) Web                       */
+/* Copyright (c) 2024 Lukas Lenhardt - lukaslen.com             */
+/* Released under the MIT license, see LICENSE file for details */
+
 div:not([role]) > div:not([role]) > ._8nE1Y ._21S-L /*user/group name in search message*/,
 div[role="row"] > div > ._8nE1Y ._21S-L /*user/group name in message list*/,
 div[role="button"] > div > ._8nE1Y ._21S-L /*user/group name in non message list*/,

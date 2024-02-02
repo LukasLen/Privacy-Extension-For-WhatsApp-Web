@@ -1,6 +1,6 @@
-/* Privacy Extension for WhatsApp Web */
-
-
+/* Privacy Extension for WhatsApp(TM) Web                       */
+/* Copyright (c) 2024 Lukas Lenhardt - lukaslen.com             */
+/* Released under the MIT license, see LICENSE file for details */
 
 chrome.runtime.onInstalled.addListener(() => {
   chrome.storage.sync.get(["settings"]).then((result) => {
