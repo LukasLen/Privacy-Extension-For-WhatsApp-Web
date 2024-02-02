@@ -1,4 +1,8 @@
-function removeStyleById(id){
+/* Privacy Extension for WhatsApp(TM) Web                       */
+/* Copyright (c) 2024 Lukas Lenhardt - lukaslen.com             */
+/* Released under the MIT license, see LICENSE file for details */
+
+function removeStyleById(id) {
   if(el=document.getElementById(id)){
     el.parentNode.removeChild(el);
   }
