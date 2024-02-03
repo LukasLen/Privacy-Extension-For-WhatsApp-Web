@@ -6,7 +6,7 @@
   <img width="48%" title="WhatsApp™ Web with the extension" alt="WhatsApp™ Web with the extension" src="https://github.com/LukasLen/Privacy-Extension-For-WhatsApp-Web/blob/master/screenshots/PFWA_Settings.png?raw=true">
 </p>
 
-To increase privacy in public spaces the Privacy Extension For WhatsApp™ Web blurs your messages as well as other content and only reveals one when you hover over it with your mouse cursor. Additionally, you can quickly toggle all effects by using a keyboard shortcut or by clicking the toggle button in the extension menu.
+To increase privacy in public spaces the Privacy Extension For WhatsApp™ Web blurs your messages. Your messages and other content only reveals upon hovering over with your mouse cursor. Additionally you can quickly toggle all effects by using a keyboard shortcut or by clicking the toggle button in the extension menu.
 
 **Customize it**
 
@@ -26,29 +26,28 @@ It adapts to your needs by letting you decide which elements you want to blur. Y
 
 You can quickly toggle the blur in the settings or with a keyboard shortcut (Default: Alt+X).
 To change this navigate to:
- - Chrome: "chrome://extensions/shortcuts"
- - Firefox: "about:addons" -> Settings icon on the top right -> Manage Extension Shortcuts
+ - Chrome: [chrome://extensions/shortcuts](chrome://extensions/shortcuts)
+ - Firefox: [about:addons](about:addons) -> Settings icon on the top right -> Manage Extension Shortcuts
 
 ## Installation
 Available for both Chrome and Firefox.
 
 ### Chrome
-- Install if from [https://chrome.google.com/webstore/detail/privacy-extension-for-wha/jbojhlhhggfmmkpefknmbdhlaghehini](https://chrome.google.com/webstore/detail/privacy-extension-for-wha/jbojhlhhggfmmkpefknmbdhlaghehini)
+Official Chrome webstore page: [https://chrome.google.com/webstore/detail/privacy-extension-for-wha/jbojhlhhggfmmkpefknmbdhlaghehini](https://chrome.google.com/webstore/detail/privacy-extension-for-wha/jbojhlhhggfmmkpefknmbdhlaghehini)
 
 ### Firefox
-- Install if from [https://addons.mozilla.org/firefox/addon/privacy-extension-for-whatsapp/](https://addons.mozilla.org/firefox/addon/privacy-extension-for-whatsapp/)
+Official Firefox addons page: [https://addons.mozilla.org/firefox/addon/privacy-extension-for-whatsapp/](https://addons.mozilla.org/firefox/addon/privacy-extension-for-whatsapp/)
 
 ### For development purposes on Chrome
 - Download the newest release [here](https://github.com/LukasLen/Privacy-Extension-For-WhatsApp-Web/releases) and unzip it
-- Rename the file /src/manifest-chromium.json to /src/manifest.json
-- Navigate to chrome://extensions/
+- Navigate to [chrome://extensions](chrome://extensions)
 - Activate the developer mode (on the top right)
 - Click on "Load Unpacked"
 - Select the "/src" folder from your unzipped download (this folder has to be persistent so you might want to keep it somewhere where you won't delete it)
 - Check back here for new releases
 
 ## Issues and Feature Requests
-If you have a feature request or if you have encountered a problem, please create a new issue under this link: [https://github.com/LukasLen/Privacy-Extension-For-WhatsApp-Web/issues](https://github.com/LukasLen/Privacy-Extension-For-WhatsApp-Web/issues)
+If you have a feature request or encountered a problem, please create a new issue under this link: [https://github.com/LukasLen/Privacy-Extension-For-WhatsApp-Web/issues](https://github.com/LukasLen/Privacy-Extension-For-WhatsApp-Web/issues)
 
 ## License
 This project is licensed under the MIT License - see the [LICENSE](https://github.com/LukasLen/Privacy-Extension-For-WhatsApp-Web/blob/master/LICENSE) file for details.
