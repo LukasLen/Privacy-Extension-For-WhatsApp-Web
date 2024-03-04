@@ -1,10 +1,11 @@
 {
   "manifest_version": 3,
-  "name": "Privacy Extension For WhatsApp Web",
-  "description": "Hides your messages until you hover over them.",
+  "default_locale": "en",
+  "name": "__MSG_extensionName__",
+  "description": "__MSG_extensionDescription__",
   "version": "3.1.0",
   "action": {
-    "default_title": "Privacy Extension For WhatsApp Web",
+    "default_title": "__MSG_extensionName__",
     "default_popup": "popup/popup.html",
     "default_icon": {
       "16": "images/icon16.png",

@@ -14,6 +14,13 @@ const settingsIdentifier = "settings";
 let version = browser.runtime.getManifest().version;
 document.getElementById('version').innerText = version;
 
+document.querySelectorAll('[data-locale]').forEach(e => {
+  e.innerText = browser.i18n.getMessage(e.dataset.locale);
+});
+document.querySelectorAll('[data-localetitle]').forEach(e => {
+  e.title = browser.i18n.getMessage(e.dataset.localetitle);
+});
+
 let switches = document.querySelectorAll("input[type='checkbox']");
 
 // Track switch changes and save settings

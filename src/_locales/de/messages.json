@@ -1,0 +1,87 @@
+{
+    "extensionName": {
+      "message": "Privacy Extension For WhatsApp Web"
+    },
+    "extensionDescription": {
+      "message": "Verbirgt Ihre Nachrichten, bis Sie mit der Maus über sie gehen."
+    },
+    "extensionShortcut": {
+        "message": "Ein-/Ausschalten"
+    },
+    
+    "extensionToggle": {
+      "message": "Ein-/Ausschalten"
+    },
+    "extensionSettings": {
+      "message": "Einstellungen"
+    },
+    "toggleMessages": {
+        "message": "Alle Nachrichten im Chat"
+    },
+    "toggleMessagesDescription": {
+        "message": "Verbrigt alle Nachrichten im Chat."
+    },
+    "toggleMessagesPreview": {
+        "message": "Nachrichtenvorschau"
+    },
+    "toggleMessagesPreviewDescription": {
+        "message": "Verbirgt alle Nachrichtenvorschauen auf der linken Seite."
+    },
+    "toggleMediaPreview": {
+        "message": "Medienvorschau"
+    },
+    "toggleMediaPreviewDescription": {
+        "message": "Verbirgt alle Bilder, Videos, Sticker usw. separat vom Text."
+    },
+    "toggleMediaGallery": {
+        "message": "Mediengalerie"
+    },
+    "toggleMediaGalleryDescription": {
+        "message": "Verbirgt alle kleinen Vorschau-Symbole von Bildern, Videos usw., während Sie ein Bild, Video usw. betrachten."
+    },
+    "toggleTextInput": {
+        "message": "Texteingabe"
+    },
+    "toggleTextInputDescription": {
+        "message": "Macht die Farbe in Ihrem Eingabefeld heller, um sie schwer lesbar zu machen."
+    },
+    "toggleProfilePic": {
+        "message": "Profilbilder"
+    },
+    "toggleProfilePicDescription": {
+        "message": "Verbirgt alle Profilbilder."
+    },
+    "toggleName": {
+        "message": "Gruppen-/Benutzernamen"
+    },
+    "toggleNameDescription": {
+        "message": "Verbirgt alle Gruppen- und Benutzernamen."
+    },
+    "toggleNoDelay": {
+        "message": "Keine Übergangsverzögerung"
+    },
+    "toggleNoDelayDescription": {
+        "message": "Ermöglicht es Ihnen, die Verzögerung vor dem Anzeigen eines Elements beim Überfahren mit der Maus auszuschalten."
+    },
+    "toggleUnblurActive": {
+        "message": "Alle bei App-Hover sichtbar machen"
+    },
+    "toggleUnblurActiveDescription": {
+        "message": "Entblendet alle, wenn Sie mit der Maus über die WhatsApp Web-App fahren."
+    },
+    "footerBugReports": {
+        "message": "Fehlerberichte & Vorschläge"
+    },
+    "footerBugReportsDescription": {
+        "message": "Wenn Sie Probleme haben oder einen Funktionswunsch haben, senden Sie mir bitte eine E-Mail: contact@lukaslen.com"
+    },
+    "footerAuthor": {
+        "message": "Autor"
+    },
+    "footerReleaseNotes": {
+        "message": "Versionshinweise"
+    },
+    "footerReleaseNotesDescription": {
+        "message": "Versionshinweise anzeigen."
+    }
+}

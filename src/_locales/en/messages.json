@@ -1,0 +1,87 @@
+{
+    "extensionName": {
+      "message": "Privacy Extension For WhatsApp Web"
+    },
+    "extensionDescription": {
+      "message": "Hides your messages until you hover over them."
+    },
+    "extensionShortcut": {
+        "message": "Toggle On/Off"
+    },
+    
+    "extensionToggle": {
+      "message": "Toggle"
+    },
+    "extensionSettings": {
+      "message": "Settings"
+    },
+    "toggleMessages": {
+        "message": "All messages in chat"
+    },
+    "toggleMessagesDescription": {
+        "message": "Blurs all messages in the chat."
+    },
+    "toggleMessagesPreview": {
+        "message": "Last messages preview"
+    },
+    "toggleMessagesPreviewDescription": {
+        "message": "Blurs all message previews on the left."
+    },
+    "toggleMediaPreview": {
+        "message": "Media preview"
+    },
+    "toggleMediaPreviewDescription": {
+        "message": "Blurs all images, videos, stickers, ... in separation from the text."
+    },
+    "toggleMediaGallery": {
+        "message": "Media gallery"
+    },
+    "toggleMediaGalleryDescription": {
+        "message": "Blurs all small preview icons of images, videos, ... while viewing an image, video, ..."
+    },
+    "toggleTextInput": {
+        "message": "Text input"
+    },
+    "toggleTextInputDescription": {
+        "message": "Makes the color in your input field lighter to make it hard to read."
+    },
+    "toggleProfilePic": {
+        "message": "Profile pictures"
+    },
+    "toggleProfilePicDescription": {
+        "message": "Blurs all profile pictures."
+    },
+    "toggleName": {
+        "message": "Group/Users names"
+    },
+    "toggleNameDescription": {
+        "message": "Blurs all group and usernames."
+    },
+    "toggleNoDelay": {
+        "message": "No transition delay"
+    },
+    "toggleNoDelayDescription": {
+        "message": "Allows you to turn off the delay before revealing an item on hover."
+    },
+    "toggleUnblurActive": {
+        "message": "Unblur all on app hover"
+    },
+    "toggleUnblurActiveDescription": {
+        "message": "Unblurs all when you hover over the WhatsApp Web app."
+    },
+    "footerBugReports": {
+        "message": "Bug reports & Suggestions"
+    },
+    "footerBugReportsDescription": {
+        "message": "When you encounter issues or have a feature request please email me: contact@lukaslen.com"
+    },
+    "footerAuthor": {
+        "message": "Author"
+    },
+    "footerReleaseNotes": {
+        "message": "Release notes"
+    },
+    "footerReleaseNotesDescription": {
+        "message": "View the release notes."
+    }
+}
