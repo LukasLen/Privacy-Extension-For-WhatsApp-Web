@@ -10,27 +10,37 @@ if (typeof browser == "undefined") {
 
 const styleIdentifier = "pfwa";
 const settingsIdentifier = "settings";
-const defaultSettings =
-  {
-    settings: {
-      on: true,
-      currentPopupMessage: "",
-      styles: {
-        mediaGallery: true,
-        mediaPreview: true,
-        messages: true,
-        messagesPreview: true,
-        name: false,
-        noDelay: false,
-        profilePic: false,
-        textInput: true,
-        unblurActive: false
-      }
+const defaultSettings = {
+  settings: {
+    on: true,
+    currentPopupMessage: "",
+    styles: {
+      mediaGallery: true,
+      mediaPreview: true,
+      messages: true,
+      messagesPreview: true,
+      name: false,
+      noDelay: false,
+      profilePic: false,
+      textInput: true,
+      unblurActive: false
     }
-  };
+  }
+};
+const requiredPermissions = { 
+  origins: ["https://web.whatsapp.com/*"],
+  permissions: ["storage"]
+}
 
-// Set default settings upon install
+// On install
 browser.runtime.onInstalled.addListener(() => {
+  // Request host permissions
+  browser.permissions.contains(requiredPermissions).then((hasPermissions) => {
+    if (hasPermissions) return;
+    browser.permissions.request(requiredPermissions);
+  });
+
+  // Set default settings upon install
   browser.storage.sync.get([settingsIdentifier]).then((result) => {
     if (result.hasOwnProperty(settingsIdentifier)) return;
     browser.storage.sync.set(defaultSettings);
