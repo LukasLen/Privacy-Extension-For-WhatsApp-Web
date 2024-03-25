@@ -1,19 +1,19 @@
 {
     "extensionName": {
-      "message": "Privacy Extension For WhatsApp Web"
+        "message": "Privacy Extension For WhatsApp Web"
     },
     "extensionDescription": {
-      "message": "Hides your messages until you hover over them."
+        "message": "Hides your messages until you hover over them."
     },
     "extensionShortcut": {
         "message": "Toggle On/Off"
     },
     
     "extensionToggle": {
-      "message": "Toggle"
+        "message": "Toggle"
     },
     "extensionSettings": {
-      "message": "Settings"
+        "message": "Settings"
     },
     "toggleMessages": {
         "message": "All messages in chat"
