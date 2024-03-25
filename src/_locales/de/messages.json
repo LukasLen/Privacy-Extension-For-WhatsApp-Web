@@ -1,19 +1,19 @@
 {
     "extensionName": {
-      "message": "Privacy Extension For WhatsApp Web"
+        "message": "Privacy Extension For WhatsApp Web"
     },
     "extensionDescription": {
-      "message": "Verbirgt Ihre Nachrichten, bis Sie mit der Maus über sie gehen."
+        "message": "Verbirgt Ihre Nachrichten, bis Sie mit der Maus über sie gehen."
     },
     "extensionShortcut": {
         "message": "Ein-/Ausschalten"
     },
     
     "extensionToggle": {
-      "message": "Ein-/Ausschalten"
+        "message": "Ein-/Ausschalten"
     },
     "extensionSettings": {
-      "message": "Einstellungen"
+        "message": "Einstellungen"
     },
     "toggleMessages": {
         "message": "Alle Nachrichten im Chat"
