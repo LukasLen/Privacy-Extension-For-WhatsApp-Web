@@ -1,0 +1,87 @@
+{
+    "extensionName": {
+        "message": "Extensão de Privacidade para o WhatsApp Web"
+    },
+    "extensionDescription": {
+        "message": "Oculta suas mensagens até que você passe o mouse sobre elas."
+    },
+    "extensionShortcut": {
+        "message": "Ligado/Desligado"
+    },
+    
+    "extensionToggle": {
+        "message": "Ligado/Desligado"
+    },
+    "extensionSettings": {
+        "message": "Configurações"
+    },
+    "toggleMessages": {
+        "message": "Todas as mensagens no chat"
+    },
+    "toggleMessagesDescription": {
+        "message": "Desfoca todas as mensagens no chat."
+    },
+    "toggleMessagesPreview": {
+        "message": "Pré-visualização das últimas mensagens"
+    },
+    "toggleMessagesPreviewDescription": {
+        "message": "Desfoca todas as pré-visualizações de mensagens à esquerda."
+    },
+    "toggleMediaPreview": {
+        "message": "Pré-visualização de mídia"
+    },
+    "toggleMediaPreviewDescription": {
+        "message": "Desfoca todas as imagens, vídeos, adesivos, etc., separadamente do texto."
+    },
+    "toggleMediaGallery": {
+        "message": "Galeria de mídia"
+    },
+    "toggleMediaGalleryDescription": {
+        "message": "Desfoca todos os pequenos ícones de pré-visualização de imagens, vídeos, etc., ao visualizar uma imagem, vídeo, etc."
+    },
+    "toggleTextInput": {
+        "message": "Entrada de texto"
+    },
+    "toggleTextInputDescription": {
+        "message": "Torna a cor no seu campo de entrada mais clara para dificultar a leitura."
+    },
+    "toggleProfilePic": {
+        "message": "Fotos de perfil"
+    },
+    "toggleProfilePicDescription": {
+        "message": "Desfoca todas as fotos de perfil."
+    },
+    "toggleName": {
+        "message": "Nomes de grupos/usuários"
+    },
+    "toggleNameDescription": {
+        "message": "Desfoca todos os nomes de grupos e usuários."
+    },
+    "toggleNoDelay": {
+        "message": "Sem transição"
+    },
+    "toggleNoDelayDescription": {
+        "message": "Permite desativar o atraso antes de revelar um item ao passar o mouse."
+    },
+    "toggleUnblurActive": {
+        "message": "Desfocar tudo ao passar o mouse sobre o WhatsApp Web-App"
+    },
+    "toggleUnblurActiveDescription": {
+        "message": "Desfoca tudo quando você passa o mouse sobre o aplicativo do WhatsApp Web."
+    },
+    "footerBugReports": {
+        "message": "Relatórios de bugs & Sugestões"
+    },
+    "footerBugReportsDescription": {
+        "message": "Se você encontrar problemas ou tiver uma solicitação de recurso, envie um e-mail para: contact@lukaslen.com"
+    },
+    "footerAuthor": {
+        "message": "Autor"
+    },
+    "footerReleaseNotes": {
+        "message": "Notas de lançamento"
+    },
+    "footerReleaseNotesDescription": {
+        "message": "Visualizar as notas de lançamento."
+    }
+}
