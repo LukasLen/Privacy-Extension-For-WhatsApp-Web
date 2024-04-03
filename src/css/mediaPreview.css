@@ -17,7 +17,8 @@
 .Efdtr /* name in contact attachment */,
 .djhxrpsl /* name in multi contact attachment */,
 ._3dPH0 /* contacts attachment */,
-.b021xdil /* multi contacts attachment */
+.b021xdil /* multi contacts attachment */,
+.x1vjfegm
 {
   filter: blur(20px) grayscale(1);
   transition-delay: 0s;
@@ -37,7 +38,8 @@
 .Efdtr:hover /* name in contact attachment */,
 .djhxrpsl:hover /* name in multi contact attachment */,
 ._3dPH0:hover /* contacts attachment */,
-.b021xdil:hover /* multi contacts attachment */
+.b021xdil:hover /* multi contacts attachment */,
+.x1vjfegm:hover
 {
   filter: blur(0) grayscale(0);
   transition-delay: 0.3s;

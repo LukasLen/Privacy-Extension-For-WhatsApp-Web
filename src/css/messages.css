@@ -4,7 +4,8 @@
 
 ._2AOIt div:first-child /*normal message*/,
 ._3cupO /*link list message*/,
-._1BOF7 ._1sykI /*blue info bar*/
+._1BOF7 ._1sykI /*blue info bar*/,
+.x1yrsyyn
 {
   filter: blur(8px) grayscale(1);
   transition-delay: 0s;
@@ -23,7 +24,8 @@
 ._2AOIt:hover div:first-child /*normal message*/,
 ._3cupO:hover /*link list message*/,
 ._1qNn2 ._1nCcB:hover, /*sticker*/
-._1BOF7 ._1sykI:hover /*blue info bar*/
+._1BOF7 ._1sykI:hover /*blue info bar*/,
+.x1yrsyyn:hover
 {
   filter: blur(0) grayscale(0);
   transition-delay: 0.3s;
