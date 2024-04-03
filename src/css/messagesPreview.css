@@ -3,14 +3,14 @@
 /* Released under the MIT license, see LICENSE file for details */
 
 .vQ0w7 /*message preview*/,
-._ak8l
+._ak8j
 {
   filter: blur(8px) grayscale(1);
   transition-delay: 0s;
 }
 
 .vQ0w7:hover /*message preview*/,
-._ak8l:hover
+._ak8j:hover
 {
   filter: blur(0) grayscale(0);
   transition-delay: 0.3s;

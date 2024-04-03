@@ -55,14 +55,29 @@ body:hover ._3dPH0 /* contacts attachment */,
 body:hover .b021xdil /* multi contacts attachment */,
 body:hover .pz0xruzv /*Details direct profile pic*/,
 body:hover .njub1g37 ._3xH7K /*Details group profile pic*/,
-body:hover .njub1g37 .kk3akd72.claouzo6 /*Starred message profile pic*/
+body:hover .njub1g37 .kk3akd72.claouzo6 /*Starred message profile pic*/,
+body:hover .x1lliihq /*All profile pic*/,
+body:hover .xsp8fsz /*Default profile pic*/,
+body:hover .x1awj2ng /*initial letter profile pic*/,
+body:hover .xgd8bvy /*message chat head*/,
+body:hover .djhxrpsl /* name in multi contact attachment */,
+body:hover .xlyipyv/* name in listing*/,
+body:hover ._ahx_ /* default numbers*/,
+body:hover ._ak8j /* message preview */,
+body:hover .x1yrsyyn /*normal message*/,
+body:hover .x1u9i22x /*file name preview*/,
+body:hover .x13yjgf2 /*map preview*/,
+body:hover ._akbu,
+body:hover .xhtitgo /* Media preview*/, 
+body:hover .x1q2m574 /* Media gallery */
 {
   filter: blur(0) grayscale(0);
   transition-delay: 0s;
 }
 
 /* textInput */
-body:hover ._3Uu1_ /*textarea*/
+body:hover ._3Uu1_ /*textarea*/,
+body:hover ._ak1l /*textarea*/
 {
   filter: grayscale(0) opacity(1);
 }

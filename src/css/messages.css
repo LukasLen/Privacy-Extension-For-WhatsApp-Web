@@ -5,7 +5,10 @@
 ._2AOIt div:first-child /*normal message*/,
 ._3cupO /*link list message*/,
 ._1BOF7 ._1sykI /*blue info bar*/,
-.x1yrsyyn
+.x1yrsyyn /*normal message*/,
+.x1u9i22x /*file name preview*/,
+.x13yjgf2 /*map preview*/,
+._akbu
 {
   filter: blur(8px) grayscale(1);
   transition-delay: 0s;
@@ -16,7 +19,8 @@
   padding-top: 12px !important;
   padding-bottom: 12px !important;
 }
-._1qNn2 ._1nCcB /*sticker*/
+._1qNn2 ._1nCcB /*sticker*/,
+._ajxb /*sticker*/
 {
   filter: blur(20px) grayscale(1);
   transition-delay: 0s;
@@ -25,12 +29,17 @@
 ._3cupO:hover /*link list message*/,
 ._1qNn2 ._1nCcB:hover, /*sticker*/
 ._1BOF7 ._1sykI:hover /*blue info bar*/,
-.x1yrsyyn:hover
+.x1yrsyyn:hover /*normal message*/,
+.x1u9i22x:hover /*file name preview*/,
+._ajxb:hover /*sticker*/,
+.x13yjgf2:hover /*map preview*/,
+._akbu:hover
 {
   filter: blur(0) grayscale(0);
   transition-delay: 0.3s;
 }
-._1qNn2 ._1nCcB /*set pseudo background on sticker*/
+._1qNn2 ._1nCcB /*set pseudo background on sticker*/,
+._ajxb /*set pseudo background on sticker*/
 {
   background-color: var(--incoming-background) !important;
   border-radius: 7.5px !important;

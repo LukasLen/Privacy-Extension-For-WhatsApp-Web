@@ -3,14 +3,16 @@
 /* Released under the MIT license, see LICENSE file for details */
 
 .tukmaf4q /*media preview in gallery*/,
-._1Pr6q /*media preview in send media*/
+._1Pr6q /*media preview in send media*/,
+.x1q2m574
 {
   filter: blur(12px) grayscale(1);
   transition-delay: 0s;
 }
 
 .tukmaf4q:hover /*media preview in gallery*/,
-._1Pr6q:hover /*media preview in send media*/
+._1Pr6q:hover /*media preview in send media*/,
+.x1q2m574:hover
 {
   filter: blur(0) grayscale(0);
   transition-delay: 0.3s;

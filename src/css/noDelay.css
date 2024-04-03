@@ -56,9 +56,21 @@ div[role="button"] > div > ._8nE1Y ._21S-L:hover /*user/group name in non messag
 .pz0xruzv:hover /*Details direct profile pic*/,
 .njub1g37 ._3xH7K:hover /*Details group profile pic*/,
 .njub1g37 .kk3akd72.claouzo6:hover /*Starred message profile pic*/,
-
-/* textInput */
-._3Uu1_:hover /*textarea*/
+._3Uu1_:hover /*textarea*/,
+ .x1lliihq /*All profile pic*/,
+ .xsp8fsz /*Default profile pic*/,
+ .x1awj2ng /*initial letter profile pic*/,
+ .xgd8bvy /*message chat head*/,
+ .djhxrpsl /* name in multi contact attachment */,
+ .xlyipyv /* name in listing*/,
+ ._ahx_ /* default numbers*/,
+ ._ak8j /* message preview */,
+ .x1yrsyyn /*normal message*/,
+ .x1u9i22x /*file name preview*/,
+ .x13yjgf2 /*map preview*/,
+ ._akbu,
+ .xhtitgo/* Media preview*/,
+ .x1q2m574/* Media gallery */
 {
   transition-delay: 0.04s !important;
   -webkit-transition-duration: 0s !important;

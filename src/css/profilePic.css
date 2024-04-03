@@ -10,7 +10,10 @@
 ._3oha0._2xaO4 /* voice message profile pic */,
 ._3dPH0 /* contacts attachment */,
 .b021xdil /* multi contacts attachment */,
-.x1lliihq
+.x1lliihq /*All profile pic*/,
+.xsp8fsz/*Default profile pic*/,
+.x1awj2ng/*initial letter profile pic*/,
+.xgd8bvy/*message chat head*/
 {
   filter: blur(7px) grayscale(1);
   transition-delay: 0s;
@@ -38,9 +41,11 @@
 .pz0xruzv:hover /*Details direct profile pic*/,
 .njub1g37 ._3xH7K:hover /*Details group profile pic*/,
 .njub1g37 .kk3akd72.claouzo6:hover /*Starred message profile pic*/,
-.x1lliihq:hover
+.x1lliihq:hover /*All profile pic*/,
+.xsp8fsz:hover /*Default profile pic*/,
+.x1awj2ng:hover /*initial letter profile pic*/,
+.xgd8bvy:hover /*message chat head*/
 {
   filter: blur(0) grayscale(0);
   transition-delay: 0.3s;
 }
-
