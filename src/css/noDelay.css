@@ -2,6 +2,7 @@
 /* Copyright (c) 2024 Lukas Lenhardt - lukaslen.com             */
 /* Released under the MIT license, see LICENSE file for details */
 
+/* former wa version (v2.2412.xx) */
 /* mediaGallery */
 .tukmaf4q:hover /*media preview in gallery*/,
 ._1Pr6q:hover /*media preview in send media*/,
@@ -58,7 +59,76 @@ div[role="button"] > div > ._8nE1Y ._21S-L:hover /*user/group name in non messag
 .njub1g37 .kk3akd72.claouzo6:hover /*Starred message profile pic*/,
 
 /* textInput */
-._3Uu1_:hover /*textarea*/
+._3Uu1_:hover /*textarea*/,
+
+/* updated wa version (v2.3000.xx) */
+/* mediaGallery */
+div._ajuf._ajuh._ajug > div:hover /* media in overlay view */,
+div.x1conndi:hover /* media thumb in overlay view and details panel */,
+div.x4t2iug:hover /* media thumb in media gallery panel */,
+
+/* mediaPreview */
+div._amk4 > ._amk6 :is(div, button)[role="button"]:not(.x13yyeie, ._ak3u, [data-js-context-icon]):hover /* media messages in chat panel (also quoted message and contact attachment button) */,
+div._ak4o:hover /* voice note / audio in chat panel */,
+div._ahy5 > div:hover /* link preview in chat panel */,
+div._ak15 > ._ahwq:hover /* some link preview in link list panel */,
+span._ajxd._ajxk > ._ajxj._ajxd:hover /* sticker in chat panel */,
+div.xz9dduz > div:first-child:hover /* maps / location */,
+div._ajwt > div:first-child > div:nth-child(2) > div:hover /* media preview in send media */,
+div._ak3i:hover /* media preview thumb in send media */,
+div._ajwt .xm0mufa > div:hover /* document filename in send media */,
+
+/* messages */
+div._amk4 > ._amk6:hover /* normal message text */,
+div._amk4 ._am2s:hover /* sticker message */,
+
+/* messagesPreview */
+div._ak8j:hover /* message preview */,
+
+/* name */
+div[role="row"] ._ak8q:hover /* user/group name in message list */,
+div[role="button"][class=""] ._ak8q:hover /* user/group name in details list and popup list */,
+div[role="dialog"] ._ak8q:hover /* user name in contact popup list */,
+div[role="dialog"] div.copyable-text:hover /* phone number and business user name in contact popup list */,
+div[role="row"] ._am_2:hover /* community name */,
+div[role="button"]._amie > div:nth-child(1):hover /* user/group name at the top of chat panel */,
+div[role="button"]._amie > div:nth-child(2):hover /* user/group details at the top of chat panel */,
+div._ahxj:hover /* user name in group chat messages */,
+div._ahz1:hover /* user name in contact attachment */,
+div.xs83m0k.x1iyjqo2.xdl72j9.x18wx58x.x6ikm8r.x10wlt62:hover /* user name in multiple contacts attachment */,
+div.overlay ._ak8q:hover /* user name in overlay media view */,
+h2.xngnso2.x1fcty0u.x2b8uid:hover /* user name in details info */,
+div.x2b8uid.x193iq5w.xqmxbcd:hover /* group name in details info */,
+div.x1evy7pa.x1gslohp:hover /* user phone number in details info*/,
+span.x1lkfr7t.xdbd6k5.x1fcty0u.xw2npq5:nth-child(2):hover /* user phone number in details info*/,
+div.x1evy7pa.x1kgmq87.x2b8uid:hover /* group short details in details info */,
+div.xlm9qay.x1s688f.x1e56ztr:hover /* business user name in details info */,
+div.xlm9qay.x1s688f.x1e56ztr + div:hover /* business short details in details info */,
+div.x2b8uid > .xzueoph + div:hover /* business category in details info */,
+div.xkhd6sd:not([role]) > ._ajxu > div:hover /* business about in details info */,
+div.xkhd6sd._ajxt > ._ajxu > div:hover /* business phone number in details info */,
+div._ak1d > div:first-child > div:first-child > :not(:first-child):hover /* user/group name in starred message list */,
+
+/* profilePic */
+div[role="row"] ._ak8h:hover /* user/group profile pic in message list */,
+div[role="button"][class=""] ._ak8h:hover /* user/group profile pic in details list and popup list */,
+div[role="dialog"] ._ak8h:hover /* user/group profile pic in details list and popup list */,
+header._amid div[role="button"]:first-child > div:hover /* user/group profile pic at the top of chat panel */,
+div._amk4 > div[role="button"]:hover /* user profile pic in group chat messages */,
+div._ahz2:hover /* user profile pic in contact attachment */,
+div.x2lah0s.x1c4vz4f.xdl72j9.x194xeti:hover /* user profile pic in multiple contact attachment */,
+div._ak4m:hover /* user profile pic in voice note chat */,
+div.overlay ._ak8h:hover /* user profile pic in overlay media view */,
+div.x78zum5.xl56j7k.x1fqp7bg > div[role="button"]:hover /* user profile pic in details panel */,
+div[role="button"][class="x1n2onr6 x14yjl9h xudhj91 x18nykt9 xww2gxu"]:hover /* business profile pic in details panel */,
+div.x10l6tqk.x13vifvy.x17qophe.xh8yej3.xiqx3za.x6ikm8r.x10wlt62.x1knukwh.xihgre1:hover /* business profile banner in details panel */,
+div.x15e7hw7:hover /* business profile banner in catalog list */,
+div._amje:hover /* group profile pic in details panel */,
+div.overlay ._am0k:hover /* user/group profile pic overlay view */,
+div.x1okw0bk.x1w0mnb:hover /* user profile pic in starred message list */,
+
+/* textInput */
+div._ak1l:hover /* message text input */
 {
   transition-delay: 0.04s !important;
   -webkit-transition-duration: 0s !important;

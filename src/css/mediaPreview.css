@@ -2,6 +2,7 @@
 /* Copyright (c) 2024 Lukas Lenhardt - lukaslen.com             */
 /* Released under the MIT license, see LICENSE file for details */
 
+/* former wa version (v2.2412.xx) */
 ._2AOIt div.ktbp76dp div[role="button"] img /*image landscape*/,
 ._2AOIt div.eu4mztcy div[role="button"] img /*image potrait*/,
 ._2AOIt div.ktbp76dp > div[role="button"] /*video landscape*/,
@@ -17,11 +18,25 @@
 .Efdtr /* name in contact attachment */,
 .djhxrpsl /* name in multi contact attachment */,
 ._3dPH0 /* contacts attachment */,
-.b021xdil /* multi contacts attachment */
+.b021xdil /* multi contacts attachment */,
+
+/* updated wa version (v2.3000.xx) */
+div._amk4 > ._amk6 :is(div, button)[role="button"]:not(.x13yyeie, ._ak3u, [data-js-context-icon]) /* media messages in chat panel (also quoted message and contact attachment button) */,
+div._ak4o /* voice note / audio in chat panel */,
+div._ahy5 > div /* link preview in chat panel */,
+div._ak15 > ._ahwq /* some link preview in link list panel */,
+span._ajxd._ajxk > ._ajxj._ajxd /* sticker in chat panel */,
+div.xz9dduz > div:first-child /* maps / location */,
+div._ajwt > div:first-child > div:nth-child(2) > div /* media preview in send media */,
+div._ak3i /* media preview thumb in send media */,
+div._ajwt .xm0mufa > div /* document filename in send media */
 {
   filter: blur(20px) grayscale(1);
+  transition: initial; /* fix link preview delay */
   transition-delay: 0s;
 }
+
+/* former wa version (v2.2412.xx) */
 ._2AOIt div.ktbp76dp div[role="button"]:hover img /*image landscape*/,
 ._2AOIt div.eu4mztcy div[role="button"]:hover img /*image potrait*/,
 ._2AOIt div.ktbp76dp > div[role="button"]:hover /*video landscape*/,
@@ -37,12 +52,29 @@
 .Efdtr:hover /* name in contact attachment */,
 .djhxrpsl:hover /* name in multi contact attachment */,
 ._3dPH0:hover /* contacts attachment */,
-.b021xdil:hover /* multi contacts attachment */
+.b021xdil:hover /* multi contacts attachment */,
+
+/* updated wa version (v2.3000.xx) */
+div._amk4 > ._amk6 :is(div, button)[role="button"]:not(.x13yyeie, ._ak3u, [data-js-context-icon]):hover /* media messages in chat panel (also quoted message and contact attachment button) */,
+div._ak4o:hover /* voice note / audio in chat panel */,
+div._ahy5 > div:hover /* link preview in chat panel */,
+div._ak15 > ._ahwq:hover /* some link preview in link list panel */,
+span._ajxd._ajxk > ._ajxj._ajxd:hover /* sticker in chat panel */,
+div.xz9dduz > div:first-child:hover /* maps / location */,
+div._ajwt > div:first-child > div:nth-child(2) > div:hover /* media preview in send media */,
+div._ak3i:hover /* media preview thumb in send media */,
+div._ajwt .xm0mufa > div:hover /* document filename in send media */
 {
   filter: blur(0) grayscale(0);
   transition-delay: 0.3s;
 }
-._1qNn2 ._1nCcB /*set pseudo background on sticker*/
+
+
+/* former wa version (v2.2412.xx) */
+._1qNn2 ._1nCcB /*set pseudo background on sticker*/,
+
+/* updated wa version (v2.3000.xx) */
+span._ajxd._ajxk > ._ajxj._ajxd /*set pseudo background on sticker*/
 {
   background-color: var(--incoming-background) !important;
   border-radius: 7.5px !important;

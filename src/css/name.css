@@ -2,6 +2,7 @@
 /* Copyright (c) 2024 Lukas Lenhardt - lukaslen.com             */
 /* Released under the MIT license, see LICENSE file for details */
 
+/* former wa version (v2.2412.xx) */
 div:not([role]) > div:not([role]) > ._8nE1Y ._21S-L /*user/group name in search message*/,
 div[role="row"] > div > ._8nE1Y ._21S-L /*user/group name in message list*/,
 div[role="button"] > div > ._8nE1Y ._21S-L /*user/group name in non message list*/,
@@ -14,12 +15,37 @@ div[role="button"] > div > ._8nE1Y ._21S-L /*user/group name in non message list
 .a4ywakfo.qt60bha0 /*About user phone number*/,
 ._3IzYj /*Message in chat*/,
 .Efdtr /* name in contact attachment */,
-.djhxrpsl /* name in multi contact attachment */
+.djhxrpsl /* name in multi contact attachment */,
+
+/* updated wa version (v2.3000.xx) */
+div[role="row"] ._ak8q /* user/group name in message list */,
+div[role="button"][class=""] ._ak8q /* user/group name in details list and popup list */,
+div[role="dialog"] ._ak8q /* user name in contact popup list */,
+div[role="dialog"] div.copyable-text /* phone number and business user name in contact popup list */,
+div[role="row"] ._am_2 /* community name */,
+div[role="button"]._amie > div:nth-child(1) /* user/group name at the top of chat panel */,
+div[role="button"]._amie > div:nth-child(2) /* user/group details at the top of chat panel */,
+div._ahxj /* user name in group chat messages */,
+div._ahz1 /* user name in contact attachment */,
+div.xs83m0k.x1iyjqo2.xdl72j9.x18wx58x.x6ikm8r.x10wlt62 /* user name in multiple contacts attachment */,
+div.overlay ._ak8q /* user name in overlay media view */,
+h2.xngnso2.x1fcty0u.x2b8uid /* user name in details info*/,
+div.x2b8uid.x193iq5w.xqmxbcd /* group name in details info */,
+div.x1evy7pa.x1gslohp /* user phone number in details info*/,
+span.x1lkfr7t.xdbd6k5.x1fcty0u.xw2npq5:nth-child(2) /* user phone number in details info*/,
+div.x1evy7pa.x1kgmq87.x2b8uid /* group short details in details info */,
+div.xlm9qay.x1s688f.x1e56ztr /* business user name in details info */,
+div.xlm9qay.x1s688f.x1e56ztr + div /* business short details in details info */,
+div.x2b8uid > .xzueoph + div /* business category in details info */,
+div.xkhd6sd:not([role]) > ._ajxu > div /* business about in details info */,
+div.xkhd6sd._ajxt > ._ajxu > div /* business phone number details in details info */,
+div._ak1d > div:first-child > div:first-child > :not(:first-child) /* user/group name in starred message list */
 {
   filter: blur(5px) grayscale(1);
   transition-delay: 0s;
 }
 
+/* former wa version (v2.2412.xx) */
 div:not([role]) > div:not([role]) > ._8nE1Y ._21S-L:hover /*user/group name in search message*/,
 div[role="row"] > div > ._8nE1Y ._21S-L:hover /*user/group name in message list*/,
 div[role="button"] > div > ._8nE1Y ._21S-L:hover /*user/group name in non message list*/,
@@ -32,8 +58,39 @@ div[role="button"] > div > ._8nE1Y ._21S-L:hover /*user/group name in non messag
 .a4ywakfo.qt60bha0:hover /*About user phone number*/,
 ._3IzYj:hover /*Message in chat*/,
 .Efdtr:hover /* name in contact attachment */,
-.djhxrpsl:hover /* name in multi contact attachment */
+.djhxrpsl:hover /* name in multi contact attachment */,
+
+/* updated wa version (v2.3000.xx) */
+div[role="row"] ._ak8q:hover /* user/group name in message list */,
+div[role="button"][class=""] ._ak8q:hover /* user/group name in details list and popup list */,
+div[role="dialog"] ._ak8q:hover /* user name in contact popup list */,
+div[role="dialog"] div.copyable-text:hover /* phone number and business user name in contact popup list */,
+div[role="row"] ._am_2:hover /* community name */,
+div[role="button"]._amie > div:nth-child(1):hover /* user/group name at the top of chat panel */,
+div[role="button"]._amie > div:nth-child(2):hover /* user/group details at the top of chat panel */,
+div._ahxj:hover /* user name in group chat messages */,
+div._ahz1:hover /* user name in contact attachment */,
+div.xs83m0k.x1iyjqo2.xdl72j9.x18wx58x.x6ikm8r.x10wlt62:hover /* user name in multiple contacts attachment */,
+div.overlay ._ak8q:hover /* user name in overlay media view */,
+h2.xngnso2.x1fcty0u.x2b8uid:hover /* user name in details info */,
+div.x2b8uid.x193iq5w.xqmxbcd:hover /* group name in details info */,
+div.x1evy7pa.x1gslohp:hover /* user phone number in details info*/,
+span.x1lkfr7t.xdbd6k5.x1fcty0u.xw2npq5:nth-child(2):hover /* user phone number in details info*/,
+div.x1evy7pa.x1kgmq87.x2b8uid:hover /* group short details in details info */,
+div.xlm9qay.x1s688f.x1e56ztr:hover /* business user name in details info */,
+div.xlm9qay.x1s688f.x1e56ztr + div:hover /* business short details in details info */,
+div.x2b8uid > .xzueoph + div:hover /* business category in details info */,
+div.xkhd6sd:not([role]) > ._ajxu > div:hover /* business about in details info */,
+div.xkhd6sd._ajxt > ._ajxu > div:hover /* business phone number in details info */,
+div._ak1d > div:first-child > div:first-child > :not(:first-child):hover /* user/group name in starred message list */
 {
   filter: blur(0) grayscale(0);
   transition-delay: 0.3s;
+}
+
+/* updated wa version (v2.3000.xx) */
+/* prevent cropped blur */
+div._ak1d > div:first-child > div:first-child /* user/group name in starred message list */
+{
+  overflow: visible;
 }
