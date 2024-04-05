@@ -2,33 +2,51 @@
 /* Copyright (c) 2024 Lukas Lenhardt - lukaslen.com             */
 /* Released under the MIT license, see LICENSE file for details */
 
+/* former wa version (v2.2412.xx) */
 ._2AOIt div:first-child /*normal message*/,
 ._3cupO /*link list message*/,
-._1BOF7 ._1sykI /*blue info bar*/
+._1BOF7 ._1sykI /*blue info bar*/,
+
+/* updated wa version (v2.3000.xx) */
+div._amk4 > ._amk6 /* normal message text */,
+div._amk4 ._am2s /* sticker message */
 {
   filter: blur(8px) grayscale(1);
   transition-delay: 0s;
 }
+/* former wa version (v2.2412.xx) */
 ._2AOIt /*normal message more padding*/
 {
   padding-right: 40px !important;
   padding-top: 12px !important;
   padding-bottom: 12px !important;
 }
+/* former wa version (v2.2412.xx) */
 ._1qNn2 ._1nCcB /*sticker*/
 {
   filter: blur(20px) grayscale(1);
   transition-delay: 0s;
 }
+
+/* former wa version (v2.2412.xx) */
 ._2AOIt:hover div:first-child /*normal message*/,
 ._3cupO:hover /*link list message*/,
 ._1qNn2 ._1nCcB:hover, /*sticker*/
-._1BOF7 ._1sykI:hover /*blue info bar*/
+._1BOF7 ._1sykI:hover /*blue info bar*/,
+
+/* updated wa version (v2.3000.xx) */
+div._amk4 > ._amk6:hover /* normal message text */,
+div._amk4 ._am2s:hover /* sticker message */
 {
   filter: blur(0) grayscale(0);
   transition-delay: 0.3s;
 }
-._1qNn2 ._1nCcB /*set pseudo background on sticker*/
+
+/* former wa version (v2.2412.xx) */
+._1qNn2 ._1nCcB /*set pseudo background on sticker*/,
+
+/* updated wa version (v2.3000.xx) */
+div._amk4 ._am2s /* set pseudo background on sticker */
 {
   background-color: var(--incoming-background) !important;
   border-radius: 7.5px !important;

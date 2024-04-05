@@ -2,13 +2,21 @@
 /* Copyright (c) 2024 Lukas Lenhardt - lukaslen.com             */
 /* Released under the MIT license, see LICENSE file for details */
 
-.vQ0w7 /*message preview*/
+/* former wa version (v2.2412.xx) */
+.vQ0w7 /*message preview*/,
+
+/* updated wa version (v2.3000.xx) */
+div._ak8j /*message preview*/
 {
   filter: blur(8px) grayscale(1);
   transition-delay: 0s;
 }
 
-.vQ0w7:hover /*message preview*/
+/* former wa version (v2.2412.xx) */
+.vQ0w7:hover /*message preview*/,
+
+/* updated wa version (v2.3000.xx) */
+div._ak8j:hover /*message preview*/
 {
   filter: blur(0) grayscale(0);
   transition-delay: 0.3s;

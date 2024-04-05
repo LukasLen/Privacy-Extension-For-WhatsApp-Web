@@ -2,16 +2,35 @@
 /* Copyright (c) 2024 Lukas Lenhardt - lukaslen.com             */
 /* Released under the MIT license, see LICENSE file for details */
 
+/* former wa version (v2.2412.xx) */
 .tukmaf4q /*media preview in gallery*/,
-._1Pr6q /*media preview in send media*/
+._1Pr6q /*media preview in send media*/,
+
+/* updated wa version (v2.3000.xx) */
+div._ajuf._ajuh._ajug > div /* media in overlay view */,
+div.x1conndi /* media thumb in overlay view and details panel */,
+div.x4t2iug /* media thumb in media gallery panel */
 {
-  filter: blur(12px) grayscale(1);
+  filter: blur(20px) grayscale(1);
   transition-delay: 0s;
 }
 
+/* former wa version (v2.2412.xx) */
 .tukmaf4q:hover /*media preview in gallery*/,
-._1Pr6q:hover /*media preview in send media*/
+._1Pr6q:hover /*media preview in send media*/,
+
+/* updated wa version (v2.3000.xx) */
+div._ajuf._ajuh._ajug > div:hover /* media in overlay view */,
+div.x1conndi:hover /* media thumb in overlay view and details panel */,
+div.x4t2iug:hover /* media thumb in media gallery panel */
 {
   filter: blur(0) grayscale(0);
   transition-delay: 0.3s;
+}
+
+/* updated wa version (v2.3000.xx) */
+/* prevent cropped blur */
+div[role="dialog"] > .x10wlt62 /* media thumb in details panel */
+{
+  overflow: visible;
 }
