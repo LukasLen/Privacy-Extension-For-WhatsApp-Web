@@ -2,34 +2,29 @@
 /* Copyright (c) 2024 Lukas Lenhardt - lukaslen.com             */
 /* Released under the MIT license, see LICENSE file for details */
 
-._2AOIt div:first-child /*normal message*/,
-._3cupO /*link list message*/,
-._1BOF7 ._1sykI /*blue info bar*/
-{
+._akbu /*normal message*/,
+._ahy1 /*link list message*/,
+._amk4 ._amkd /*blue info bar*/ {
   filter: blur(8px) grayscale(1);
   transition-delay: 0s;
 }
-._2AOIt /*normal message more padding*/
-{
-  padding-right: 40px !important;
-  padding-top: 12px !important;
-  padding-bottom: 12px !important;
+._akbu /*normal message more padding*/ {
+  padding-right: 0x !important;
+  padding-top: 0x !important;
+  padding-bottom: 0x !important;
 }
-._1qNn2 ._1nCcB /*sticker*/
-{
+.xa3vuyk /*sticker*/ {
   filter: blur(20px) grayscale(1);
   transition-delay: 0s;
 }
-._2AOIt:hover div:first-child /*normal message*/,
-._3cupO:hover /*link list message*/,
-._1qNn2 ._1nCcB:hover, /*sticker*/
-._1BOF7 ._1sykI:hover /*blue info bar*/
-{
+._akbu:hover /*normal message*/,
+._ahy1:hover /*link list message*/,
+.xa3vuyk:hover, /*sticker*/
+._amk4 ._amkd:hover /*blue info bar*/ {
   filter: blur(0) grayscale(0);
   transition-delay: 0.3s;
 }
-._1qNn2 ._1nCcB /*set pseudo background on sticker*/
-{
+.xa3vuyk /*set pseudo background on sticker*/ {
   background-color: var(--incoming-background) !important;
   border-radius: 7.5px !important;
   box-shadow: 0 1px 0.5px rgba(0, 0, 0, 0.13) !important;
