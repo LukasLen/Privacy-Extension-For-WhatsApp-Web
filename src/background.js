@@ -24,6 +24,16 @@ const defaultSettings = {
       profilePic: false,
       textInput: true,
       unblurActive: false
+    },
+    varStyles: {
+      mdgBlur: "20px",
+      mdpBlur: "20px",
+      msBlur: "8px",
+      mspBlur: "8px",
+      nmBlur: "5px",
+      ppSmBlur: "3px",
+      ppBlur: "8px",
+      ppLgBlur: "12px",
     }
   }
 };
