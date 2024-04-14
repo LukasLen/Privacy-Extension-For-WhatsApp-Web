@@ -11,7 +11,7 @@ div._ajuf._ajuh._ajug > div /* media in overlay view */,
 div.x1conndi /* media thumb in overlay view and details panel */,
 div.x4t2iug /* media thumb in media gallery panel */
 {
-  filter: blur(20px) grayscale(1);
+  filter: blur(var(--mdg-blur)) grayscale(1);
   transition-delay: 0s;
 }
 

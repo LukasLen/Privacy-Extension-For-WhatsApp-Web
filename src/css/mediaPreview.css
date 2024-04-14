@@ -31,7 +31,7 @@ div._ajwt > div:first-child > div:nth-child(2) > div /* media preview in send me
 div._ak3i /* media preview thumb in send media */,
 div._ajwt .xm0mufa > div /* document filename in send media */
 {
-  filter: blur(20px) grayscale(1);
+  filter: blur(var(--mdp-blur)) grayscale(1);
   transition: initial; /* fix link preview delay */
   transition-delay: 0s;
 }

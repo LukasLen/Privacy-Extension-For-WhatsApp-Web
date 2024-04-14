@@ -42,6 +42,33 @@ function saveSettings() {
   });
 }
 
+// toggle open/close blur amount settings
+const showBlurSettings = (ev) => {
+  ev.currentTarget.classList.toggle("active");
+  ev.currentTarget.parentNode.querySelector(".collapsible").classList.toggle("show");
+}
+const revealButtons = document.querySelectorAll(".reveal-btn");
+revealButtons.forEach((revealBtn) => {
+  revealBtn.addEventListener("click", showBlurSettings)
+})
+
+// track form save/submit for variable style settings
+const forms = document.querySelectorAll("form.var-style");
+
+forms.forEach((form) => {
+  form.addEventListener("submit", saveFormSettings);
+})
+function saveFormSettings(ev) {
+  ev.preventDefault();
+  const [key, val] = Object.entries(Object.fromEntries(new FormData(ev.target)))[0];
+
+  browser.storage.sync.get([settingsIdentifier]).then((result) => {
+    if (!result.hasOwnProperty(settingsIdentifier)) return;
+    result.settings.varStyles[key] = val + "px";
+    browser.storage.sync.set(result);
+  });
+}
+
 // Load settings and update switches
 browser.storage.sync.get([settingsIdentifier]).then((result) => {
   if (!result.hasOwnProperty(settingsIdentifier)) return;
@@ -54,6 +81,14 @@ browser.storage.sync.get([settingsIdentifier]).then((result) => {
       checkbox.checked = result.settings.styles[id];
     }
   });
+
+  // set variable input value
+  forms.forEach((form) => {
+    const numInput = form.querySelector(`input[type="number"]`)
+    const varName = numInput.dataset.varName;
+    numInput.value = parseInt(result.settings.varStyles[varName]);
+  })
+  
 });
 
 

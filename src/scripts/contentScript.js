@@ -36,6 +36,31 @@ function addStyleById(id) {
   document.getElementsByTagName("head")[0].appendChild(link);
 }
 
+// variable style
+function addVarStyle([varName, value]) {
+  if (document.getElementById(varName)) removeStyleById(varName);
+
+  const kebabize = (str) => str.replace(/[A-Z]+(?![a-z])|[A-Z]/g, (s, ofs) => (ofs ? "-" : "") + s.toLowerCase());
+
+  const innerText = `
+  #whatsapp-web body {
+    --${kebabize(varName)}: ${value};
+  }
+  `
+
+  const varStyleEl = document.getElementById(varName);
+  if (varStyleEl) {
+    varStyleEl.innerText = innerText;
+    return;
+  };
+
+  var styleEl = document.createElement('style');
+  styleEl.id = varName;
+  styleEl.className = "pfwa-variables";
+  styleEl.innerText = innerText;
+  document.getElementsByTagName("head")[0].appendChild(styleEl);
+}
+
 function updateStyles() {
   browser.storage.sync.get([settingsIdentifier]).then((result) => {
     if (result == null || !result.settings.on) {
@@ -51,6 +76,13 @@ function updateStyles() {
         removeStyleById(style);
       }
     });
+
+    // update variable styles
+    const varStyles = Object.entries(result.settings.varStyles);
+    varStyles.forEach((varStyle) => {
+      addVarStyle(varStyle);
+    })
+    
   });
 }
 
