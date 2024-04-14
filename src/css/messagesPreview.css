@@ -8,7 +8,7 @@
 /* updated wa version (v2.3000.xx) */
 div._ak8k /*message preview*/
 {
-  filter: blur(8px) grayscale(1);
+  filter: blur(var(--msp-blur)) grayscale(1);
   transition-delay: 0s;
 }
 

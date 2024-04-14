@@ -37,14 +37,23 @@
           font-size: small;
           display: inline-block;
         }
-        p{
+        #mainContent {
+          margin: 10px 0;
+        }
+        #mainContent > ul > li{
+          position: relative;
           font-size: small;
-          padding: 10px 5px;
+          padding: 10px 5px 0;
+          margin-bottom: 10px;
           border-top: 1px solid #dedede;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          flex-wrap: wrap;
         }
         #mainContent locales {
           display: inline-block;
-          width: 75%;
+          width: 65%;
         }
         button {
           height: 25px;
@@ -64,7 +73,6 @@
         }
         #footer p{
           padding: 0;
-          padding-top: 13px;
           font-size: smaller;
           text-align: center;
         }
@@ -75,6 +83,37 @@
         #popupMessageButton{
           float: right;
           margin: 10px;
+        }
+        .reveal-btn {
+          display: inline-flex;
+          width: 10%;
+          height: 100%;
+          padding: 2px;
+          margin: 0 5px;
+          border: 1px solid #25d366;
+          border-radius: 24px;
+          color: #25d366;
+          background-color: #ffffff;
+          transition: .3s;
+          cursor: pointer;
+        }
+        .reveal-btn:hover {
+          background-color: #25d366;
+          color: #ffffff;
+          border-radius: 4px;
+          transform: rotate(360deg);
+        }
+        .reveal-btn:active, .reveal-btn.active:active {
+          background-color: #ffffffbf;
+          color: #25d366bf;
+        }
+        .reveal-btn.active {
+          background-color: #25d366;
+          color: #ffffff;
+        }
+        .reveal-btn svg {
+          width: 100%;
+          height: 100%;
         }
         input[type=checkbox]{
           height: 0;
@@ -91,7 +130,6 @@
           display: block;
           border-radius: 100px;
           position: relative;
-          top: -2px;
           float: right;
         }
         label:after {
@@ -118,13 +156,118 @@
         label[for="switch"]{
           margin-right: 5px;
         }
+        .collapsible, .var-style, .var-style * {
+          box-sizing: border-box;
+        }
+        .collapsible {
+          position: absolute;
+          top: 100%;
+          left: 0;
+          right: 0;
+          width: 90%;
+          margin: 5px auto;
+          max-height: 0;
+          overflow: hidden;
+          transition: .3s;
+          border-radius: 5px;
+          z-index: 1;
+        }
+        .collapsible.show {
+          max-height: 150px;
+          box-shadow: 0px 2px 5px 1px #23232340;
+        }
+        .var-style {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          padding: 8px;
+          font-size: 11px;
+          background-color: #ffffff;
+          width: 100%;
+          height: 100%;
+        }
+        .var-style button[type="reset"] {
+          width: 14%;
+          color: #ff0000;
+          background-color: #ffffff;
+          border: none;
+          margin: 0 4px;
+          height: 100%;
+          display: flex;
+          cursor: pointer;
+        }
+        .var-style button[type="reset"] svg {
+          width: 100%;
+          height: 100%;
+        }
+        .var-style button[type="reset"] svg > g {
+          transition: .15s;
+        }
+        .var-style button[type="reset"]:hover svg > g {
+          stroke-width: 2.5;
+        }
+        .var-style button[type="reset"]:active svg > g {
+          stroke-width: 2;
+        }
+        .var-style input {
+          width: 25px;
+          height: 25px;
+          padding: 0 4px;
+          font-size: 11px;
+          text-align: right;
+          outline: none;
+          border: 1px solid #aaaaaa;
+          border-top-left-radius: 4px;
+          border-bottom-left-radius: 4px;
+          border-right: none;
+        }
+        .var-style input[type="number"] {
+          -webkit-appearance: textfield;
+            -moz-appearance: textfield;
+                  appearance: textfield;
+        }
+        .var-style input[type=number]::-webkit-inner-spin-button, 
+        .var-style input[type=number]::-webkit-outer-spin-button { 
+          -webkit-appearance: none;
+        }
+        .var-style .unit {
+          width: 25px;
+          height: 25px;
+          text-align: center;
+          line-height: 23px;
+          color: #888888;
+          background-color: #dddddd;
+          border-top: 1px solid #aaaaaa;
+          border-bottom: 1px solid #aaaaaa;
+        }
+        .var-style button[type="submit"] {
+          width: 25px;
+          height: 25px;
+          margin: 0;
+          padding: 0;
+          text-align: center;
+          line-height: 23px;
+          outline: none;
+          border: 1px solid #aaaaaa;
+          border-top-right-radius: 4px;
+          border-bottom-right-radius: 4px;
+          background-color: #eeeeee;
+          transition: .3s;
+          cursor: pointer;
+        }
+        .var-style button[type="submit"]:hover {
+          background-color: #dddddd;
+        }
+        .var-style button[type="submit"]:active {
+          background-color: #cccccc;
+        }
       </style>
     </head>
     <body>
       <img src="../images/icon32.png" alt="">
       <h1>Privacy Extension<br>For WhatsApp Web</h1>
       <hr>
-      <span id="mainContent">
+      <div id="mainContent">
         <h2 style="margin-bottom: 10px;">
           <locales data-locale="extensionToggle"></locales>
         </h2>
@@ -136,45 +279,211 @@
         <h2 style="margin-top: 10px; margin-bottom: 5px;">
           <locales data-locale="extensionSettings"></locales>
         </h2>
-        <p>
-          <locales data-locale="toggleMessages"></locales>
-          <input type="checkbox" id="messages" data-style="messages">
-          <label for="messages" data-localetitle="toggleMessagesDescription"/>
-        </p>
-        <p><locales data-locale="toggleMessagesPreview"></locales>
-          <input type="checkbox" id="messagesPreview" data-style="messagesPreview">
-          <label for="messagesPreview" data-localetitle="toggleMessagesPreviewDescription"/>
-        </p>
-        <p><locales data-locale="toggleMediaPreview"></locales>
-          <input type="checkbox" id="mediaPreview" data-style="mediaPreview">
-          <label for="mediaPreview" data-localetitle="toggleMediaPreviewDescription"/>
-        </p>
-        <p><locales data-locale="toggleMediaGallery"></locales>
-          <input type="checkbox" id="mediaGallery" data-style="mediaGallery">
-          <label for="mediaGallery" data-localetitle="toggleMediaGalleryDescription"/>
-        </p>
-        <p><locales data-locale="toggleTextInput"></locales>
-          <input type="checkbox" id="textInput" data-style="textInput">
-          <label for="textInput" data-localetitle="toggleTextInputDescription"/>
-        </p>
-        <p><locales data-locale="toggleProfilePic"></locales>
-          <input type="checkbox" id="profilePic" data-style="profilePic">
-          <label for="profilePic" data-localetitle="toggleProfilePicDescription"/>
-        </p>
-        <p><locales data-locale="toggleName"></locales>
-          <input type="checkbox" id="name" data-style="name">
-          <label for="name" data-localetitle="toggleNameDescription"/>
-        </p>
-        <p><locales data-locale="toggleNoDelay"></locales>
-          <input type="checkbox" id="noDelay" data-style="noDelay">
-          <label for="noDelay" data-localetitle="toggleNoDelayDescription"/>
-        </p>
-        <p><locales data-locale="toggleUnblurActive"></locales>
-          <input type="checkbox" id="unblurActive" data-style="unblurActive">
-          <label for="unblurActive" data-localetitle="toggleUnblurActiveDescription"/>
-        </p>
-      </span>
+        <ul>
+          <li>
+            <locales data-locale="toggleMessages"></locales>
+            <button type="button" class="reveal-btn">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                <path fill="currentColor" d="M12 15.5A3.5 3.5 0 0 1 8.5 12A3.5 3.5 0 0 1 12 8.5a3.5 3.5 0 0 1 3.5 3.5a3.5 3.5 0 0 1-3.5 3.5m7.43-2.53c.04-.32.07-.64.07-.97s-.03-.66-.07-1l2.11-1.63c.19-.15.24-.42.12-.64l-2-3.46c-.12-.22-.39-.31-.61-.22l-2.49 1c-.52-.39-1.06-.73-1.69-.98l-.37-2.65A.506.506 0 0 0 14 2h-4c-.25 0-.46.18-.5.42l-.37 2.65c-.63.25-1.17.59-1.69.98l-2.49-1c-.22-.09-.49 0-.61.22l-2 3.46c-.13.22-.07.49.12.64L4.57 11c-.04.34-.07.67-.07 1s.03.65.07.97l-2.11 1.66c-.19.15-.25.42-.12.64l2 3.46c.12.22.39.3.61.22l2.49-1.01c.52.4 1.06.74 1.69.99l.37 2.65c.04.24.25.42.5.42h4c.25 0 .46-.18.5-.42l.37-2.65c.63-.26 1.17-.59 1.69-.99l2.49 1.01c.22.08.49 0 .61-.22l2-3.46c.12-.22.07-.49-.12-.64z" />
+              </svg>
+            </button>
+            <input type="checkbox" id="messages" data-style="messages">
+            <label for="messages" data-localetitle="toggleMessagesDescription"></label>
+            <div class="collapsible">
+              <form class="var-style">
+                <locales data-locale="blurInputLabel"></locales>
+                <button type="reset" data-localetitle="resetValue">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                    <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="1.5">
+                      <path stroke-miterlimit="10" d="M6.395 7.705A7.885 7.885 0 0 1 12 5.382a7.929 7.929 0 0 1 7.929 7.929A7.94 7.94 0 0 1 12 21.25a7.939 7.939 0 0 1-7.929-7.94" />
+                      <path stroke-linejoin="round" d="m7.12 2.75l-.95 3.858a1.332 1.332 0 0 0 .97 1.609l3.869.948" />
+                    </g>
+                  </svg>
+                </button>
+                <input type="number" name="msBlur" id="msBlur" data-var-name="msBlur" value="8" data-localetitle="msBlurInputDescription">
+                <span class="unit">px</span>
+                <button type="submit" data-localetitle="msBlurInputDescription">✔</button>
+              </form>
+            </div>
+          </li>
+          <li>
+            <locales data-locale="toggleMessagesPreview"></locales>
+            <button type="button" class="reveal-btn">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                <path fill="currentColor" d="M12 15.5A3.5 3.5 0 0 1 8.5 12A3.5 3.5 0 0 1 12 8.5a3.5 3.5 0 0 1 3.5 3.5a3.5 3.5 0 0 1-3.5 3.5m7.43-2.53c.04-.32.07-.64.07-.97s-.03-.66-.07-1l2.11-1.63c.19-.15.24-.42.12-.64l-2-3.46c-.12-.22-.39-.31-.61-.22l-2.49 1c-.52-.39-1.06-.73-1.69-.98l-.37-2.65A.506.506 0 0 0 14 2h-4c-.25 0-.46.18-.5.42l-.37 2.65c-.63.25-1.17.59-1.69.98l-2.49-1c-.22-.09-.49 0-.61.22l-2 3.46c-.13.22-.07.49.12.64L4.57 11c-.04.34-.07.67-.07 1s.03.65.07.97l-2.11 1.66c-.19.15-.25.42-.12.64l2 3.46c.12.22.39.3.61.22l2.49-1.01c.52.4 1.06.74 1.69.99l.37 2.65c.04.24.25.42.5.42h4c.25 0 .46-.18.5-.42l.37-2.65c.63-.26 1.17-.59 1.69-.99l2.49 1.01c.22.08.49 0 .61-.22l2-3.46c.12-.22.07-.49-.12-.64z" />
+              </svg>
+            </button>
+            <input type="checkbox" id="messagesPreview" data-style="messagesPreview">
+            <label for="messagesPreview" data-localetitle="toggleMessagesPreviewDescription"></label>
+            <div class="collapsible">
+              <form class="var-style">
+                <locales data-locale="blurInputLabel"></locales>
+                <button type="reset" data-localetitle="resetValue">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                    <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="1.5">
+                      <path stroke-miterlimit="10" d="M6.395 7.705A7.885 7.885 0 0 1 12 5.382a7.929 7.929 0 0 1 7.929 7.929A7.94 7.94 0 0 1 12 21.25a7.939 7.939 0 0 1-7.929-7.94" />
+                      <path stroke-linejoin="round" d="m7.12 2.75l-.95 3.858a1.332 1.332 0 0 0 .97 1.609l3.869.948" />
+                    </g>
+                  </svg>
+                </button>
+                <input type="number" name="mspBlur" id="mspBlur" data-var-name="mspBlur" value="8" data-localetitle="mspBlurInputDescription">
+                <span class="unit">px</span>
+                <button type="submit" data-localetitle="mspBlurInputDescription">✔</button>
+              </form>
+            </div>
+          </li>
+          <li>
+            <locales data-locale="toggleMediaPreview"></locales>
+            <button type="button" class="reveal-btn">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                <path fill="currentColor" d="M12 15.5A3.5 3.5 0 0 1 8.5 12A3.5 3.5 0 0 1 12 8.5a3.5 3.5 0 0 1 3.5 3.5a3.5 3.5 0 0 1-3.5 3.5m7.43-2.53c.04-.32.07-.64.07-.97s-.03-.66-.07-1l2.11-1.63c.19-.15.24-.42.12-.64l-2-3.46c-.12-.22-.39-.31-.61-.22l-2.49 1c-.52-.39-1.06-.73-1.69-.98l-.37-2.65A.506.506 0 0 0 14 2h-4c-.25 0-.46.18-.5.42l-.37 2.65c-.63.25-1.17.59-1.69.98l-2.49-1c-.22-.09-.49 0-.61.22l-2 3.46c-.13.22-.07.49.12.64L4.57 11c-.04.34-.07.67-.07 1s.03.65.07.97l-2.11 1.66c-.19.15-.25.42-.12.64l2 3.46c.12.22.39.3.61.22l2.49-1.01c.52.4 1.06.74 1.69.99l.37 2.65c.04.24.25.42.5.42h4c.25 0 .46-.18.5-.42l.37-2.65c.63-.26 1.17-.59 1.69-.99l2.49 1.01c.22.08.49 0 .61-.22l2-3.46c.12-.22.07-.49-.12-.64z" />
+              </svg>
+            </button>
+            <input type="checkbox" id="mediaPreview" data-style="mediaPreview">
+            <label for="mediaPreview" data-localetitle="toggleMediaPreviewDescription"></label>
+            <div class="collapsible">
+              <form class="var-style">
+                <locales data-locale="blurInputLabel"></locales>
+                <button type="reset" data-localetitle="resetValue">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                    <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="1.5">
+                      <path stroke-miterlimit="10" d="M6.395 7.705A7.885 7.885 0 0 1 12 5.382a7.929 7.929 0 0 1 7.929 7.929A7.94 7.94 0 0 1 12 21.25a7.939 7.939 0 0 1-7.929-7.94" />
+                      <path stroke-linejoin="round" d="m7.12 2.75l-.95 3.858a1.332 1.332 0 0 0 .97 1.609l3.869.948" />
+                    </g>
+                  </svg>
+                </button>
+                <input type="number" name="mdpBlur" id="mdpBlur" data-var-name="mdpBlur" value="20" data-localetitle="mdpBlurInputDescription">
+                <span class="unit">px</span>
+                <button type="submit" data-localetitle="mdpBlurInputDescription">✔</button>
+              </form>
+            </div>
+          </li>
+          <li>
+            <locales data-locale="toggleMediaGallery"></locales>
+            <button type="button" class="reveal-btn">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                <path fill="currentColor" d="M12 15.5A3.5 3.5 0 0 1 8.5 12A3.5 3.5 0 0 1 12 8.5a3.5 3.5 0 0 1 3.5 3.5a3.5 3.5 0 0 1-3.5 3.5m7.43-2.53c.04-.32.07-.64.07-.97s-.03-.66-.07-1l2.11-1.63c.19-.15.24-.42.12-.64l-2-3.46c-.12-.22-.39-.31-.61-.22l-2.49 1c-.52-.39-1.06-.73-1.69-.98l-.37-2.65A.506.506 0 0 0 14 2h-4c-.25 0-.46.18-.5.42l-.37 2.65c-.63.25-1.17.59-1.69.98l-2.49-1c-.22-.09-.49 0-.61.22l-2 3.46c-.13.22-.07.49.12.64L4.57 11c-.04.34-.07.67-.07 1s.03.65.07.97l-2.11 1.66c-.19.15-.25.42-.12.64l2 3.46c.12.22.39.3.61.22l2.49-1.01c.52.4 1.06.74 1.69.99l.37 2.65c.04.24.25.42.5.42h4c.25 0 .46-.18.5-.42l.37-2.65c.63-.26 1.17-.59 1.69-.99l2.49 1.01c.22.08.49 0 .61-.22l2-3.46c.12-.22.07-.49-.12-.64z" />
+              </svg>
+            </button>
+            <input type="checkbox" id="mediaGallery" data-style="mediaGallery">
+            <label for="mediaGallery" data-localetitle="toggleMediaGalleryDescription"></label>
+            <div class="collapsible">
+              <form class="var-style">
+                <locales data-locale="blurInputLabel"></locales>
+                <button type="reset" data-localetitle="resetValue">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                    <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="1.5">
+                      <path stroke-miterlimit="10" d="M6.395 7.705A7.885 7.885 0 0 1 12 5.382a7.929 7.929 0 0 1 7.929 7.929A7.94 7.94 0 0 1 12 21.25a7.939 7.939 0 0 1-7.929-7.94" />
+                      <path stroke-linejoin="round" d="m7.12 2.75l-.95 3.858a1.332 1.332 0 0 0 .97 1.609l3.869.948" />
+                    </g>
+                  </svg>
+                </button>
+                <input type="number" name="mdgBlur" id="mdgBlur" data-var-name="mdgBlur" value="20" data-localetitle="mdgBlurInputDescription">
+                <span class="unit">px</span>
+                <button type="submit" data-localetitle="mdgBlurInputDescription">✔</button>
+              </form>
+            </div>
+          </li>
+          <li>
+            <locales data-locale="toggleTextInput"></locales>
+            <input type="checkbox" id="textInput" data-style="textInput">
+            <label for="textInput" data-localetitle="toggleTextInputDescription"></label>
+          </li>
+          <li>
+            <locales data-locale="toggleProfilePic"></locales>
+            <button type="button" class="reveal-btn">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                <path fill="currentColor" d="M12 15.5A3.5 3.5 0 0 1 8.5 12A3.5 3.5 0 0 1 12 8.5a3.5 3.5 0 0 1 3.5 3.5a3.5 3.5 0 0 1-3.5 3.5m7.43-2.53c.04-.32.07-.64.07-.97s-.03-.66-.07-1l2.11-1.63c.19-.15.24-.42.12-.64l-2-3.46c-.12-.22-.39-.31-.61-.22l-2.49 1c-.52-.39-1.06-.73-1.69-.98l-.37-2.65A.506.506 0 0 0 14 2h-4c-.25 0-.46.18-.5.42l-.37 2.65c-.63.25-1.17.59-1.69.98l-2.49-1c-.22-.09-.49 0-.61.22l-2 3.46c-.13.22-.07.49.12.64L4.57 11c-.04.34-.07.67-.07 1s.03.65.07.97l-2.11 1.66c-.19.15-.25.42-.12.64l2 3.46c.12.22.39.3.61.22l2.49-1.01c.52.4 1.06.74 1.69.99l.37 2.65c.04.24.25.42.5.42h4c.25 0 .46-.18.5-.42l.37-2.65c.63-.26 1.17-.59 1.69-.99l2.49 1.01c.22.08.49 0 .61-.22l2-3.46c.12-.22.07-.49-.12-.64z" />
+              </svg>
+            </button>
+            <input type="checkbox" id="profilePic" data-style="profilePic">
+            <label for="profilePic" data-localetitle="toggleProfilePicDescription"></label> 
+            <div class="collapsible">
+              <form class="var-style">
+                <locales data-locale="ppSmBlurInputLabel"></locales>
+                <button type="reset" data-localetitle="resetValue">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                    <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="1.5">
+                      <path stroke-miterlimit="10" d="M6.395 7.705A7.885 7.885 0 0 1 12 5.382a7.929 7.929 0 0 1 7.929 7.929A7.94 7.94 0 0 1 12 21.25a7.939 7.939 0 0 1-7.929-7.94" />
+                      <path stroke-linejoin="round" d="m7.12 2.75l-.95 3.858a1.332 1.332 0 0 0 .97 1.609l3.869.948" />
+                    </g>
+                  </svg>
+                </button>
+                <input type="number" name="ppSmBlur" id="ppSmBlur" data-var-name="ppSmBlur" value="3" data-localetitle="ppSmBlurInputDescription">
+                <span class="unit">px</span>
+                <button type="submit" data-localetitle="ppSmBlurInputDescription">✔</button>
+              </form>
+              <form class="var-style">
+                <locales data-locale="ppBlurInputLabel"></locales>
+                <button type="reset" data-localetitle="resetValue">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                    <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="1.5">
+                      <path stroke-miterlimit="10" d="M6.395 7.705A7.885 7.885 0 0 1 12 5.382a7.929 7.929 0 0 1 7.929 7.929A7.94 7.94 0 0 1 12 21.25a7.939 7.939 0 0 1-7.929-7.94" />
+                      <path stroke-linejoin="round" d="m7.12 2.75l-.95 3.858a1.332 1.332 0 0 0 .97 1.609l3.869.948" />
+                    </g>
+                  </svg>
+                </button>
+                <input type="number" name="ppBlur" id="ppBlur" data-var-name="ppBlur" value="5" data-localetitle="ppBlurInputDescription">
+                <span class="unit">px</span>
+                <button type="submit" data-localetitle="ppBlurInputDescription">✔</button>
+              </form>
+              <form class="var-style">
+                <locales data-locale="ppLgBlurInputLabel"></locales>
+                <button type="reset" data-localetitle="resetValue">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                    <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="1.5">
+                      <path stroke-miterlimit="10" d="M6.395 7.705A7.885 7.885 0 0 1 12 5.382a7.929 7.929 0 0 1 7.929 7.929A7.94 7.94 0 0 1 12 21.25a7.939 7.939 0 0 1-7.929-7.94" />
+                      <path stroke-linejoin="round" d="m7.12 2.75l-.95 3.858a1.332 1.332 0 0 0 .97 1.609l3.869.948" />
+                    </g>
+                  </svg>
+                </button>
+                <input type="number" name="ppLgBlur" id="ppLgBlur" data-var-name="ppLgBlur" value="12" data-localetitle="ppLgBlurInputDescription">
+                <span class="unit">px</span>
+                <button type="submit" data-localetitle="ppLgBlurInputDescription">✔</button>
+              </form>
+            </div>
+          </li>
+          <li>
+            <locales data-locale="toggleName"></locales>
+            <button type="button" class="reveal-btn">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                <path fill="currentColor" d="M12 15.5A3.5 3.5 0 0 1 8.5 12A3.5 3.5 0 0 1 12 8.5a3.5 3.5 0 0 1 3.5 3.5a3.5 3.5 0 0 1-3.5 3.5m7.43-2.53c.04-.32.07-.64.07-.97s-.03-.66-.07-1l2.11-1.63c.19-.15.24-.42.12-.64l-2-3.46c-.12-.22-.39-.31-.61-.22l-2.49 1c-.52-.39-1.06-.73-1.69-.98l-.37-2.65A.506.506 0 0 0 14 2h-4c-.25 0-.46.18-.5.42l-.37 2.65c-.63.25-1.17.59-1.69.98l-2.49-1c-.22-.09-.49 0-.61.22l-2 3.46c-.13.22-.07.49.12.64L4.57 11c-.04.34-.07.67-.07 1s.03.65.07.97l-2.11 1.66c-.19.15-.25.42-.12.64l2 3.46c.12.22.39.3.61.22l2.49-1.01c.52.4 1.06.74 1.69.99l.37 2.65c.04.24.25.42.5.42h4c.25 0 .46-.18.5-.42l.37-2.65c.63-.26 1.17-.59 1.69-.99l2.49 1.01c.22.08.49 0 .61-.22l2-3.46c.12-.22.07-.49-.12-.64z" />
+              </svg>
+            </button>
+            <input type="checkbox" id="name" data-style="name">
+            <label for="name" data-localetitle="toggleNameDescription"></label>
+            <div class="collapsible">
+              <form class="var-style">
+                <locales data-locale="blurInputLabel"></locales>
+                <button type="reset" data-localetitle="resetValue">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                    <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="1.5">
+                      <path stroke-miterlimit="10" d="M6.395 7.705A7.885 7.885 0 0 1 12 5.382a7.929 7.929 0 0 1 7.929 7.929A7.94 7.94 0 0 1 12 21.25a7.939 7.939 0 0 1-7.929-7.94" />
+                      <path stroke-linejoin="round" d="m7.12 2.75l-.95 3.858a1.332 1.332 0 0 0 .97 1.609l3.869.948" />
+                    </g>
+                  </svg>
+                </button>
+                <input type="number" name="nmBlur" id="nmBlur" data-var-name="nmBlur" value="5" data-localetitle="nmBlurInputDescription">
+                <span class="unit">px</span>
+                <button type="submit" data-localetitle="nmBlurInputDescription">✔</button>
+              </form>
+            </div>
+          </li>
+          <li>
+            <locales data-locale="toggleNoDelay"></locales>
+            <input type="checkbox" id="noDelay" data-style="noDelay">
+            <label for="noDelay" data-localetitle="toggleNoDelayDescription"></label>
+          </li>
+          <li>
+            <locales data-locale="toggleUnblurActive"></locales>
+            <input type="checkbox" id="unblurActive" data-style="unblurActive">
+            <label for="unblurActive" data-localetitle="toggleUnblurActiveDescription"></label>
+          </li>
+        </ul>
+
+      </div>
       <span id="popupMessage"></span>
+      <hr>
       <div id="footer">
         <p><a href="mailto:contact@lukaslen.com" data-localetitle="footerBugReportsDescription" target="_blank"><locales data-locale="footerBugReports"></locales></a> - <a href="https://lukaslen.com" title="by Lukas Lenhardt" target="_blank"><locales data-locale="footerAuthor"></locales></a>
         <br>v<span id="version">0.0.0</span> - <a href="https://github.com/LukasLen/Privacy-Extension-For-WhatsApp-Web/releases" data-localetitle="footerReleaseNotesDescription" target="_blank"><locales data-locale="footerReleaseNotes"></locales></a></p>
