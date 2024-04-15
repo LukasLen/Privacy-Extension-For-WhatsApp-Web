@@ -9,7 +9,8 @@
 
 /* updated wa version (v2.3000.xx) */
 div._amk4 > ._amk6 /* normal message text */,
-div._amk4 ._am2s /* sticker message */
+div._amk4 ._am2s /* sticker message */,
+span._amk7 /* Tail-out */
 {
   filter: blur(8px) grayscale(1);
   transition-delay: 0s;
@@ -36,7 +37,8 @@ div._amk4 ._am2s /* sticker message */
 
 /* updated wa version (v2.3000.xx) */
 div._amk4 > ._amk6:hover /* normal message text */,
-div._amk4 ._am2s:hover /* sticker message */
+div._amk4 ._am2s:hover /* sticker message */,
+span._amk7:hover /* Tail-out */
 {
   filter: blur(0) grayscale(0);
   transition-delay: 0.3s;
