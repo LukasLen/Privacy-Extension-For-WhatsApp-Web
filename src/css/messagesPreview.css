@@ -6,7 +6,7 @@
 .vQ0w7 /*message preview*/,
 
 /* updated wa version (v2.3000.xx) */
-div._ak8j /*message preview*/
+div._ak8k /*message preview*/
 {
   filter: blur(8px) grayscale(1);
   transition-delay: 0s;
@@ -16,7 +16,7 @@ div._ak8j /*message preview*/
 .vQ0w7:hover /*message preview*/,
 
 /* updated wa version (v2.3000.xx) */
-div._ak8j:hover /*message preview*/
+div._ak8k:hover /*message preview*/
 {
   filter: blur(0) grayscale(0);
   transition-delay: 0.3s;
