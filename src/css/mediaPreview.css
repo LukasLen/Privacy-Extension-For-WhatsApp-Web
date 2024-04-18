@@ -21,7 +21,7 @@
 .b021xdil /* multi contacts attachment */,
 
 /* updated wa version (v2.3000.xx) */
-div._amk4 > ._amk6 :is(div, button)[role="button"]:not(.x13yyeie, ._ak3u, [data-js-context-icon]) /* media messages in chat panel (also quoted message and contact attachment button) */,
+div._amk4 > ._amk6 :is(div, button)[role="button"]:not(.x13yyeie, ._ak3u, [data-js-context-icon], .x1a06ls3) /* media messages in chat panel (also quoted message and contact attachment button) */,
 div._ak4o /* voice note / audio in chat panel */,
 div._ahy5 > div /* link preview in chat panel */,
 div._ak15 > ._ahwq /* some link preview in link list panel */,
@@ -55,7 +55,7 @@ div._ajwt .xm0mufa > div /* document filename in send media */
 .b021xdil:hover /* multi contacts attachment */,
 
 /* updated wa version (v2.3000.xx) */
-div._amk4 > ._amk6 :is(div, button)[role="button"]:not(.x13yyeie, ._ak3u, [data-js-context-icon]):hover /* media messages in chat panel (also quoted message and contact attachment button) */,
+div._amk4 > ._amk6 :is(div, button)[role="button"]:not(.x13yyeie, ._ak3u, [data-js-context-icon], .x1a06ls3):hover /* media messages in chat panel (also quoted message and contact attachment button) */,
 div._ak4o:hover /* voice note / audio in chat panel */,
 div._ahy5 > div:hover /* link preview in chat panel */,
 div._ak15 > ._ahwq:hover /* some link preview in link list panel */,
