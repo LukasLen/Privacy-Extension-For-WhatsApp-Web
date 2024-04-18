@@ -68,7 +68,7 @@ div.x1conndi:hover /* media thumb in overlay view and details panel */,
 div.x4t2iug:hover /* media thumb in media gallery panel */,
 
 /* mediaPreview */
-div._amk4 > ._amk6 :is(div, button)[role="button"]:not(.x13yyeie, ._ak3u, [data-js-context-icon]):hover /* media messages in chat panel (also quoted message and contact attachment button) */,
+div._amk4 > ._amk6 :is(div, button)[role="button"]:not(.x13yyeie, ._ak3u, [data-js-context-icon], .x1a06ls3):hover /* media messages in chat panel (also quoted message and contact attachment button) */,
 div._ak4o:hover /* voice note / audio in chat panel */,
 div._ahy5 > div:hover /* link preview in chat panel */,
 div._ak15 > ._ahwq:hover /* some link preview in link list panel */,
