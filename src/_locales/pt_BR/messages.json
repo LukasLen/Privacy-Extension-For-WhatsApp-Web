@@ -8,7 +8,6 @@
     "extensionShortcut": {
         "message": "Ligado/Desligado"
     },
-    
     "extensionToggle": {
         "message": "Ligado/Desligado"
     },
@@ -68,6 +67,45 @@
     },
     "toggleUnblurActiveDescription": {
         "message": "Desfoca tudo quando você passa o mouse sobre o aplicativo do WhatsApp Web."
+    },
+    "resetValue": {
+        "message": "Redefinir Valor para Padrão"
+    },
+    "blurInputLabel": {
+        "message": "Quantidade de desfoque"
+    },
+    "msBlurInputDescription": {
+        "message": "Defina a quantidade de desfoque para todas as mensagens (em pixels)."
+    },
+    "mspBlurInputDescription": {
+        "message": "Defina a quantidade de desfoque para pré-visualização de mensagens (em pixels)."
+    },
+    "mdpBlurInputDescription": {
+        "message": "Defina a quantidade de desfoque para pré-visualização de mídia (em pixels)."
+    },
+    "mdgBlurInputDescription": {
+        "message": "Defina a quantidade de desfoque para galeria de mídia (em pixels)."
+    },  
+    "ppSmBlurInputLabel": {
+        "message": "Desfoque para foto de perfil miniatura"
+    },
+    "ppSmBlurInputDescription": {
+        "message": "Defina a quantidade de desfoque para a miniatura das fotos de perfil (em pixels)."
+    },
+    "ppBlurInputLabel": {
+        "message": "Desfoque para fotos de pefil"
+    },
+    "ppBlurInputDescription": {
+        "message": "Defina a quantidade de desfoque para fotos de perfil de tamanho normal (em pixels)."
+    },
+    "ppLgBlurInputLabel": {
+        "message": "Desfoque para fotos de pefil ampliadas"
+    },
+    "ppLgBlurInputDescription": {
+        "message": "Defina a quantidade de desfoque para fotos de perfil quando ampliadas (em pixels)."
+    },
+    "nmBlurInputDescription": {
+        "message": "Defina a quantidade de desfoque para nomes de grupos/usuários (em pixels)."
     },
     "footerBugReports": {
         "message": "Relatórios de bugs & Sugestões"
