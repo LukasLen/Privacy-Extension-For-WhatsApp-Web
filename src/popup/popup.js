@@ -35,6 +35,8 @@ function saveSettings() {
     if (!result.hasOwnProperty(settingsIdentifier)) return;
     if (id == "on") {
       result.settings.on = checked;
+    } else if (id === "blurOnIdle") {
+      result.settings.blurOnIdle.isEnabled = checked;
     } else {
       result.settings.styles[id] = checked;
     }
@@ -64,7 +66,11 @@ function saveFormSettings(ev) {
 
   browser.storage.sync.get([settingsIdentifier]).then((result) => {
     if (!result.hasOwnProperty(settingsIdentifier)) return;
-    result.settings.varStyles[key] = val + "px";
+    if (key === "itBlur") {
+      result.settings.blurOnIdle.idleTimeout = val;
+    } else {
+      result.settings.varStyles[key] = val + "px";
+    }
     browser.storage.sync.set(result);
   });
 }
@@ -77,6 +83,8 @@ browser.storage.sync.get([settingsIdentifier]).then((result) => {
     let id = checkbox.dataset.style;
     if (id == "on") {
       checkbox.checked = result.settings.on;
+    } else if (id === "blurOnIdle") {
+      checkbox.checked = result.settings?.blurOnIdle?.isEnabled;
     } else {
       checkbox.checked = result.settings.styles[id];
     }
@@ -86,7 +94,11 @@ browser.storage.sync.get([settingsIdentifier]).then((result) => {
   forms.forEach((form) => {
     const numInput = form.querySelector(`input[type="number"]`)
     const varName = numInput.dataset.varName;
-    numInput.value = parseInt(result.settings.varStyles[varName]);
+    if (varName === "itBlur") {
+      numInput.value = parseInt(result.settings?.blurOnIdle?.idleTimeout || 15);
+    } else {
+      numInput.value = parseInt(result.settings.varStyles[varName]);
+    }
   })
   
 });
