@@ -34,6 +34,11 @@ const defaultSettings = {
       ppSmBlur: "3px",
       ppBlur: "8px",
       ppLgBlur: "12px",
+      wiBlur: "14px",
+    },
+    blurOnIdle: {
+      isEnabled: false,
+      idleTimeout: 15,
     }
   }
 };
