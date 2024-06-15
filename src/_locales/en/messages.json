@@ -68,6 +68,12 @@
     "toggleUnblurActiveDescription": {
         "message": "Unblurs all when you hover over the WhatsApp Web app."
     },
+    "toggleBlurOnIdle": {
+        "message": "Blur WhatsApp on Idle"
+    },
+    "toggleBlurOnIdleDescription": {
+        "message": "Blur WhatsApp when there is no mouse/keyboard activity after a certain time."
+    },
     "resetValue": {
         "message": "Reset Value to Default"
     },
@@ -106,6 +112,18 @@
     },
     "nmBlurInputDescription": {
         "message": "Set Blur Amount for group/user names (in pixel)."
+    },
+    "itBlurInputLabel": {
+        "message": "Idle Timeout"
+    },
+    "itBlurInputDescription": {
+        "message": "Set timeout of inactivity (in seconds)."
+    },
+    "wiBlurInputLabel": {
+        "message": "Blur amount"
+    },
+    "wiBlurInputDescription": {
+        "message": "Set Blur Amount when Idle."
     },
     "footerBugReports": {
         "message": "Bug reports & Suggestions"
