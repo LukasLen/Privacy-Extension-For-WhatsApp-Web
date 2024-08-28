@@ -18,7 +18,7 @@
         "message": "Alle Nachrichten im Chat"
     },
     "toggleMessagesDescription": {
-        "message": "Verbrigt alle Nachrichten im Chat."
+        "message": "Verbirgt alle Nachrichten im Chat."
     },
     "toggleMessagesPreview": {
         "message": "Nachrichtenvorschau"
@@ -66,13 +66,70 @@
         "message": "Alle bei App-Hover sichtbar machen"
     },
     "toggleUnblurActiveDescription": {
-        "message": "Entblendet alle, wenn Sie mit der Maus über die WhatsApp Web-App fahren."
+        "message": "Macht alles sichtbar, wenn Sie mit der Maus über WhatsApp Web-App stehen."
+    },
+    "toggleBlurOnIdle": {
+        "message": "Verstecke WhatsApp bei Abwesenheit"
+    },
+    "toggleBlurOnIdleDescription": {
+        "message": "Verstecke WhatsApp nach einer gewissen Zeit, sobald keine Maus/Tastatur Eingabe erkannt wird."
+    },
+    "resetValue": {
+        "message": "Zurücksetzen"
+    },
+    "blurInputLabel": {
+        "message": "Intensität"
+    },
+    "msBlurInputDescription": {
+        "message": "Setze Intensität für alle Nachrichten (in pixel)."
+    },
+    "mspBlurInputDescription": {
+        "message": "Setze Intensität für Nachrichtenvorschau (in pixel)."
+    },
+    "mdpBlurInputDescription": {
+        "message": "Setze Intensität für Medienvorschau (in pixel)."
+    },
+    "mdgBlurInputDescription": {
+        "message": "Setze Intensität für Mediengalerie (in pixel)."
+    },
+    "ppSmBlurInputLabel": {
+        "message": "Intensität kleine Größe"
+    },
+    "ppSmBlurInputDescription": {
+        "message": "Setze Intensität für kleine Profilbilder (in pixel)."
+    },
+    "ppBlurInputLabel": {
+        "message": "Intensität normale Größe"
+    },
+    "ppBlurInputDescription": {
+        "message": "Setze Intensität für normale Profilbilder (in pixel)."
+    },
+    "ppLgBlurInputLabel": {
+        "message": "Intensität große Größe"
+    },
+    "ppLgBlurInputDescription": {
+        "message": "Setze Intensität für große Profilbilder (in pixel)."
+    },
+    "nmBlurInputDescription": {
+        "message": "Setze Intensität für Gruppen-/Benutzernamen (in pixel)."
+    },
+    "itBlurInputLabel": {
+        "message": "Abwesenheitslimit"
+    },
+    "itBlurInputDescription": {
+        "message": "Setze Zeit der Inaktivität (in seconds)."
+    },
+    "wiBlurInputLabel": {
+        "message": "Intensität"
+    },
+    "wiBlurInputDescription": {
+        "message": "Setze Intensität wenn Abwesend."
     },
     "footerBugReports": {
         "message": "Fehlerberichte & Vorschläge"
     },
     "footerBugReportsDescription": {
-        "message": "Wenn Sie Probleme haben oder einen Funktionswunsch haben, senden Sie mir bitte eine E-Mail: contact@lukaslen.com"
+        "message": "Wenn Sie Probleme haben oder einen Funktionswunsch haben, senden Sie bitte eine E-Mail: contact@lukaslen.com"
     },
     "footerAuthor": {
         "message": "Autor"
