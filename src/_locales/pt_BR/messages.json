@@ -68,6 +68,12 @@
     "toggleUnblurActiveDescription": {
         "message": "Desfoca tudo quando você passa o mouse sobre o aplicativo do WhatsApp Web."
     },
+    "toggleBlurOnIdle": {
+        "message": "Desfoca o WhatsApp quando ocioso"
+    },
+    "toggleBlurOnIdleDescription": {
+        "message": "Desfoca o WhatsApp quando não há atividade de mouse/teclado após um certo tempo."
+    },
     "resetValue": {
         "message": "Redefinir Valor para Padrão"
     },
@@ -106,6 +112,18 @@
     },
     "nmBlurInputDescription": {
         "message": "Defina a quantidade de desfoque para nomes de grupos/usuários (em pixels)."
+    },
+    "itBlurInputLabel": {
+        "message": "Tempo limite de inatividade"
+    },
+    "itBlurInputDescription": {
+        "message": "Defina o tempo limite de inatividade (em segundos)."
+    },
+    "wiBlurInputLabel": {
+        "message": "Quantidade de desfoque"
+    },
+    "wiBlurInputDescription": {
+        "message": "Defina a quantidade de desfoque quando ocioso."
     },
     "footerBugReports": {
         "message": "Relatórios de bugs & Sugestões"
