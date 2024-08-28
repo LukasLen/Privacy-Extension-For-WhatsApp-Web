@@ -86,11 +86,11 @@ div._amk4 ._am2s:hover /* sticker message */,
 div._ak8k:hover /* message preview */,
 
 /* name */
-div[role="row"] ._ak8q:hover /* user/group name in message list */,
+div[role="listitem"] ._ak8q:hover /* user/group name in message list */,
 div[role="button"][class=""] ._ak8q:hover /* user/group name in details list and popup list */,
 div[role="dialog"] ._ak8q:hover /* user name in contact popup list */,
 div[role="dialog"] div.copyable-text:hover /* phone number and business user name in contact popup list */,
-div[role="row"] ._am_2:hover /* community name */,
+div[role="listitem"] ._am_2:hover /* community name */,
 div[role="button"]._amie > div:nth-child(1):hover /* user/group name at the top of chat panel */,
 div[role="button"]._amie > div:nth-child(2):hover /* user/group details at the top of chat panel */,
 div._ahxj:hover /* user name in group chat messages */,
@@ -110,7 +110,7 @@ div.xkhd6sd._ajxt > ._ajxu > div:hover /* business phone number in details info 
 div._ak1d > div:first-child > div:first-child > :not(:first-child):hover /* user/group name in starred message list */,
 
 /* profilePic */
-div[role="row"] ._ak8h:hover /* user/group profile pic in message list */,
+div[role="listitem"] ._ak8h:hover /* user/group profile pic in message list */,
 div[role="button"][class=""] ._ak8h:hover /* user/group profile pic in details list and popup list */,
 div[role="dialog"] ._ak8h:hover /* user/group profile pic in details list and popup list */,
 header._amid div[role="button"]:first-child > div:hover /* user/group profile pic at the top of chat panel */,
