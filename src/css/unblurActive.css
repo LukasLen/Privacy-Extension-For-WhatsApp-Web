@@ -83,11 +83,11 @@ body:hover div._amk4 ._am2s /* sticker message */,
 body:hover div._ak8k /* message preview */,
 
 /* name */
-body:hover div[role="row"] ._ak8q /* user/group name in message list */,
+body:hover div[role="listitem"] ._ak8q /* user/group name in message list */,
 body:hover div[role="button"][class=""] ._ak8q /* user/group name in details list and popup list */,
 body:hover div[role="dialog"] ._ak8q /* user name in contact popup list */,
 body:hover div[role="dialog"] div.copyable-text /* phone number and business user name in contact popup list */,
-body:hover div[role="row"] ._am_2 /* community name */,
+body:hover div[role="listitem"] ._am_2 /* community name */,
 body:hover div[role="button"]._amie > div:nth-child(1) /* user/group name at the top of chat panel */,
 body:hover div[role="button"]._amie > div:nth-child(2) /* user/group details at the top of chat panel */,
 body:hover div._ahxj /* user name in group chat messages */,
@@ -107,7 +107,7 @@ body:hover div.xkhd6sd._ajxt > ._ajxu > div /* business phone number in details 
 body:hover div._ak1d > div:first-child > div:first-child > :not(:first-child) /* user/group name in starred message list */,
 
 /* profilePic */
-body:hover div[role="row"] ._ak8h /* user/group profile pic in message list */,
+body:hover div[role="listitem"] ._ak8h /* user/group profile pic in message list */,
 body:hover div[role="button"][class=""] ._ak8h /* user/group profile pic in details list and popup list */,
 body:hover div[role="dialog"] ._ak8h /* user/group profile pic in details list and popup list */,
 body:hover header._amid div[role="button"]:first-child > div /* user/group profile pic at the top of chat panel */,

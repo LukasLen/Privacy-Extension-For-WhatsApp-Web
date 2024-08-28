@@ -13,7 +13,7 @@
 .b021xdil /* multi contacts attachment */,
 
 /* updated wa version (v2.3000.xx) */
-div[role="row"] ._ak8h /* user/group profile pic in message list */,
+div[role="listitem"] ._ak8h /* user/group profile pic in message list */,
 div[role="button"][class=""] ._ak8h /* user/group profile pic in details list and popup list */,
 div[role="dialog"] ._ak8h /* user/group profile pic in details list and popup list */,
 header._amid div[role="button"]:first-child > div /* user/group profile pic at the top of chat panel */,
@@ -65,7 +65,7 @@ div.x1okw0bk.x1w0mnb /* user profile pic in starred message list */
 .njub1g37 .kk3akd72.claouzo6:hover /*Starred message profile pic*/,
 
 /* updated wa version (v2.3000.xx) */
-div[role="row"] ._ak8h:hover /* user/group profile pic in message list */,
+div[role="listitem"] ._ak8h:hover /* user/group profile pic in message list */,
 div[role="button"][class=""] ._ak8h:hover /* user/group profile pic in details list and popup list */,
 div[role="dialog"] ._ak8h:hover /* user/group profile pic in details list and popup list */,
 header._amid div[role="button"]:first-child > div:hover /* user/group profile pic at the top of chat panel */,
