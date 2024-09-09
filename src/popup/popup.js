@@ -32,7 +32,10 @@ function saveSettings() {
   let checked = this.checked;
 
   browser.storage.sync.get([settingsIdentifier]).then((result) => {
-    if (!result.hasOwnProperty(settingsIdentifier)) return;
+    if (!result.hasOwnProperty(settingsIdentifier)) {
+      browser.runtime.reload();
+      return;
+    }
     if (id == "on") {
       result.settings.on = checked;
     } else if (id === "blurOnIdle") {

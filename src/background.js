@@ -8,7 +8,6 @@ if (typeof browser == "undefined") {
   globalThis.browser = chrome;
 }
 
-const styleIdentifier = "pfwa";
 const settingsIdentifier = "settings";
 const defaultSettings = {
   settings: {
@@ -57,7 +56,11 @@ browser.runtime.onInstalled.addListener(() => {
 
   // Set default settings upon install
   browser.storage.sync.get([settingsIdentifier]).then((result) => {
-    if (result.hasOwnProperty(settingsIdentifier)) return;
+    if (result.hasOwnProperty(settingsIdentifier)) {
+      var defaultKeys = Object.keys(defaultSettings.settings).sort();
+      var currentKeys = Object.keys(result.settings).sort();
+      if(JSON.stringify(defaultKeys) === JSON.stringify(currentKeys)) return;
+    }
     browser.storage.sync.set(defaultSettings);
   });
 });
@@ -67,7 +70,10 @@ browser.commands.onCommand.addListener((command) => {
   if (command != "toggle") return;
 
   browser.storage.sync.get([settingsIdentifier]).then((result) => {
-    if (!result.hasOwnProperty(settingsIdentifier)) return;
+    if (!result.hasOwnProperty(settingsIdentifier)) {
+      browser.runtime.reload();
+      return;
+    }
 
     result.settings.on = !result.settings.on;
     browser.storage.sync.set(result);
