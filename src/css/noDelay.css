@@ -128,7 +128,8 @@ div.overlay ._am0k:hover /* user/group profile pic overlay view */,
 div.x1okw0bk.x1w0mnb:hover /* user profile pic in starred message list */,
 
 /* textInput */
-div._ak1l:hover /* message text input */
+div._ak1l:hover /* message text input */,
+div._ak1r:hover /* message text input */
 {
   transition-delay: 0.04s !important;
   -webkit-transition-duration: 0s !important;
