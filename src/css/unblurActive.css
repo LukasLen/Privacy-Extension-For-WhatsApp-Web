@@ -134,7 +134,8 @@ body:hover ._3Uu1_ /*textarea*/,
 
 /* updated wa version (v2.3000.xx) */
 /* textInput */
-div._ak1l:hover /* message text input */
+div._ak1l:hover /* message text input */,
+div._ak1r:hover /* message text input */
 {
   filter: grayscale(0) opacity(1);
 }
