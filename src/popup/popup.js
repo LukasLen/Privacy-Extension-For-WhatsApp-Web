@@ -68,7 +68,10 @@ function saveFormSettings(ev) {
   const [key, val] = Object.entries(Object.fromEntries(new FormData(ev.target)))[0];
 
   browser.storage.sync.get([settingsIdentifier]).then((result) => {
-    if (!result.hasOwnProperty(settingsIdentifier)) return;
+    if (!result.hasOwnProperty(settingsIdentifier)) {
+      browser.runtime.reload();
+      return;
+    }
     if (key === "itBlur") {
       result.settings.blurOnIdle.idleTimeout = val;
     } else {
@@ -80,7 +83,10 @@ function saveFormSettings(ev) {
 
 // Load settings and update switches
 browser.storage.sync.get([settingsIdentifier]).then((result) => {
-  if (!result.hasOwnProperty(settingsIdentifier)) return;
+  if (!result.hasOwnProperty(settingsIdentifier)) {
+    browser.runtime.reload();
+    return;
+  }
 
   switches.forEach((checkbox) => {
     let id = checkbox.dataset.style;
@@ -105,36 +111,3 @@ browser.storage.sync.get([settingsIdentifier]).then((result) => {
   })
   
 });
-
-
-/*
-// legacy code, keeping it for future reference
-// message loading not implemented currently
-
-//load message
-xmlhttp=new XMLHttpRequest();
-xmlhttp.onreadystatechange=function(){
-  if (xmlhttp.readyState==4 && xmlhttp.status==200){
-    let response = JSON.parse(xmlhttp.responseText);
-    if(response["*"] && response["*"]["min"] <= version && response["*"]["max"] >= version)
-      response = response["*"]["msg"];
-    else
-      response = response[version] ? response[version] : '';
-
-    if(response != "" && data.currentPopupMessage != response){
-      mainContent.style.display = "none";
-      popupMessage.innerText = response;
-      popupMessage.innerHTML += "<br><a href=\"#\" id=\"popupMessageButton\">Close message</a>";
-
-      let popupMessageButton = document.getElementById('popupMessageButton');
-      popupMessageButton.addEventListener('click', function() {
-        chrome.storage.sync.set({currentPopupMessage: response});
-        popupMessage.innerHTML = "";
-        mainContent.style.display = "initial";
-      });
-    }
-  }
-}
-xmlhttp.open("GET", "https://lukaslen.com/message/pfwa.json", true);
-xmlhttp.send();
-*/
