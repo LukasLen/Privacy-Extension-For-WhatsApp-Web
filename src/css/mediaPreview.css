@@ -21,7 +21,11 @@
 .b021xdil /* multi contacts attachment */,
 
 /* updated wa version (v2.3000.xx) */
-div._amk4 > ._amk6 :is(div, button)[role="button"]:not(.x13yyeie, ._ak3u, [data-js-context-icon], .x1a06ls3) /* media messages in chat panel (also quoted message and contact attachment button) */,
+div._amk4 > ._amk6 :is(div, button)[role="button"][class]:not(.x13yyeie, .x1dxgm4b, .x7fhd9j, ._ak3u, ._aju3, [data-js-context-icon], .x1a06ls3, .x6ikm8r.x10wlt62.xlyipyv) /* media messages in chat panel and contact attachment button */,
+div._aju3 ._agtn > div /* media in quoted message */,
+div._aju3 .x1ozewix /* icon for filename in quoted message */,
+div._aju3 .x1ozewix + span /* filename in quoted message */,
+div._aju3 span._ajxd._ajxk /* sticker in quoted message */,
 div._ak4o /* voice note / audio in chat panel */,
 div._ahy5 > div /* link preview in chat panel */,
 div._ak15 > ._ahwq /* some link preview in link list panel */,
@@ -55,7 +59,15 @@ div._ajwt .xm0mufa > div /* document filename in send media */
 .b021xdil:hover /* multi contacts attachment */,
 
 /* updated wa version (v2.3000.xx) */
-div._amk4 > ._amk6 :is(div, button)[role="button"]:not(.x13yyeie, ._ak3u, [data-js-context-icon], .x1a06ls3):hover /* media messages in chat panel (also quoted message and contact attachment button) */,
+div._amk4 > ._amk6:hover :is(div, button)[role="button"][class]:not(.x13yyeie, .x1dxgm4b, .x7fhd9j, ._ak3u, ._aju3, [data-js-context-icon], .x1a06ls3, .x6ikm8r.x10wlt62.xlyipyv) /* media messages in chat panel and contact attachment button */,
+div._aju3:hover ._agtn > div /* media in quoted message */,
+div._aju3:hover .x1ozewix /* icon for filename in quoted message */,
+div._aju3:hover .x1ozewix + span /* filename in quoted message */,
+div._aju3:hover span._ajxd._ajxk /* sticker in quoted message */,
+div._amk6:hover div._ahz2 /* user profile pic in contact attachment */,
+div._amk6:hover div.x2lah0s.x1c4vz4f.xdl72j9.x194xeti /* user profile pic in multiple contact attachment */,
+div._amk6:hover div._ahz1 /* user name in contact attachment */,
+div._amk6:hover div.xs83m0k.x1iyjqo2.xdl72j9.x18wx58x.x6ikm8r.x10wlt62 /* user name in multiple contacts attachment */,
 div._ak4o:hover /* voice note / audio in chat panel */,
 div._ahy5 > div:hover /* link preview in chat panel */,
 div._ak15 > ._ahwq:hover /* some link preview in link list panel */,
