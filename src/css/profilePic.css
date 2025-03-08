@@ -16,7 +16,7 @@
 div[role="listitem"] ._ak8h /* user/group profile pic in message list */,
 div[role="button"][class=""] ._ak8h /* user/group profile pic in details list and popup list */,
 div[role="dialog"] ._ak8h /* user/group profile pic in details list and popup list */,
-header._amid div[role="button"]:first-child > div /* user/group profile pic at the top of chat panel */,
+header > div[role="button"]:first-child > div /* user/group profile pic at the top of chat panel */,
 div._amk4 > div[role="button"] /* user profile pic in group chat messages */,
 div._ahz2 /* user profile pic in contact attachment */,
 div.x2lah0s.x1c4vz4f.xdl72j9.x194xeti /* user profile pic in multiple contact attachment */,
@@ -35,8 +35,8 @@ div.x78zum5.xl56j7k.x1fqp7bg > div[role="button"] /* user profile pic in details
 div[role="button"][class="x1n2onr6 x14yjl9h xudhj91 x18nykt9 xww2gxu"] /* business profile pic in details panel */,
 div.x10l6tqk.x13vifvy.x17qophe.xh8yej3.xiqx3za.x6ikm8r.x10wlt62.x1knukwh.xihgre1 /* business profile banner in details panel */,
 div.x15e7hw7 /* business profile banner in catalog list */,
-div._amje /* group profile pic in details panel */,
-div.overlay ._am0k /* user/group profile pic overlay view */
+div.x1n2onr6.x1oysuqx.x1m3v4wt.x1gryazu.xkrivgy /* group profile pic in details panel */,
+div.overlay:not([data-animate-media-viewer]) ._ajuf._ajuh > div /* user/group profile pic overlay view */
 {
   filter: blur(var(--pp-lg-blur)) grayscale(1);
   transition-delay: 0s;
@@ -68,7 +68,7 @@ div.x1okw0bk.x1w0mnb /* user profile pic in starred message list */
 div[role="listitem"] ._ak8h:hover /* user/group profile pic in message list */,
 div[role="button"][class=""] ._ak8h:hover /* user/group profile pic in details list and popup list */,
 div[role="dialog"] ._ak8h:hover /* user/group profile pic in details list and popup list */,
-header._amid div[role="button"]:first-child > div:hover /* user/group profile pic at the top of chat panel */,
+header > div[role="button"]:first-child > div:hover /* user/group profile pic at the top of chat panel */,
 div._amk4 > div[role="button"]:hover /* user profile pic in group chat messages */,
 div._ahz2:hover /* user profile pic in contact attachment */,
 div.x2lah0s.x1c4vz4f.xdl72j9.x194xeti:hover /* user profile pic in multiple contact attachment */,
@@ -78,8 +78,8 @@ div.x78zum5.xl56j7k.x1fqp7bg > div[role="button"]:hover /* user profile pic in d
 div[role="button"][class="x1n2onr6 x14yjl9h xudhj91 x18nykt9 xww2gxu"]:hover /* business profile pic in details panel */,
 div.x10l6tqk.x13vifvy.x17qophe.xh8yej3.xiqx3za.x6ikm8r.x10wlt62.x1knukwh.xihgre1:hover /* business profile banner in details panel */,
 div.x15e7hw7:hover /* business profile banner in catalog list */,
-div._amje:hover /* group profile pic in details panel */,
-div.overlay ._am0k:hover /* user/group profile pic overlay view */,
+div.x1n2onr6.x1oysuqx.x1m3v4wt.x1gryazu.xkrivgy:hover /* group profile pic in details panel */,
+div.overlay:not([data-animate-media-viewer]) ._ajuf._ajuh > div:hover /* user/group profile pic overlay view */,
 div.x1okw0bk.x1w0mnb:hover /* user profile pic in starred message list */
 {
   filter: blur(0) grayscale(0);
