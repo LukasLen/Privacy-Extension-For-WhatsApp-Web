@@ -139,5 +139,35 @@
     },
     "footerReleaseNotesDescription": {
         "message": "Visualizar as notas de lançamento."
-    }
+    },
+    "toggleTimeBlur": {
+    "message": "Desfoque por tempo"
+  },
+  "toggleTimeBlurDescription": {
+    "message": "Ativar ou desativar o desfoque em horários específicos"
+  },
+  "startTimeLabel": {
+    "message": "Hora de início"
+  },
+  "startTimeDescription": {
+    "message": "Hora em que o desfoque deve começar"
+  },
+  "endTimeLabel": {
+    "message": "Hora de término"
+  },
+  "endTimeDescription": {
+    "message": "Hora em que o desfoque deve parar"
+  },
+  "toggleTextInputBlur": {
+    "message": "Desfoque em campos de texto"
+  },
+  "toggleTextInputBlurDescription": {
+    "message": "Ativar desfoque em campos de texto"
+  },
+  "tiBlurInputLabel": {
+    "message": "Nível de desfoque do texto"
+  },
+  "tiBlurInputDescription": {
+    "message": "Ajustar a intensidade do desfoque no campo de texto"
+  }
 }
