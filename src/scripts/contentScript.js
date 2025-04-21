@@ -147,6 +147,15 @@ function updateStyles(changes) {
   });
 }
 
+// Re-check time-based blur every 30 seconds
+setInterval(() => {
+  browser.storage.sync.get([settingsIdentifier]).then((result) => {
+    if (result?.settings?.on && result.settings.styles?.blurOnTime) { 
+      setTimeBasedBlur(result);
+    }
+  });
+}, 30000);  
+
 // Update styles on setting change
 browser.storage.onChanged.addListener((changes, area) => {
   if (area == "sync" && changes.settings != null) {
