@@ -61,6 +61,59 @@ function addVarStyle([varName, value]) {
   document.getElementsByTagName("head")[0].appendChild(styleEl);
 }
 
+function enableAllStyles(result) {
+  const styles = Object.keys(result.settings.styles);
+
+  styles.forEach((style) => {
+    if (result.settings.styles[style]) {
+      addStyleById(style);
+    }
+  });
+
+  // Optional: variable styles
+  const varStyles = Object.entries(result.settings.varStyles);
+  varStyles.forEach(([key, value]) => {
+    addVarStyle([key, value]);
+  });
+}
+
+function removeAllStylesById() {
+  const allStyleIds = [
+    "mediaGallery",
+    "mediaPreview",
+    "messages",
+    "messagesPreview",
+    "name",
+    "profilePic",
+    "textInput",
+  ];
+
+  allStyleIds.forEach(removeStyleById);
+}
+
+function setTimeBasedBlur(result) {
+  const { styles, timeBasedBlur } = result.settings;
+  if (!styles?.blurOnTime) return;
+  const now = new Date();
+  const currentTime = now.getHours() * 60 + now.getMinutes();
+  const [startHour, startMin] = timeBasedBlur.startTime.split(":").map(Number);
+  const [endHour, endMin] = timeBasedBlur.endTime.split(":").map(Number);
+
+  const startTime = startHour * 60 + startMin;
+  const endTime = endHour * 60 + endMin;
+
+  const isWithinTime =
+    startTime < endTime
+      ? currentTime >= startTime && currentTime <= endTime
+      : currentTime >= startTime || currentTime <= endTime;
+
+  if (isWithinTime) {
+    enableAllStyles(result);
+  } else {
+    removeAllStylesById();
+  }
+}
+
 function updateStyles(changes) {
   browser.storage.sync.get([settingsIdentifier]).then((result) => {
     if (result == null || !result.settings.on) {
@@ -90,9 +143,18 @@ function updateStyles(changes) {
     
     // update blur on idle
     setBlurOnIdle(changes, result);
-
+    setTimeBasedBlur(result);
   });
 }
+
+// Re-check time-based blur every 30 seconds
+setInterval(() => {
+  browser.storage.sync.get([settingsIdentifier]).then((result) => {
+    if (result?.settings?.on && result.settings.styles?.blurOnTime) { 
+      setTimeBasedBlur(result);
+    }
+  });
+}, 30000);  
 
 // Update styles on setting change
 browser.storage.onChanged.addListener((changes, area) => {

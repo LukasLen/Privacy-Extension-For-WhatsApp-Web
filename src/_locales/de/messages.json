@@ -139,5 +139,35 @@
     },
     "footerReleaseNotesDescription": {
         "message": "Versionshinweise anzeigen."
-    }
+    },
+    "toggleTimeBlur": {
+        "message": "Zeitbasierte Unschärfe"
+      },
+      "toggleTimeBlurDescription": {
+        "message": "Unschärfe zu bestimmten Zeiten aktivieren oder deaktivieren"
+      },
+      "startTimeLabel": {
+        "message": "Startzeit"
+      },
+      "startTimeDescription": {
+        "message": "Zeitpunkt, an dem die Unschärfe beginnen soll"
+      },
+      "endTimeLabel": {
+        "message": "Endzeit"
+      },
+      "endTimeDescription": {
+        "message": "Zeitpunkt, an dem die Unschärfe enden soll"
+      },
+      "toggleTextInputBlur": {
+        "message": "Textfeld-Unschärfe"
+      },
+      "toggleTextInputBlurDescription": {
+        "message": "Unschärfe für Texteingaben aktivieren"
+      },
+      "tiBlurInputLabel": {
+        "message": "Unschärfestärke für Text"
+      },
+      "tiBlurInputDescription": {
+        "message": "Stelle die Stärke der Unschärfe für Texteingaben ein"
+      }
 }

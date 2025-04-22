@@ -40,12 +40,15 @@ function saveSettings() {
       result.settings.on = checked;
     } else if (id === "blurOnIdle") {
       result.settings.blurOnIdle.isEnabled = checked;
+    } else if (id === "blurOnTime") {
+      result.settings.styles.blurOnTime = checked;
     } else {
       result.settings.styles[id] = checked;
     }
     browser.storage.sync.set(result);
   });
 }
+
 
 // toggle open/close blur amount settings
 const showBlurSettings = (ev) => {
@@ -65,7 +68,9 @@ forms.forEach((form) => {
 })
 function saveFormSettings(ev) {
   ev.preventDefault();
-  const [key, val] = Object.entries(Object.fromEntries(new FormData(ev.target)))[0];
+  const [key, val] = Object.entries(
+    Object.fromEntries(new FormData(ev.target))
+  )[0];
 
   browser.storage.sync.get([settingsIdentifier]).then((result) => {
     if (!result.hasOwnProperty(settingsIdentifier)) {
@@ -74,6 +79,15 @@ function saveFormSettings(ev) {
     }
     if (key === "itBlur") {
       result.settings.blurOnIdle.idleTimeout = val;
+    } else if (key === "startTime" || key === "endTime") {
+      // Handle time inputs
+      if (!result.settings.timeBasedBlur) {
+        result.settings.timeBasedBlur = {
+          startTime: "08:30",
+          endTime: "16:30",
+        };
+      }
+      result.settings.timeBasedBlur[key] = val;
     } else {
       result.settings.varStyles[key] = val + "px";
     }
@@ -92,8 +106,8 @@ browser.storage.sync.get([settingsIdentifier]).then((result) => {
     let id = checkbox.dataset.style;
     if (id == "on") {
       checkbox.checked = result.settings.on;
-    } else if (id === "blurOnIdle") {
-      checkbox.checked = result.settings?.blurOnIdle?.isEnabled;
+    } else if (id === "blurOnTime") {
+      checkbox.checked = result.settings?.styles?.blurOnTime || false;
     } else {
       checkbox.checked = result.settings.styles[id];
     }
@@ -101,13 +115,18 @@ browser.storage.sync.get([settingsIdentifier]).then((result) => {
 
   // set variable input value
   forms.forEach((form) => {
-    const numInput = form.querySelector(`input[type="number"]`)
-    const varName = numInput.dataset.varName;
+    const input = form.querySelector(
+      `input[type="number"], input[type="time"]`
+    );
+    const varName = input.dataset.varName;
     if (varName === "itBlur") {
-      numInput.value = parseInt(result.settings?.blurOnIdle?.idleTimeout || 15);
+      input.value = parseInt(result.settings?.blurOnIdle?.idleTimeout || 15);
+    } else if (varName === "startTime" || varName === "endTime") {
+      input.value =
+        result.settings?.timeBasedBlur?.[varName] ||
+        (varName === "startTime" ? "08:00" : "17:00");
     } else {
-      numInput.value = parseInt(result.settings.varStyles[varName]);
+      input.value = parseInt(result.settings.varStyles[varName]);
     }
-  })
-  
+  });
 });

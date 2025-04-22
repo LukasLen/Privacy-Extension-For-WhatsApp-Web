@@ -139,5 +139,35 @@
     },
     "footerReleaseNotesDescription": {
         "message": "View the release notes."
-    }
+    },
+    "toggleTimeBlur": {
+        "message": "Time-based Blur"
+      },
+      "toggleTimeBlurDescription": {
+        "message": "Enable or disable blur during specific times"
+      },
+      "startTimeLabel": {
+        "message": "Start Time"
+      },
+      "startTimeDescription": {
+        "message": "The time when blur should start"
+      },
+      "endTimeLabel": {
+        "message": "End Time"
+      },
+      "endTimeDescription": {
+        "message": "The time when blur should stop"
+      },
+      "toggleTextInputBlur": {
+        "message": "Text Input Blur"
+      },
+      "toggleTextInputBlurDescription": {
+        "message": "Enable blur on text inputs"
+      },
+      "tiBlurInputLabel": {
+        "message": "Text Blur Level"
+      },
+      "tiBlurInputDescription": {
+        "message": "Adjust how strong the blur should be on text input"
+      }
 }

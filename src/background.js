@@ -22,7 +22,8 @@ const defaultSettings = {
       noDelay: false,
       profilePic: false,
       textInput: true,
-      unblurActive: false
+      unblurActive: false,
+      blurOnTime: false,
     },
     varStyles: {
       mdgBlur: "20px",
@@ -38,7 +39,11 @@ const defaultSettings = {
     blurOnIdle: {
       isEnabled: false,
       idleTimeout: 15,
-    }
+    },
+    timeBasedBlur: {
+      startTime: "08:00",
+      endTime: "16:30",
+    },
   }
 };
 const requiredPermissions = { 
