@@ -29,7 +29,7 @@ div._aju3 span._ajxd._ajxk /* sticker in quoted message */,
 div._ak4o /* voice note / audio in chat panel */,
 div._ahy5 > div /* link preview in chat panel */,
 div._ak15 > ._ahwq /* some link preview in link list panel */,
-span._ajxd._ajxk > ._ajxj._ajxd /* sticker in chat panel */,
+span._ajxd._ajxk ._ajxj._ajxd /* sticker in chat panel */,
 div.xz9dduz > div:first-child /* maps / location */,
 div._ajwt > div:first-child > div:nth-child(2) > div /* media preview in send media */,
 div._ak3i /* media preview thumb in send media */,
@@ -71,7 +71,7 @@ div._amk6:hover div.xs83m0k.x1iyjqo2.xdl72j9.x18wx58x.x6ikm8r.x10wlt62 /* user n
 div._ak4o:hover /* voice note / audio in chat panel */,
 div._ahy5 > div:hover /* link preview in chat panel */,
 div._ak15 > ._ahwq:hover /* some link preview in link list panel */,
-span._ajxd._ajxk > ._ajxj._ajxd:hover /* sticker in chat panel */,
+span._ajxd._ajxk ._ajxj._ajxd:hover /* sticker in chat panel */,
 div.xz9dduz > div:first-child:hover /* maps / location */,
 div._ajwt > div:first-child > div:nth-child(2) > div:hover /* media preview in send media */,
 div._ak3i:hover /* media preview thumb in send media */,
@@ -86,7 +86,7 @@ div._ajwt .xm0mufa > div:hover /* document filename in send media */
 ._1qNn2 ._1nCcB /*set pseudo background on sticker*/,
 
 /* updated wa version (v2.3000.xx) */
-span._ajxd._ajxk > ._ajxj._ajxd /*set pseudo background on sticker*/
+span._ajxd._ajxk ._ajxj._ajxd /*set pseudo background on sticker*/
 {
   background-color: var(--incoming-background) !important;
   border-radius: 7.5px !important;
