@@ -22,7 +22,8 @@ const defaultSettings = {
       noDelay: false,
       profilePic: false,
       textInput: true,
-      unblurActive: false
+      unblurActive: false,
+      hideChatList: false
     },
     varStyles: {
       mdgBlur: "20px",

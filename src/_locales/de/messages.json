@@ -74,6 +74,12 @@
     "toggleBlurOnIdleDescription": {
         "message": "Verstecke WhatsApp nach einer gewissen Zeit, sobald keine Maus/Tastatur Eingabe erkannt wird."
     },
+    "toggleHideChatList": {
+        "message": "Chat-Liste automatisch ein-/ausblenden"
+    },
+    "toggleHideChatListDescription": {
+        "message": "Die Chat-Liste öffnet sich, wenn die Maus in der Nähe der linken Seite ist, und schließt sich, wenn die Maus wegbewegt wird."
+    },
     "resetValue": {
         "message": "Zurücksetzen"
     },

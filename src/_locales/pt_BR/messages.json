@@ -74,6 +74,12 @@
     "toggleBlurOnIdleDescription": {
         "message": "Desfoca o WhatsApp quando não há atividade de mouse/teclado após um certo tempo."
     },
+    "toggleHideChatList": {
+        "message": "Ocultar/mostrar lista de conversas automaticamente"
+    },
+    "toggleHideChatListDescription": {
+        "message": "A lista de conversas desliza para abrir quando o mouse está próximo ao lado esquerdo e recolhe quando o mouse se afasta."
+    },
     "resetValue": {
         "message": "Redefinir Valor para Padrão"
     },

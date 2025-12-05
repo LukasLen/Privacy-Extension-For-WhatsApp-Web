@@ -43,7 +43,8 @@
         "css/profilePic.css",
         "css/name.css",
         "css/noDelay.css",
-        "css/unblurActive.css"
+        "css/unblurActive.css",
+        "css/hideChatList.css"
       ],
       "matches": ["https://web.whatsapp.com/*"]
     }

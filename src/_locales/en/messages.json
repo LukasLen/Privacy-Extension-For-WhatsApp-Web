@@ -74,6 +74,12 @@
     "toggleBlurOnIdleDescription": {
         "message": "Blur WhatsApp when there is no mouse/keyboard activity after a certain time."
     },
+    "toggleHideChatList": {
+        "message": "Auto hide/show chat list"
+    },
+    "toggleHideChatListDescription": {
+        "message": "Chat list slides open when mouse is near the left side and collapses when mouse moves away."
+    },
     "resetValue": {
         "message": "Reset Value to Default"
     },
