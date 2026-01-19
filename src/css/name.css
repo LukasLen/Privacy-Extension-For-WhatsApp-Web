@@ -19,6 +19,11 @@ div[role="button"] > div > ._8nE1Y ._21S-L /*user/group name in non message list
 
 /* updated wa version (v2.3000.xx) */
 div[role="listitem"] ._ak8q /* user/group name in message list */,
+div[role="row"] ._ak8q /* user/group name in chat list */,
+div[role="row"] ._ak8o ._ak8q /* user/group name in chat list (nested) */,
+div[role="row"] span[title][dir="auto"] /* user/group name in chat list with title */,
+div[role="listitem"] span._ak8q /* user/group name in message list (additional wrapper) */,
+div[role="listitem"] span[title] /* user/group name in message list (title attribute) */,
 div[role="button"][class=""] ._ak8q /* user/group name in details list and popup list */,
 div[role="dialog"] ._ak8q /* user name in contact popup list */,
 div[role="dialog"] div.copyable-text /* phone number and business user name in contact popup list */,
@@ -62,6 +67,11 @@ div[role="button"] > div > ._8nE1Y ._21S-L:hover /*user/group name in non messag
 
 /* updated wa version (v2.3000.xx) */
 div[role="listitem"] ._ak8q:hover /* user/group name in message list */,
+div[role="row"] ._ak8q:hover /* user/group name in chat list */,
+div[role="row"] ._ak8o ._ak8q:hover /* user/group name in chat list (nested) */,
+div[role="row"] span[title][dir="auto"]:hover /* user/group name in chat list with title */,
+div[role="listitem"] span._ak8q:hover /* user/group name in message list (additional wrapper) */,
+div[role="listitem"] span[title]:hover /* user/group name in message list (title attribute) */,
 div[role="button"][class=""] ._ak8q:hover /* user/group name in details list and popup list */,
 div[role="dialog"] ._ak8q:hover /* user name in contact popup list */,
 div[role="dialog"] div.copyable-text:hover /* phone number and business user name in contact popup list */,
