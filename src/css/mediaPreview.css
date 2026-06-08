@@ -93,3 +93,19 @@ span._ajxd._ajxk > ._ajxj._ajxd /*set pseudo background on sticker*/
   box-shadow: 0 1px 0.5px rgba(0, 0, 0, 0.13) !important;
 }
 
+
+/* ----------------------------------------------------------------- */
+/* updated wa version (v2.3000.10xx - June 2026)                     */
+/* ----------------------------------------------------------------- */
+#main div[data-id] div[role="button"] img /* media image in chat */,
+#main div[data-id] div[role="button"] video /* media video in chat */
+{
+  filter: blur(var(--mdp-blur)) grayscale(1);
+  transition-delay: 0s;
+}
+#main div[data-id] div[role="button"]:hover img /* media image in chat */,
+#main div[data-id] div[role="button"]:hover video /* media video in chat */
+{
+  filter: blur(0) grayscale(0);
+  transition-delay: 0.3s;
+}

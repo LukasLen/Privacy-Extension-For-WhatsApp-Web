@@ -148,3 +148,22 @@ div._ak1r:hover /* message text input */
 {
   filter: grayscale(0) opacity(1);
 }
+
+/* ----------------------------------------------------------------- */
+/* updated wa version (v2.3000.10xx - June 2026)                     */
+/* ----------------------------------------------------------------- */
+body:hover #pane-side div.xjbqb8w /* message preview in chat list */,
+body:hover #pane-side div.xggjnk3 div.x14ug900 /* user/group name in chat list */,
+body:hover #pane-side div.xeusxvb /* profile pic in chat list */,
+body:hover #main header div.xeusxvb /* profile pic at top of chat panel */,
+body:hover #main div.copyable-text /* message text bubble */,
+body:hover #main div[data-id] div[role="button"] img /* media image in chat */,
+body:hover #main div[data-id] div[role="button"] video /* media video in chat */
+{
+  filter: blur(0) grayscale(0);
+  transition-delay: 0s;
+}
+body:hover #main footer div[contenteditable="true"][role="textbox"] /* message text input */
+{
+  filter: grayscale(0) opacity(1);
+}

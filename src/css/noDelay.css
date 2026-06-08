@@ -145,3 +145,19 @@ div._ak1r:hover /* message text input */
   -o-transition-duration: 0s !important;
   transition-duration: 0s !important;
 }
+
+/* ----------------------------------------------------------------- */
+/* updated wa version (v2.3000.10xx - June 2026)                     */
+/* ----------------------------------------------------------------- */
+#pane-side [role="grid"] > div:hover div.xjbqb8w /* message preview in chat list */,
+#pane-side [role="grid"] > div:hover div.xggjnk3 div.x14ug900 /* user/group name in chat list */,
+#pane-side [role="grid"] > div:hover div.xeusxvb /* profile pic in chat list */,
+#main header div.xeusxvb:hover /* profile pic at top of chat panel */,
+#main div.copyable-text:hover /* message text bubble */,
+#main div[data-id] div[role="button"]:hover img /* media image in chat */,
+#main div[data-id] div[role="button"]:hover video /* media video in chat */,
+#main footer div[contenteditable="true"][role="textbox"]:hover /* message text input */
+{
+  transition-delay: 0.04s !important;
+  transition-duration: 0s !important;
+}
